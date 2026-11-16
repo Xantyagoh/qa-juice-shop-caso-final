@@ -1,0 +1,13 @@
+{
+  "name": "qa-juice-shop",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas del caso practico final - Aseguramiento de la calidad (OWASP Juice Shop)",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

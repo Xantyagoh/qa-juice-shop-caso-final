@@ -1,0 +1,18 @@
+Aprobado  MC-01  Registro con datos válidos  ->  Redirigió a /login y mostró: "Registration completed successfully. You can now log in."
+Aprobado  MC-02  Registro con contraseña de 4 caracteres  ->  Errores: Password must be 5-40 characters long.. Botón Register deshabilitado.
+Aprobado  MC-03  Registro con contraseña de 5 caracteres  ->  Errores: ninguno. Botón habilitado. URL final: /login
+Aprobado  MC-04  Registro con contraseña de 40 caracteres  ->  Errores: ninguno. Botón habilitado. URL final: /login
+Aprobado  MC-05  Registro con contraseña de 41 caracteres  ->  El campo contiene 40 caracteres de los 41 escritos (atributo maxlength=40).
+Aprobado  MC-06  Registro con correo de formato inválido  ->  Errores: Email address is not valid.. Botón deshabilitado.
+Aprobado  MC-07  Registro con confirmación de contraseña distinta  ->  Errores: Passwords do not match. Botón deshabilitado.
+Aprobado  MC-08  Login con credenciales válidas  ->  Redirigió a /search. El menú de cuenta muestra: "mc01.17947868232772172@qa-test.com"
+Aprobado  MC-09  Login con contraseña incorrecta  ->  Permaneció en /login. Mensaje: "Invalid email or password."
+Aprobado  MC-10  Búsqueda con término existente  ->  3 producto(s): Apple Juice (1000ml); Apple Pomace; Pineapple Juice (1000ml)
+Aprobado  MC-11  Búsqueda sin coincidencias  ->  0 producto(s). Texto en pantalla: "Search Results - zzzxxxqqq No results found Try adjusting your search to find what you're looking for. Items per page: 1"
+Aprobado  MC-12  Agregar producto al carrito  ->  Mensaje: "Placed Apple Juice (1000ml) into basket.". Botón del carrito: "Your Basket 1"
+Aprobado  MC-13  Feedback con comentario en el límite de 160 caracteres  ->  Comentario con 160 caracteres. CAPTCHA "7-9*10" = -83. Mensaje: "Thank you so much for your amazing 5-star feedback!"
+Fallido   MC-14  Validación en servidor: contraseña de 4 caracteres (API)  ->  HTTP 201: el servidor CREÓ la cuenta.
+Fallido   MC-15  Login con payload de inyección SQL  ->  URL: /search. Sesión iniciada como: "admin@juice-sh.op"
+Fallido   MC-16  XSS reflejado en el campo de búsqueda  ->  El navegador ejecutó el script: apareció un alert con el texto "xss".
+
+Resumen manuales: 16 casos, 13 aprobados, 3 fallidos

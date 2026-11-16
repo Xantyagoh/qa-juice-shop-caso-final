@@ -1,0 +1,902 @@
+﻿00:35:19.603 INFO  Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+00:35:19.608 INFO  Project root configuration file: /usr/src/sonar-project.properties
+00:35:19.625 INFO  SonarScanner CLI 8.4.0.16527
+00:35:19.630 INFO  Linux 6.6.87.2-microsoft-standard-WSL2 amd64
+00:35:20.668 INFO  Communicating with SonarQube Community Build 26.11.0.134175
+00:35:20.669 INFO  JRE provisioning: os[linux], arch[x86_64]
+00:35:26.893 INFO  Starting SonarScanner Engine...
+00:35:26.894 INFO  Java 21.0.13 Eclipse Adoptium (64-bit)
+00:35:27.574 INFO  Load global settings
+00:35:27.689 INFO  Load global settings (done) | time=115ms
+00:35:27.691 INFO  Server id: 147B411E-AaHhh1d-w5EVeT5HaWud
+00:35:27.934 INFO  Loading required plugins
+00:35:27.935 INFO  Load plugins index
+00:35:27.993 INFO  Load plugins index (done) | time=57ms
+00:35:27.993 INFO  Load/download plugins
+00:35:29.580 INFO  Load/download plugins (done) | time=1586ms
+00:35:29.834 INFO  Load project settings for component key: 'juice-shop'
+00:35:29.868 INFO  Load project settings for component key: 'juice-shop' (done) | time=34ms
+00:35:29.880 INFO  Process project properties
+00:35:29.895 INFO  Process project properties (done) | time=15ms
+00:35:29.904 INFO  Project key: juice-shop
+00:35:29.905 INFO  Base dir: /usr/src
+00:35:29.905 INFO  Working dir: /tmp/.scannerwork
+00:35:30.045 INFO  Load quality profiles
+00:35:30.130 INFO  Load quality profiles (done) | time=85ms
+00:35:30.157 INFO  Load active rules
+00:35:30.382 INFO  Load active rules (done) | time=225ms
+00:35:30.386 INFO  Load analysis cache
+00:35:30.456 INFO  Load analysis cache | time=69ms
+00:35:30.554 INFO  Preprocessing files...
+00:35:40.555 INFO  Preprocessed 640 files
+00:35:41.420 INFO  8 languages detected in 899 preprocessed files (done) | time=10865ms
+00:35:41.421 INFO  831 files ignored because of inclusion/exclusion patterns
+00:35:41.422 INFO  5 directories skipped because of exclusion patterns (content not counted)
+00:35:41.422 INFO  32 files ignored because of scm ignore settings
+00:35:41.423 INFO  Loading plugins for detected languages
+00:35:41.423 INFO  Load/download plugins
+00:35:48.618 INFO  Load/download plugins (done) | time=7194ms
+00:35:48.721 INFO  Load project repositories
+00:35:48.836 INFO  Load project repositories (done) | time=115ms
+00:35:48.864 INFO  Indexing files...
+00:35:48.864 INFO  Project configuration:
+00:35:48.865 INFO    Excluded sources: **/node_modules/**, **/*.spec.ts, test/**, cypress/**, **/*.min.js, data/static/**, ftp/**, encryptionkeys/**, frontend/src/assets/**, **/*.spec.ts, test/**/*.ts, test/**/*.js
+00:35:48.865 INFO    Included tests: **/*.spec.ts, test/**/*.ts, test/**/*.js
+00:35:52.897 INFO  898 files indexed (done) | time=4032ms
+00:35:52.898 INFO  Quality profile for css: Sonar way core
+00:35:52.898 INFO  Quality profile for docker: Sonar way core
+00:35:52.898 INFO  Quality profile for js: Sonar way core
+00:35:52.899 INFO  Quality profile for json: Sonar way comprehensive
+00:35:52.899 INFO  Quality profile for terraform: Sonar way core
+00:35:52.899 INFO  Quality profile for ts: Sonar way core
+00:35:52.899 INFO  Quality profile for web: Sonar way core
+00:35:52.899 INFO  Quality profile for yaml: Sonar way comprehensive
+00:35:52.900 INFO  ------------- Run sensors on module juice-shop
+00:35:52.923 INFO  Load metrics repository
+00:35:52.947 INFO  Load metrics repository (done) | time=25ms
+00:35:53.245 INFO  Reflections took 83 ms to scan 1 urls, producing 30 keys and 313 values
+00:35:53.326 INFO  Sensor IaC YAML File Type Classification Sensor [iac]
+00:35:53.538 INFO  Sensor IaC YAML File Type Classification Sensor [iac] (done) | time=212ms
+00:35:53.539 INFO  Sensor IaC Terraform Sensor [iac]
+00:35:53.600 INFO  8 source files to be analyzed
+00:35:53.800 INFO  8/8 source files have been analyzed
+00:35:53.801 INFO  Sensor IaC Terraform Sensor [iac] (done) | time=261ms
+00:35:53.801 INFO  Sensor IaC TFLint report Sensor [iac]
+00:35:53.801 INFO  Sensor IaC TFLint report Sensor [iac] (done) | time=0ms
+00:35:53.801 INFO  Sensor IaC CloudFormation Sensor [iac]
+00:35:53.802 INFO  There are no files to be analyzed for the CloudFormation language
+00:35:53.802 INFO  Sensor IaC CloudFormation Sensor [iac] (done) | time=0ms
+00:35:53.802 INFO  Sensor IaC cfn-lint report Sensor [iac]
+00:35:53.802 INFO  Sensor IaC cfn-lint report Sensor [iac] (done) | time=0ms
+00:35:53.803 INFO  Sensor IaC Kustomization Sensor [iac]
+00:35:53.803 INFO  Sensor IaC Kustomization Sensor [iac] (done) | time=0ms
+00:35:53.803 INFO  Sensor IaC hadolint report Sensor [iac]
+00:35:53.803 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+00:35:53.803 INFO  Sensor IaC Azure Resource Manager Sensor [iac]
+00:35:53.804 INFO  There are no files to be analyzed for the Azure Resource Manager language
+00:35:53.804 INFO  Sensor IaC Azure Resource Manager Sensor [iac] (done) | time=0ms
+00:35:53.804 INFO  Sensor Java Config Sensor [iac]
+00:35:53.804 INFO  There are no files to be analyzed for the Java language
+00:35:53.804 INFO  Sensor Java Config Sensor [iac] (done) | time=0ms
+00:35:53.805 INFO  Sensor IaC Docker Sensor [iac]
+00:35:53.830 INFO  2 source files to be analyzed
+00:35:53.908 INFO  2/2 source files have been analyzed
+00:35:53.909 INFO  Sensor IaC Docker Sensor [iac] (done) | time=105ms
+00:35:53.909 INFO  Sensor HTML [web]
+00:35:55.269 INFO  Sensor HTML [web] (done) | time=1360ms
+00:35:55.270 INFO  Sensor JavaScript/TypeScript Coverage [javascript]
+00:35:55.272 INFO  Analysing [/usr/src/coverage/server-tests/lcov.info]
+00:35:56.419 INFO  Sensor JavaScript/TypeScript Coverage [javascript] (done) | time=1149ms
+00:35:56.420 INFO  Sensor IaC Kubernetes Sensor [iac]
+00:35:56.535 INFO  There are no files to be analyzed for the Kubernetes language
+00:35:56.535 INFO  Sensor IaC Kubernetes Sensor [iac] (done) | time=115ms
+00:35:56.535 INFO  Sensor TextAndSecretsSensor [text]
+00:35:56.622 INFO  Available processors: 12
+00:35:56.622 INFO  Using 12 threads for analysis.
+00:35:56.943 INFO  Start fetching files for the text and secrets analysis
+00:35:56.952 INFO  Using Git CLI to retrieve dirty files
+00:35:56.963 WARN  Retrieving only language associated files, make sure to run the analysis inside a git repository to make use of inclusions specified via "sonar.text.inclusions"
+00:35:56.964 INFO  Starting the text and secrets analysis
+00:35:56.966 INFO  795 source files to be analyzed for the text and secrets analysis
+00:35:59.708 INFO  795/795 source files have been analyzed for the text and secrets analysis
+00:35:59.711 INFO  Sensor TextAndSecretsSensor [text] (done) | time=3176ms
+00:35:59.714 INFO  ------------- Run sensors on project
+00:35:59.861 INFO  Sensor JavaScript/TypeScript/CSS analysis [javascript]
+00:36:00.393 INFO  Detected os: Linux arch: amd64 alpine: false. Platform: LINUX_X64
+00:36:00.394 INFO  Deploy location /opt/sonar-scanner/.sonar/js/node-runtime, tagetRuntime: /opt/sonar-scanner/.sonar/js/node-runtime/node,  version: /opt/sonar-scanner/.sonar/js/node-runtime/version.txt
+00:36:02.889 INFO  Using embedded Node.js runtime.
+00:36:02.889 INFO  Using Node.js executable: '/opt/sonar-scanner/.sonar/js/node-runtime/node'.
+00:36:06.075 INFO  Memory configuration: OS (7463 MB), Node.js (2240 MB).
+00:36:06.089 INFO  gRPC analyze-project server listening on 127.0.0.1:43149
+00:36:06.293 INFO  Plugin version: [14.3.0.46350]
+00:36:12.804 INFO  Found 3 tsconfig.json file(s): [/usr/src/frontend/tsconfig.json, /usr/src/test/cypress/tsconfig.json, /usr/src/tsconfig.json]
+00:38:05.015 INFO  736 source files to be analyzed
+00:38:05.016 INFO  Creating TypeScript(6.0.3) program with configuration file /usr/src/frontend/tsconfig.json [lib: lib.es2024.d.ts, lib.dom.d.ts]
+00:38:05.016 INFO  Discovered referenced tsconfig: /usr/src/frontend/src/tsconfig.app.json
+00:38:05.016 INFO  Discovered referenced tsconfig: /usr/src/frontend/src/tsconfig.spec.json
+00:38:05.016 INFO  No files to analyze from tsconfig /usr/src/frontend/tsconfig.json
+00:38:05.017 INFO  Creating TypeScript(6.0.3) program with configuration file /usr/src/test/cypress/tsconfig.json [lib: lib.es5.d.ts, lib.dom.d.ts, lib.es2018.d.ts]
+00:38:05.017 INFO  Analyzing 36 file(s) from tsconfig /usr/src/test/cypress/tsconfig.json (67 total files in program)
+00:38:05.017 INFO  Creating TypeScript(6.0.3) program with configuration file /usr/src/tsconfig.json [lib: lib.es2020.d.ts]
+00:38:05.017 INFO  Analyzing 223 file(s) from tsconfig /usr/src/tsconfig.json (274 total files in program)
+00:38:05.017 INFO  Creating TypeScript(6.0.3) program with configuration file /usr/src/frontend/src/tsconfig.app.json [lib: lib.es2020.d.ts, lib.dom.d.ts]
+00:38:05.017 INFO  Analyzing 173 file(s) from tsconfig /usr/src/frontend/src/tsconfig.app.json (221 total files in program)
+00:38:05.018 INFO  Creating TypeScript(6.0.3) program with configuration file /usr/src/frontend/src/tsconfig.spec.json [lib: lib.es2020.d.ts, lib.dom.d.ts]
+00:38:05.019 INFO  Analyzing 129 file(s) from tsconfig /usr/src/frontend/src/tsconfig.spec.json (339 total files in program)
+00:38:05.019 INFO  Analyzing 9 file(s) using merged compiler options [lib: lib.es2024.d.ts, lib.dom.d.ts]
+00:38:05.019 INFO  736/736 source files have been analyzed
+00:38:05.029 INFO  Hit the cache for 0 out of 652
+00:38:05.030 INFO  Miss the cache for 652 out of 652: ANALYSIS_MODE_INELIGIBLE [652/652]
+00:38:05.030 INFO  Sensor JavaScript/TypeScript/CSS analysis [javascript] (done) | time=125168ms
+00:38:05.030 INFO  Sensor IaC Project Sensor [iac]
+00:38:05.034 INFO  Sensor IaC Project Sensor [iac] (done) | time=1ms
+00:38:05.034 INFO  Sensor Zero Coverage Sensor
+00:38:05.068 INFO  Sensor Zero Coverage Sensor (done) | time=35ms
+00:38:05.069 INFO  ------------- Gather SCA dependencies on project
+00:38:05.075 INFO  Dependency analysis skipped
+00:38:05.079 INFO  SCM Publisher SCM provider for this project is: git
+00:38:05.081 INFO  SCM Publisher 746 source files to be analyzed
+00:38:05.114 WARN  Shallow clone detected, no blame information will be provided. You can convert to non-shallow with 'git fetch --unshallow'.
+00:38:05.118 INFO  SCM Publisher 0/746 source files have been analyzed (done) | time=36ms
+00:38:05.118 WARN  Missing blame information for the following files:
+00:38:05.118 WARN    * frontend/src/app/Models/backup.model.ts
+00:38:05.118 WARN    * frontend/src/app/product-review-edit/product-review-edit.component.spec.ts
+00:38:05.118 WARN    * frontend/src/app/sidenav/sidenav.component.ts
+00:38:05.119 WARN    * frontend/src/app/Services/basket.service.spec.ts
+00:38:05.119 WARN    * frontend/src/app/score-board/components/hacking-challenge-progress-score-card/hacking-challenge-progress-score-card.component.spec.ts
+00:38:05.119 WARN    * frontend/src/app/qr-code/qr-code.component.scss
+00:38:05.119 WARN    * frontend/src/app/score-board/components/challenges-unavailable-warning/challenges-unavailable-warning.component.scss
+00:38:05.120 WARN    * test/server/challengeUtils.unit.test.ts
+00:38:05.120 WARN    * frontend/src/app/product/product.component.scss
+00:38:05.120 WARN    * test/api/chat.test.ts
+00:38:05.120 WARN    * frontend/src/app/score-board/components/hacking-challenge-progress-score-card/hacking-challenge-progress-score-card.component.ts
+00:38:05.120 WARN    * frontend/src/app/score-board/components/difficulty-stars/difficulty-stars.component.html
+00:38:05.120 WARN    * test/server/terraformCustomization.unit.test.ts
+00:38:05.120 WARN    * lib/startup/validateDependenciesBasic.ts
+00:38:05.121 WARN    * frontend/src/app/score-board/components/score-card/score-card.component.html
+00:38:05.121 WARN    * frontend/src/app/privacy-policy/privacy-policy.component.ts
+00:38:05.121 WARN    * test/api/file-upload.test.ts
+00:38:05.121 WARN    * frontend/stylelint.config.mjs
+00:38:05.121 WARN    * frontend/src/app/error-page/error-page.component.scss
+00:38:05.121 WARN    * frontend/src/app/track-result/track-result.component.spec.ts
+00:38:05.121 WARN    * infrastructure/terraform/networking.tf
+00:38:05.122 WARN    * frontend/src/app/last-login-ip/last-login-ip.component.html
+00:38:05.122 WARN    * models/hint.ts
+00:38:05.122 WARN    * test/server/angular.unit.test.ts
+00:38:05.122 WARN    * test/cypress/support/setup.ts
+00:38:05.122 WARN    * frontend/src/app/oauth/oauth.component.ts
+00:38:05.122 WARN    * frontend/src/app/deluxe-user/deluxe-user.component.html
+00:38:05.122 WARN    * rsn/rsn-update.ts
+00:38:05.123 WARN    * frontend/src/app/purchase-basket/purchase-basket.component.html
+00:38:05.123 WARN    * frontend/src/app/Services/tags.service.spec.ts
+00:38:05.123 WARN    * frontend/src/app/faucet/faucet.component.html
+00:38:05.123 WARN    * frontend/src/app/oauth/oauth.component.spec.ts
+00:38:05.123 WARN    * frontend/src/app/photo-wall/mime-type.validator.spec.ts
+00:38:05.123 WARN    * frontend/src/app/product-image/product-image.component.ts
+00:38:05.124 WARN    * test/server/challengeTutorialSequence.unit.test.ts
+00:38:05.124 WARN    * frontend/src/app/Services/keys.service.spec.ts
+00:38:05.124 WARN    * frontend/src/app/coding-challenge-page/coding-challenge-page.component.ts
+00:38:05.124 WARN    * frontend/src/app/welcome/welcome.component.ts
+00:38:05.124 WARN    * test/api/administration.test.ts
+00:38:05.124 WARN    * routes/orderHistory.ts
+00:38:05.125 WARN    * test/server/appConfiguration.unit.test.ts
+00:38:05.125 WARN    * frontend/src/app/data-export/data-export.component.spec.ts
+00:38:05.125 WARN    * frontend/src/app/user-details/user-details.component.scss
+00:38:05.125 WARN    * routes/redirect.ts
+00:38:05.125 WARN    * routes/vulnCodeFixes.ts
+00:38:05.125 WARN    * frontend/src/app/Services/product.service.spec.ts
+00:38:05.125 WARN    * frontend/src/app/product-details/product-details.component.scss
+00:38:05.126 WARN    * test/api/feedback.test.ts
+00:38:05.126 WARN    * test/server/order.unit.test.ts
+00:38:05.126 WARN    * frontend/src/app/Services/order-history.service.ts
+00:38:05.126 WARN    * frontend/src/app/Services/hint.service.ts
+00:38:05.126 WARN    * terraform/variables.tf
+00:38:05.126 WARN    * test/cypress/e2e/geoStalking.spec.ts
+00:38:05.127 WARN    * lib/webhook.ts
+00:38:05.127 WARN    * frontend/src/app/order-completion/order-completion.component.scss
+00:38:05.127 WARN    * frontend/src/app/Services/configuration.service.ts
+00:38:05.127 WARN    * frontend/src/app/score-board/components/warning-card/warning-card.component.scss
+00:38:05.127 WARN    * frontend/src/app/Services/track-order.service.spec.ts
+00:38:05.127 WARN    * frontend/src/app/two-factor-auth/two-factor-auth.component.html
+00:38:05.127 WARN    * test/server/premiumReward.unit.test.ts
+00:38:05.127 WARN    * frontend/src/app/shared/codemirror-extensions.ts
+00:38:05.128 WARN    * test/server/dataExport.unit.test.ts
+00:38:05.128 WARN    * frontend/src/app/token-sale/token-sale.component.ts
+00:38:05.128 WARN    * frontend/src/app/score-board/helpers/challenge-filtering.spec.ts
+00:38:05.128 WARN    * frontend/src/app/complaint/complaint.component.ts
+00:38:05.128 WARN    * routes/order.ts
+00:38:05.128 WARN    * routes/appVersion.ts
+00:38:05.128 WARN    * frontend/src/app/chatbot/chat-input-box/chat-input-box.component.scss
+00:38:05.129 WARN    * routes/keyServer.ts
+00:38:05.129 WARN    * test/api/vuln-code-fixes.test.ts
+00:38:05.129 WARN    * frontend/src/app/app.guard.spec.ts
+00:38:05.129 WARN    * frontend/src/app/product-review-edit/product-review-edit.component.ts
+00:38:05.129 WARN    * frontend/src/app/forgot-password/forgot-password.component.html
+00:38:05.129 WARN    * frontend/src/app/Services/complaint.service.spec.ts
+00:38:05.130 WARN    * frontend/src/app/deluxe-user/deluxe-user.component.ts
+00:38:05.130 WARN    * frontend/src/app/wallet/wallet.component.scss
+00:38:05.130 WARN    * frontend/src/app/manage-passkeys/manage-passkeys.component.ts
+00:38:05.130 WARN    * frontend/src/app/score-board/score-board.component.html
+00:38:05.130 WARN    * frontend/src/app/purchase-basket/purchase-basket.component.spec.ts
+00:38:05.130 WARN    * frontend/src/app/accounting/accounting.component.scss
+00:38:05.130 WARN    * test/server/keyServer.unit.test.ts
+00:38:05.131 WARN    * test/api/nftMint.test.ts
+00:38:05.131 WARN    * routes/memory.ts
+00:38:05.131 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.ts
+00:38:05.131 WARN    * frontend/src/app/score-board/components/coding-challenge-progress-score-card/coding-challenge-progress-score-card.component.ts
+00:38:05.131 WARN    * test/api/2fa.test.ts
+00:38:05.131 WARN    * frontend/src/app/photo-wall/photo-wall.component.scss
+00:38:05.131 WARN    * frontend/src/app/product/product.component.html
+00:38:05.131 WARN    * frontend/src/app/register/register.component.scss
+00:38:05.131 WARN    * routes/logfileServer.ts
+00:38:05.131 WARN    * frontend/src/app/score-board/components/filter-settings/components/category-filter/category-filter.component.spec.ts
+00:38:05.131 WARN    * frontend/src/app/chatbot/chatbot.component.html
+00:38:05.131 WARN    * frontend/src/app/login/login.component.html
+00:38:05.131 WARN    * frontend/src/app/Services/hints.service.spec.ts
+00:38:05.131 WARN    * frontend/src/app/Services/captcha.service.ts
+00:38:05.131 WARN    * frontend/src/app/product/product.component.spec.ts
+00:38:05.131 WARN    * frontend/src/environments/environment.ts
+00:38:05.131 WARN    * terraform/networking.tf
+00:38:05.131 WARN    * frontend/src/app/Services/socket-io.service.spec.ts
+00:38:05.131 WARN    * frontend/src/app/chatbot/chat-input-box/chat-input-box.component.spec.ts
+00:38:05.131 WARN    * frontend/src/confetti/index.ts
+00:38:05.132 WARN    * frontend/src/app/Models/hint.model.ts
+00:38:05.132 WARN    * test/server/codingChallengeFixes.unit.test.ts
+00:38:05.132 WARN    * frontend/src/app/privacy-security/privacy-security.component.spec.ts
+00:38:05.132 WARN    * frontend/src/app/last-login-ip/last-login-ip.component.scss
+00:38:05.132 WARN    * models/basket.ts
+00:38:05.132 WARN    * test/cypress/e2e/basket.spec.ts
+00:38:05.132 WARN    * routes/basket.ts
+00:38:05.132 WARN    * frontend/src/app/ctf-system-wide-notification/ctf-system-wide-notification.component.spec.ts
+00:38:05.133 WARN    * frontend/src/app/address/address.component.ts
+00:38:05.133 WARN    * models/delivery.ts
+00:38:05.133 WARN    * test/api/security-question.test.ts
+00:38:05.133 WARN    * frontend/src/app/score-board/components/warning-card/warning-card.component.ts
+00:38:05.133 WARN    * frontend/src/app/score-board/components/filter-settings/components/score-board-additional-settings-dialog/score-board-additional-settings-dialog.component.spec.ts
+00:38:05.134 WARN    * frontend/src/environments/environment.prod.ts
+00:38:05.134 WARN    * test/cypress/e2e/scoreBoard.spec.ts
+00:38:05.134 WARN    * frontend/src/app/order-history/order-history.component.spec.ts
+00:38:05.135 WARN    * frontend/src/app/score-board/components/challenges-unavailable-warning/challenges-unavailable-warning.component.spec.ts
+00:38:05.135 WARN    * test/cypress/e2e/register.spec.ts
+00:38:05.135 WARN    * test/api/api.test.ts
+00:38:05.135 WARN    * frontend/src/app/coding-challenge-page/helpers/handle-verdict.spec.ts
+00:38:05.136 WARN    * frontend/src/app/welcome/welcome.component.html
+00:38:05.136 WARN    * frontend/src/app/Services/vuln-lines.service.spec.ts
+00:38:05.136 WARN    * frontend/vitest-base.config.mts
+00:38:05.136 WARN    * test/cypress/e2e/dataErasure.spec.ts
+00:38:05.137 WARN    * frontend/src/app/Services/recycle.service.ts
+00:38:05.137 WARN    * test/api/b2b-order.test.ts
+00:38:05.137 WARN    * infrastructure/Dockerfile
+00:38:05.138 WARN    * test/api/quarantine-server.test.ts
+00:38:05.141 WARN    * models/card.ts
+00:38:05.141 WARN    * frontend/src/app/Services/socket-io.service.ts
+00:38:05.141 WARN    * lib/startup/registerWebsocketEvents.ts
+00:38:05.141 WARN    * routes/securityQuestion.ts
+00:38:05.142 WARN    * test/cypress/e2e/chatbot.spec.ts
+00:38:05.142 WARN    * frontend/src/app/user-details/user-details.component.html
+00:38:05.142 WARN    * frontend/src/app/address-select/address-select.component.ts
+00:38:05.142 WARN    * data/types.ts
+00:38:05.142 WARN    * frontend/src/app/accounting/accounting.component.ts
+00:38:05.142 WARN    * infrastructure/terraform/variables.tf
+00:38:05.142 WARN    * test/server/verify.unit.test.ts
+00:38:05.143 WARN    * frontend/src/app/shared/codemirror-theme.ts
+00:38:05.143 WARN    * frontend/src/app/password-strength/password-strength.component.ts
+00:38:05.143 WARN    * routes/nftMint.ts
+00:38:05.143 WARN    * frontend/src/app/Services/window-ref.service.spec.ts
+00:38:05.143 WARN    * frontend/src/app/login/login.component.ts
+00:38:05.143 WARN    * frontend/src/app/product-details/product-details.component.html
+00:38:05.143 WARN    * frontend/src/app/wallet-web3/wallet-web3.component.scss
+00:38:05.143 WARN    * lib/config.schema.ts
+00:38:05.144 WARN    * frontend/src/app/Services/two-factor-auth-service.spec.ts
+00:38:05.144 WARN    * test/api/payment.test.ts
+00:38:05.144 WARN    * routes/checkKeys.ts
+00:38:05.144 WARN    * frontend/src/app/Services/user.service.spec.ts
+00:38:05.144 WARN    * frontend/src/app/feedback-details/feedback-details.component.scss
+00:38:05.144 WARN    * frontend/src/app/error-page/error-page.component.html
+00:38:05.144 WARN    * test/api/security-answer.test.ts
+00:38:05.144 WARN    * routes/login.ts
+00:38:05.145 WARN    * frontend/src/app/score-board/components/tutorial-mode-warning/tutorial-mode-warning.component.html
+00:38:05.145 WARN    * routes/recycles.ts
+00:38:05.145 WARN    * lib/noUpdate.ts
+00:38:05.145 WARN    * test/api/search.test.ts
+00:38:05.145 WARN    * routes/authenticatedUsers.ts
+00:38:05.145 WARN    * frontend/src/hacking-instructor/hacking-instructor.scss
+00:38:05.145 WARN    * routes/continueCode.ts
+00:38:05.145 WARN    * models/captcha.ts
+00:38:05.146 WARN    * frontend/src/app/chatbot/chat-input-box/chat-input-box.component.html
+00:38:05.146 WARN    * routes/privacyPolicyProof.ts
+00:38:05.146 WARN    * test/server/system-prompt-extraction.unit.test.ts
+00:38:05.146 WARN    * frontend/src/app/forgot-password/forgot-password.component.scss
+00:38:05.146 WARN    * frontend/src/app/accounting/accounting.component.spec.ts
+00:38:05.146 WARN    * frontend/src/app/app.component.ts
+00:38:05.146 WARN    * frontend/src/app/delivery-method/delivery-method.component.ts
+00:38:05.147 WARN    * frontend/src/app/wallet/wallet.component.html
+00:38:05.147 WARN    * frontend/src/app/score-board/components/challenge-card/challenge-card.component.ts
+00:38:05.147 WARN    * frontend/src/app/login/login.component.spec.ts
+00:38:05.147 WARN    * frontend/src/app/Services/code-snippet.service.ts
+00:38:05.147 WARN    * test/server/xml.unit.test.ts
+00:38:05.147 WARN    * test/server/currentUser.unit.test.ts
+00:38:05.147 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-section/coding-challenge-section.component.html
+00:38:05.147 WARN    * frontend/src/app/chatbot/chatbot.component.scss
+00:38:05.148 WARN    * frontend/src/app/score-board/components/hacking-challenge-progress-score-card/hacking-challenge-progress-score-card.component.html
+00:38:05.148 WARN    * test/server/web3Wallet.unit.test.ts
+00:38:05.148 WARN    * frontend/src/app/score-board/components/tutorial-mode-warning/tutorial-mode-warning.component.ts
+00:38:05.148 WARN    * frontend/src/app/photo-wall/photo-wall.component.html
+00:38:05.148 WARN    * frontend/src/hacking-instructor/challenges/loginBender.ts
+00:38:05.148 WARN    * frontend/src/app/app.routing.ts
+00:38:05.148 WARN    * frontend/src/app/score-board/components/filter-settings/filter-settings.component.spec.ts
+00:38:05.149 WARN    * test/server/easterEgg.unit.test.ts
+00:38:05.149 WARN    * routes/search.ts
+00:38:05.149 WARN    * test/server/appVersion.unit.test.ts
+00:38:05.149 WARN    * frontend/src/app/login/login.component.scss
+00:38:05.149 WARN    * frontend/src/app/Services/passkey.service.ts
+00:38:05.149 WARN    * test/api/logfile-server.test.ts
+00:38:05.149 WARN    * frontend/src/app/faucet/faucet.component.ts
+00:38:05.149 WARN    * lib/startup/customizeEasterEgg.ts
+00:38:05.150 WARN    * frontend/eslint.config.mjs
+00:38:05.150 WARN    * frontend/src/app/Services/quantity.service.spec.ts
+00:38:05.150 WARN    * frontend/src/app/payment/payment.component.spec.ts
+00:38:05.150 WARN    * frontend/src/app/Services/code-fixes.service.ts
+00:38:05.150 WARN    * routes/updateUserProfile.ts
+00:38:05.150 WARN    * frontend/src/hacking-instructor/challenges/exposedCredentials.ts
+00:38:05.151 WARN    * frontend/src/index.html
+00:38:05.151 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.html
+00:38:05.151 WARN    * frontend/src/app/score-board/components/filter-settings/pipes/difficulty-selection-summary.pipe.ts
+00:38:05.151 WARN    * rsn/rsn.ts
+00:38:05.152 WARN    * test/api/memory.test.ts
+00:38:05.153 WARN    * frontend/src/app/coding-challenge-page/coding-challenge-page.component.html
+00:38:05.153 WARN    * frontend/src/app/app.component.scss
+00:38:05.153 WARN    * frontend/src/app/feedback-details/feedback-details.component.ts
+00:38:05.153 WARN    * frontend/src/app/coding-challenge-page/coding-challenge-page.component.spec.ts
+00:38:05.153 WARN    * test/api/tags.test.ts
+00:38:05.154 WARN    * frontend/src/app/payment-method/payment-method.component.spec.ts
+00:38:05.154 WARN    * frontend/src/app/privacy-security/privacy-security.component.html
+00:38:05.154 WARN    * frontend/src/app/welcome-banner/welcome-banner.component.ts
+00:38:05.154 WARN    * models/challengeDependency.ts
+00:38:05.154 WARN    * frontend/src/app/data-export/data-export.component.ts
+00:38:05.154 WARN    * frontend/src/app/chatbot/chat-welcome-page/chat-welcome-page.component.ts
+00:38:05.155 WARN    * test/cypress/e2e/administration.spec.ts
+00:38:05.155 WARN    * terraform/outputs.tf
+00:38:05.155 WARN    * frontend/src/app/privacy-policy/privacy-policy.component.scss
+00:38:05.155 WARN    * lib/accuracy.ts
+00:38:05.156 WARN    * frontend/src/app/score-board/components/filter-settings/components/category-filter/category-filter.component.ts
+00:38:05.156 WARN    * models/memory.ts
+00:38:05.156 WARN    * frontend/src/app/mat-search-bar/abstract-value-accessor.ts
+00:38:05.156 WARN    * test/api/erasure-request.test.ts
+00:38:05.157 WARN    * app.ts
+00:38:05.157 WARN    * test/server/b2bOrder.unit.test.ts
+00:38:05.157 WARN    * routes/address.ts
+00:38:05.157 WARN    * frontend/src/app/Services/payment.service.ts
+00:38:05.158 WARN    * test/api/country-mapping.test.ts
+00:38:05.158 WARN    * frontend/src/app/roles.ts
+00:38:05.158 WARN    * frontend/src/app/order-history/order-history.component.scss
+00:38:05.158 WARN    * routes/resetPassword.ts
+00:38:05.159 WARN    * frontend/src/app/wallet-web3/wallet-web3.component.html
+00:38:05.159 WARN    * data/staticData.ts
+00:38:05.159 WARN    * frontend/src/app/order-completion/order-completion.component.ts
+00:38:05.159 WARN    * frontend/src/app/mat-search-bar/mat-search-bar.component.spec.ts
+00:38:05.159 WARN    * frontend/src/app/oauth/oauth.component.scss
+00:38:05.159 WARN    * test/server/challengeTag.unit.test.ts
+00:38:05.159 WARN    * frontend/src/hacking-instructor/challenges/loginJim.ts
+00:38:05.159 WARN    * frontend/src/app/coding-challenge-page/coding-challenge-page.component.scss
+00:38:05.159 WARN    * frontend/src/app/Services/ctf-system-wide-notification.service.spec.ts
+00:38:05.159 WARN    * frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.html
+00:38:05.159 WARN    * test/server/fileUpload.unit.test.ts
+00:38:05.159 WARN    * frontend/src/hacking-instructor/challenges/adminSection.ts
+00:38:05.160 WARN    * frontend/src/app/Services/ctf-system-wide-notification.service.ts
+00:38:05.160 WARN    * data/datacache.ts
+00:38:05.160 WARN    * frontend/src/hacking-instructor/challenges/loginAdmin.ts
+00:38:05.160 WARN    * test/api/product-review.test.ts
+00:38:05.160 WARN    * frontend/src/app/Services/feedback.service.spec.ts
+00:38:05.160 WARN    * test/cypress/e2e/redirect.spec.ts
+00:38:05.160 WARN    * frontend/src/app/Services/security-question.service.ts
+00:38:05.161 WARN    * frontend/src/app/score-board/types/EnrichedChallenge.ts
+00:38:05.161 WARN    * frontend/src/app/Services/track-order.service.ts
+00:38:05.161 WARN    * test/cypress/e2e/passkey.spec.ts
+00:38:05.161 WARN    * lib/colors.ts
+00:38:05.161 WARN    * frontend/src/app/saved-address/saved-address.component.ts
+00:38:05.161 WARN    * frontend/src/app/product-details/product-details.component.spec.ts
+00:38:05.161 WARN    * lib/xml.ts
+00:38:05.161 WARN    * frontend/src/app/score-board/components/filter-settings/filter-settings.component.scss
+00:38:05.162 WARN    * test/server/codeSnippet.unit.test.ts
+00:38:05.162 WARN    * frontend/src/app/product-review-edit/product-review-edit.component.html
+00:38:05.162 WARN    * frontend/src/app/search-result/search-result.component.ts
+00:38:05.162 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-section/coding-challenge-section.component.scss
+00:38:05.162 WARN    * routes/payment.ts
+00:38:05.162 WARN    * frontend/src/app/score-board/filter-settings/query-params-converters.ts
+00:38:05.162 WARN    * frontend/src/main.ts
+00:38:05.162 WARN    * frontend/src/app/score-board/components/difficulty-stars/difficulty-stars.component.scss
+00:38:05.163 WARN    * frontend/src/app/score-board/components/hacking-challenge-progress-score-card/hacking-challenge-progress-score-card.component.scss
+00:38:05.163 WARN    * frontend/src/app/score-board/helpers/challenge-sorting.ts
+00:38:05.163 WARN    * test/server/antiCheat.unit.test.ts
+00:38:05.163 WARN    * frontend/src/app/basket/basket.component.ts
+00:38:05.163 WARN    * frontend/src/app/Services/complaint.service.ts
+00:38:05.163 WARN    * test/server/is-docker.unit.test.ts
+00:38:05.164 WARN    * test/server/noUpdate.unit.test.ts
+00:38:05.164 WARN    * models/wallet.ts
+00:38:05.164 WARN    * frontend/filter-bundle-stats-for-diagram.mts
+00:38:05.164 WARN    * routes/profileImageUrlUpload.ts
+00:38:05.164 WARN    * frontend/src/app/score-board/components/score-card/score-card.component.ts
+00:38:05.164 WARN    * frontend/src/app/change-password/change-password.component.html
+00:38:05.164 WARN    * frontend/src/app/score-board/components/difficulty-stars/difficulty-stars.component.ts
+00:38:05.164 WARN    * frontend/src/app/score-board/components/score-card/score-card.component.scss
+00:38:05.165 WARN    * frontend/src/app/app.component.html
+00:38:05.165 WARN    * test/api/track-result.test.ts
+00:38:05.165 WARN    * test/cypress/e2e/privacyPolicy.spec.ts
+00:38:05.165 WARN    * frontend/src/app/Services/local-backup.service.spec.ts
+00:38:05.165 WARN    * frontend/stylelint-plugin-spacing-fixer.mjs
+00:38:05.165 WARN    * models/quantity.ts
+00:38:05.165 WARN    * frontend/src/app/Services/product-review.service.spec.ts
+00:38:05.165 WARN    * frontend/src/app/about/about.component.scss
+00:38:05.165 WARN    * frontend/src/app/mat-search-bar/mat-search-bar.component.ts
+00:38:05.166 WARN    * frontend/src/hacking-instructor/index.ts
+00:38:05.166 WARN    * test/api/redirect.test.ts
+00:38:05.166 WARN    * test/api/passkey.test.ts
+00:38:05.166 WARN    * frontend/src/app/Services/administration.service.spec.ts
+00:38:05.166 WARN    * cypress.config.ts
+00:38:05.166 WARN    * frontend/src/app/deluxe-user/deluxe-user.component.scss
+00:38:05.166 WARN    * frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.spec.ts
+00:38:05.166 WARN    * routes/deluxe.ts
+00:38:05.166 WARN    * test/server/blueprint.unit.test.ts
+00:38:05.167 WARN    * frontend/src/app/faucet/faucet.component.scss
+00:38:05.167 WARN    * frontend/src/app/purchase-basket/purchase-basket.component.scss
+00:38:05.167 WARN    * routes/delivery.ts
+00:38:05.167 WARN    * frontend/src/app/complaint/complaint.component.html
+00:38:05.167 WARN    * frontend/src/app/Services/photo-wall.service.ts
+00:38:05.167 WARN    * models/imageCaptcha.ts
+00:38:05.167 WARN    * routes/easterEgg.ts
+00:38:05.167 WARN    * frontend/src/app/Services/image-captcha.service.spec.ts
+00:38:05.167 WARN    * lib/startup/validateDependencies.ts
+00:38:05.168 WARN    * frontend/src/app/Services/tags.service.ts
+00:38:05.168 WARN    * lib/scripts/lintConfig.ts
+00:38:05.168 WARN    * frontend/src/app/privacy-policy/privacy-policy.component.html
+00:38:05.168 WARN    * routes/wallet.ts
+00:38:05.168 WARN    * routes/tags.ts
+00:38:05.168 WARN    * frontend/src/app/wallet/wallet.component.spec.ts
+00:38:05.168 WARN    * frontend/src/app/saved-payment-methods/saved-payment-methods.component.spec.ts
+00:38:05.168 WARN    * frontend/src/app/Services/passkey.service.spec.ts
+00:38:05.168 WARN    * frontend/src/app/coding-challenge-page/helpers/handle-verdict.ts
+00:38:05.169 WARN    * routes/dataExport.ts
+00:38:05.169 WARN    * frontend/src/app/mat-search-bar/mat-search-bar.component.html
+00:38:05.169 WARN    * frontend/src/app/search-result/search-result.component.html
+00:38:05.169 WARN    * frontend/src/app/Services/administration.service.ts
+00:38:05.169 WARN    * test/server/utils.unit.test.ts
+00:38:05.169 WARN    * frontend/src/app/chatbot/chat-welcome-screen/chat-welcome-screen.component.scss
+00:38:05.169 WARN    * frontend/src/app/chatbot/chat-welcome-screen/chat-welcome-screen.component.ts
+00:38:05.169 WARN    * frontend/src/app/score-board/components/difficulty-overview-score-card/difficulty-overview-score-card.component.ts
+00:38:05.169 WARN    * frontend/src/app/Services/image-captcha.service.ts
+00:38:05.169 WARN    * test/api/vuln-code-snippet.test.ts
+00:38:05.170 WARN    * frontend/src/app/Services/security-question.service.spec.ts
+00:38:05.170 WARN    * frontend/src/app/order-history/order-history.component.html
+00:38:05.170 WARN    * frontend/src/app/deluxe-user/deluxe-user.component.spec.ts
+00:38:05.170 WARN    * frontend/src/app/oauth/oauth.component.html
+00:38:05.170 WARN    * frontend/src/app/token-sale/token-sale.component.spec.ts
+00:38:05.170 WARN    * test/cypress/e2e/restApi.spec.ts
+00:38:05.170 WARN    * frontend/src/app/navbar/navbar.component.ts
+00:38:05.170 WARN    * frontend/src/app/order-completion/order-completion.component.html
+00:38:05.170 WARN    * frontend/src/app/address-create/address-create.component.ts
+00:38:05.171 WARN    * frontend/src/app/Services/languages.service.spec.ts
+00:38:05.171 WARN    * models/feedback.ts
+00:38:05.171 WARN    * test/cypress/e2e/noSql.spec.ts
+00:38:05.171 WARN    * frontend/src/app/app.component.spec.ts
+00:38:05.171 WARN    * frontend/src/styles/_variables.scss
+00:38:05.171 WARN    * frontend/src/app/Services/snack-bar-helper.service.ts
+00:38:05.171 WARN    * frontend/src/app/privacy-security/privacy-security.component.ts
+00:38:05.172 WARN    * frontend/src/app/token-sale/token-sale.component.scss
+00:38:05.172 WARN    * frontend/src/app/score-board/score-board.component.scss
+00:38:05.172 WARN    * models/product.ts
+00:38:05.172 WARN    * frontend/src/app/shared/codemirror-extensions.spec.ts
+00:38:05.172 WARN    * frontend/src/app/nft-unlock/nft-unlock.component.scss
+00:38:05.172 WARN    * frontend/src/app/wallet-web3/wallet-web3.component.ts
+00:38:05.173 WARN    * test/api/deluxe.test.ts
+00:38:05.173 WARN    * frontend/src/app/product-review-edit/product-review-edit.component.scss
+00:38:05.173 WARN    * models/privacyRequests.ts
+00:38:05.173 WARN    * frontend/src/app/Services/keys.service.ts
+00:38:05.173 WARN    * test/api/helpers/passkey.ts
+00:38:05.173 WARN    * frontend/src/test-setup.ts
+00:38:05.173 WARN    * test/api/complaint.test.ts
+00:38:05.173 WARN    * frontend/src/app/error-page/error-page.component.spec.ts
+00:38:05.173 WARN    * frontend/src/app/score-board/components/difficulty-overview-score-card/difficulty-overview-score-card.component.scss
+00:38:05.174 WARN    * test/cypress/e2e/forgedJwt.spec.ts
+00:38:05.174 WARN    * test/cypress/e2e/metrics.spec.ts
+00:38:05.174 WARN    * test/cypress/support/commands.ts
+00:38:05.174 WARN    * frontend/src/app/complaint/complaint.component.scss
+00:38:05.174 WARN    * frontend/src/app/sidenav/sidenav.component.scss
+00:38:05.175 WARN    * test/server/codingChallenges.unit.test.ts
+00:38:05.175 WARN    * frontend/src/app/faucet/faucet.module.ts
+00:38:05.175 WARN    * test/cypress/e2e/deluxe.spec.ts
+00:38:05.175 WARN    * frontend/src/app/score-board/components/challenges-unavailable-warning/challenges-unavailable-warning.component.ts
+00:38:05.175 WARN    * test/api/checkKeys.test.ts
+00:38:05.175 WARN    * frontend/src/app/saved-payment-methods/saved-payment-methods.component.html
+00:38:05.176 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-section/coding-challenge-section.component.ts
+00:38:05.176 WARN    * frontend/src/app/ctf-system-wide-notification/ctf-system-wide-notification.component.html
+00:38:05.176 WARN    * routes/profileImageFileUpload.ts
+00:38:05.176 WARN    * frontend/src/app/forgot-password/forgot-password.component.ts
+00:38:05.177 WARN    * test/api/http.test.ts
+00:38:05.177 WARN    * routes/fileUpload.ts
+00:38:05.177 WARN    * frontend/src/app/about/about.component.html
+00:38:05.177 WARN    * frontend/src/app/change-password/change-password.component.scss
+00:38:05.177 WARN    * frontend/src/app/register/register.component.ts
+00:38:05.177 WARN    * frontend/src/environments/environment.dev.ts
+00:38:05.178 WARN    * frontend/src/app/track-result/track-result.component.ts
+00:38:05.178 WARN    * frontend/src/app/score-board/filter-settings/FilterSetting.ts
+00:38:05.178 WARN    * frontend/src/app/score-board/components/filter-settings/components/score-board-additional-settings-dialog/score-board-additional-settings-dialog.component.scss
+00:38:05.178 WARN    * frontend/src/app/password-strength-info/password-strength-info.component.ts
+00:38:05.178 WARN    * test/api/login.test.ts
+00:38:05.178 WARN    * test/cypress/e2e/b2bOrder.spec.ts
+00:38:05.178 WARN    * lib/startup/validateConfig.ts
+00:38:05.179 WARN    * frontend/src/app/about/about.component.spec.ts
+00:38:05.179 WARN    * frontend/src/app/photo-wall/photo-wall.component.ts
+00:38:05.179 WARN    * frontend/src/app/password-strength/password-strength.component.html
+00:38:05.179 WARN    * frontend/src/app/navbar/navbar.component.scss
+00:38:05.179 WARN    * frontend/src/app/Services/address.service.spec.ts
+00:38:05.179 WARN    * routes/b2bOrder.ts
+00:38:05.179 WARN    * frontend/src/app/feedback-details/feedback-details.component.spec.ts
+00:38:05.179 WARN    * frontend/src/app/order-summary/order-summary.component.ts
+00:38:05.179 WARN    * routes/restoreProgress.ts
+00:38:05.179 WARN    * frontend/src/hacking-instructor/challenges/codingChallenges.ts
+00:38:05.179 WARN    * lib/challengeUtils.ts
+00:38:05.179 WARN    * frontend/src/app/saved-address/saved-address.component.scss
+00:38:05.179 WARN    * lib/antiCheat.ts
+00:38:05.179 WARN    * frontend/src/app/order-history/order-history.component.ts
+00:38:05.179 WARN    * routes/verify.ts
+00:38:05.179 WARN    * frontend/src/app/score-board/score-board.component.spec.ts
+00:38:05.180 WARN    * frontend/src/app/mat-search-bar/mat-search-bar.component.scss
+00:38:05.180 WARN    * frontend/src/app/search-result/search-result.component.scss
+00:38:05.180 WARN    * frontend/src/app/score-board/filter-settings/query-params-coverter.spec.ts
+00:38:05.180 WARN    * frontend/src/app/recycle/recycle.component.html
+00:38:05.180 WARN    * frontend/src/app/web3-sandbox/web3-sandbox.module.ts
+00:38:05.180 WARN    * frontend/src/app/Services/delivery.service.ts
+00:38:05.180 WARN    * frontend/src/app/Services/request.interceptor.ts
+00:38:05.180 WARN    * frontend/src/app/Services/snack-bar-helper.service.spec.ts
+00:38:05.180 WARN    * frontend/src/app/administration/administration.component.scss
+00:38:05.181 WARN    * frontend/src/app/administration/administration.component.ts
+00:38:05.181 WARN    * frontend/src/app/address/address.component.spec.ts
+00:38:05.181 WARN    * frontend/src/app/navbar/navbar.component.spec.ts
+00:38:05.181 WARN    * infrastructure/terraform/outputs.tf
+00:38:05.181 WARN    * frontend/src/app/chatbot/chat-welcome-screen/chat-welcome-screen.component.spec.ts
+00:38:05.181 WARN    * routes/metrics.ts
+00:38:05.181 WARN    * routes/vulnCodeSnippet.ts
+00:38:05.181 WARN    * routes/basketItems.ts
+00:38:05.181 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.scss
+00:38:05.182 WARN    * frontend/src/app/about/about.component.ts
+00:38:05.182 WARN    * frontend/src/app/chatbot/chat-welcome-screen/chat-welcome-screen.component.html
+00:38:05.182 WARN    * frontend/src/app/address-select/address-select.component.scss
+00:38:05.182 WARN    * lib/terraformCustomization.ts
+00:38:05.182 WARN    * lib/is-docker.ts
+00:38:05.182 WARN    * test/api/socket.test.ts
+00:38:05.182 WARN    * frontend/src/app/Services/country-mapping.service.ts
+00:38:05.182 WARN    * test/api/user.test.ts
+00:38:05.182 WARN    * frontend/src/app/manage-passkeys/manage-passkeys.component.html
+00:38:05.182 WARN    * test/server/saveLoginIp.unit.test.ts
+00:38:05.183 WARN    * frontend/src/app/score-board/components/filter-settings/pipes/difficulty-selection-summary.pipe.spec.ts
+00:38:05.183 WARN    * frontend/src/app/chatbot/chat-conversation/chat-conversation.component.scss
+00:38:05.183 WARN    * frontend/src/app/delivery-method/delivery-method.component.html
+00:38:05.183 WARN    * lib/codingChallenges.ts
+00:38:05.183 WARN    * frontend/src/app/chatbot/chat-input-box/chat-input-box.component.ts
+00:38:05.183 WARN    * frontend/src/app/token-sale/token-sale.component.html
+00:38:05.183 WARN    * frontend/src/app/Services/window-ref.service.ts
+00:38:05.183 WARN    * frontend/src/app/web3-sandbox/web3-sandbox.component.ts
+00:38:05.183 WARN    * data/mongodb.ts
+00:38:05.183 WARN    * frontend/src/app/web3-sandbox/web3-sandbox.component.scss
+00:38:05.183 WARN    * frontend/src/app/Services/payment.service.spec.ts
+00:38:05.183 WARN    * frontend/src/app/address-create/address-create.component.spec.ts
+00:38:05.184 WARN    * test/cypress/e2e/trackOrder.spec.ts
+00:38:05.184 WARN    * frontend/src/app/contact/contact.component.spec.ts
+00:38:05.184 WARN    * frontend/src/app/Services/conversation-storage.service.ts
+00:38:05.184 WARN    * frontend/src/app/score-board/components/coding-challenge-progress-score-card/coding-challenge-progress-score-card.component.scss
+00:38:05.184 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.spec.ts
+00:38:05.184 WARN    * frontend/src/app/server-started-notification/server-started-notification.component.ts
+00:38:05.184 WARN    * frontend/src/app/address-create/address-create.component.html
+00:38:05.184 WARN    * frontend/src/app/score-board/components/filter-settings/filter-settings.component.ts
+00:38:05.184 WARN    * frontend/src/hacking-instructor/challenges/domXss.ts
+00:38:05.184 WARN    * frontend/src/app/nft-unlock/nft-unlock.component.html
+00:38:05.185 WARN    * frontend/src/app/track-result/track-result.component.scss
+00:38:05.185 WARN    * frontend/src/hacking-instructor/challenges/scoreBoard.ts
+00:38:05.185 WARN    * frontend/src/app/last-login-ip/last-login-ip.component.ts
+00:38:05.185 WARN    * frontend/src/app/Services/wallet.service.spec.ts
+00:38:05.185 WARN    * test/api/user-profile.test.ts
+00:38:05.185 WARN    * frontend/src/app/two-factor-auth/two-factor-auth.component.spec.ts
+00:38:05.185 WARN    * frontend/src/app/order-completion/order-completion.component.spec.ts
+00:38:05.185 WARN    * routes/showProductReviews.ts
+00:38:05.185 WARN    * test/api/password.test.ts
+00:38:05.186 WARN    * test/api/internet-resources.test.ts
+00:38:05.186 WARN    * test/cypress/e2e/login.spec.ts
+00:38:05.186 WARN    * frontend/src/app/basket/basket.component.scss
+00:38:05.186 WARN    * frontend/src/app/two-factor-auth-enter/two-factor-auth-enter.component.ts
+00:38:05.186 WARN    * test/cypress/e2e/search.spec.ts
+00:38:05.186 WARN    * server.ts
+00:38:05.186 WARN    * frontend/src/app/manage-passkeys/passkey-providers.ts
+00:38:05.186 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.spec.ts
+00:38:05.186 WARN    * frontend/src/app/Models/securityQuestion.model.ts
+00:38:05.186 WARN    * test/cypress/e2e/contact.spec.ts
+00:38:05.186 WARN    * frontend/src/app/password-strength-info/password-strength-info.component.spec.ts
+00:38:05.186 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.scss
+00:38:05.186 WARN    * test/cypress/e2e/totpSetup.spec.ts
+00:38:05.187 WARN    * frontend/src/app/administration/administration.component.spec.ts
+00:38:05.187 WARN    * lib/logger.ts
+00:38:05.187 WARN    * frontend/src/app/Models/review-form.schema.ts
+00:38:05.187 WARN    * test/server/challengeCountryMapping.unit.test.ts
+00:38:05.187 WARN    * eslint.config.mjs
+00:38:05.187 WARN    * frontend/src/app/user-details/user-details.component.spec.ts
+00:38:05.187 WARN    * frontend/src/app/Services/basket.service.ts
+00:38:05.187 WARN    * routes/premiumReward.ts
+00:38:05.187 WARN    * frontend/src/app/saved-payment-methods/saved-payment-methods.component.scss
+00:38:05.187 WARN    * test/api/helpers/auth.ts
+00:38:05.187 WARN    * frontend/src/app/error-page/error-page.component.ts
+00:38:05.188 WARN    * test/api/quantity.test.ts
+00:38:05.188 WARN    * frontend/src/hacking-instructor/challenges/forgedFeedback.ts
+00:38:05.188 WARN    * frontend/src/app/data-export/data-export.component.html
+00:38:05.188 WARN    * rsn/rsnUtil.ts
+00:38:05.188 WARN    * lib/startup/cleanupFtpFolder.ts
+00:38:05.188 WARN    * test/cypress/e2e/profile.spec.ts
+00:38:05.189 WARN    * frontend/src/app/order-summary/order-summary.component.spec.ts
+00:38:05.189 WARN    * frontend/src/app/basket/basket.component.spec.ts
+00:38:05.189 WARN    * frontend/src/app/privacy-security/privacy-security.component.scss
+00:38:05.189 WARN    * frontend/src/app/photo-wall/photo-wall.component.spec.ts
+00:38:05.189 WARN    * test/api/challenge.test.ts
+00:38:05.189 WARN    * frontend/src/app/ctf-system-wide-notification/ctf-system-wide-notification.component.scss
+00:38:05.189 WARN    * test/server/redirect.unit.test.ts
+00:38:05.189 WARN    * frontend/src/app/score-board/components/challenge-card/challenge-card.component.spec.ts
+00:38:05.190 WARN    * frontend/src/app/navbar/navbar.component.html
+00:38:05.190 WARN    * frontend/src/app/saved-address/saved-address.component.spec.ts
+00:38:05.190 WARN    * frontend/src/app/password-strength/password-strength.component.scss
+00:38:05.190 WARN    * frontend/src/hacking-instructor/helpers/helpers.ts
+00:38:05.190 WARN    * test/cypress/e2e/tokenSale.spec.ts
+00:38:05.190 WARN    * frontend/src/app/saved-address/saved-address.component.html
+00:38:05.190 WARN    * test/api/address.test.ts
+00:38:05.190 WARN    * frontend/src/app/sidenav/sidenav.component.spec.ts
+00:38:05.191 WARN    * test/api/helpers/setup.ts
+00:38:05.191 WARN    * test/api/profile-image-upload.test.ts
+00:38:05.191 WARN    * frontend/src/app/Services/quantity.service.ts
+00:38:05.191 WARN    * frontend/src/app/recycle/recycle.component.ts
+00:38:05.191 WARN    * routes/saveLoginIp.ts
+00:38:05.191 WARN    * test/api/privacy-request.test.ts
+00:38:05.191 WARN    * frontend/src/app/change-password/change-password.component.ts
+00:38:05.192 WARN    * frontend/src/app/recycle/recycle.component.scss
+00:38:05.192 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.html
+00:38:05.192 WARN    * test/api/data-export.test.ts
+00:38:05.192 WARN    * test/server/accuracy.unit.test.ts
+00:38:05.192 WARN    * frontend/src/app/Models/product.model.ts
+00:38:05.192 WARN    * frontend/src/app/score-board/components/filter-settings/components/category-filter/category-filter.component.scss
+00:38:05.192 WARN    * frontend/src/app/payment/payment.component.html
+00:38:05.192 WARN    * frontend/src/app/Services/code-snippet.service.spec.ts
+00:38:05.193 WARN    * frontend/src/app/manage-passkeys/manage-passkeys.component.scss
+00:38:05.193 WARN    * data/datacreator.ts
+00:38:05.193 WARN    * frontend/src/hacking-instructor/challenges/passwordStrength.ts
+00:38:05.193 WARN    * frontend/src/app/address-select/address-select.component.html
+00:38:05.194 WARN    * frontend/src/app/Models/challenge.model.ts
+00:38:05.194 WARN    * models/address.ts
+00:38:05.194 WARN    * models/index.ts
+00:38:05.194 WARN    * test/api/basket.test.ts
+00:38:05.194 WARN    * frontend/src/app/Services/languages.service.ts
+00:38:05.194 WARN    * frontend/src/app/password-strength-info/password-strength-info.component.html
+00:38:05.195 WARN    * frontend/src/app/Services/country-mapping.service.spec.ts
+00:38:05.195 WARN    * frontend/src/app/chatbot/chat-conversation/chat-conversation.component.html
+00:38:05.195 WARN    * routes/countryMapping.ts
+00:38:05.195 WARN    * routes/repeatNotification.ts
+00:38:05.195 WARN    * test/api/authenticated-users.test.ts
+00:38:05.196 WARN    * test/server/countryMapping.unit.test.ts
+00:38:05.196 WARN    * frontend/src/app/score-board/components/difficulty-overview-score-card/difficulty-overview-score-card.component.spec.ts
+00:38:05.196 WARN    * frontend/src/app/Services/data-subject.service.spec.ts
+00:38:05.196 WARN    * frontend/src/app/web3-sandbox/web3-sandbox.component.html
+00:38:05.196 WARN    * frontend/src/app/coding-challenge-page/coding-challenge.types.ts
+00:38:05.196 WARN    * lib/utils.ts
+00:38:05.196 WARN    * frontend/src/app/user-details/user-details.component.ts
+00:38:05.196 WARN    * test/server/insecurity.unit.test.ts
+00:38:05.196 WARN    * frontend/src/app/forgot-password/forgot-password.component.spec.ts
+00:38:05.196 WARN    * frontend/src/app/score-board/components/filter-settings/filter-settings.component.html
+00:38:05.196 WARN    * lib/startup/validatePreconditions.ts
+00:38:05.196 WARN    * frontend/src/app/address-create/address-create.component.scss
+00:38:05.196 WARN    * frontend/src/app/contact/contact.component.ts
+00:38:05.197 WARN    * models/user.ts
+00:38:05.197 WARN    * frontend/src/app/Services/chat.service.ts
+00:38:05.197 WARN    * test/server/webhook.unit.test.ts
+00:38:05.197 WARN    * frontend/src/app/track-result/track-result.component.html
+00:38:05.197 WARN    * routes/angular.ts
+00:38:05.197 WARN    * frontend/src/app/manage-passkeys/manage-passkeys.component.spec.ts
+00:38:05.197 WARN    * frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.scss
+00:38:05.197 WARN    * frontend/src/app/Services/security-answer.service.ts
+00:38:05.197 WARN    * frontend/src/app/two-factor-auth-enter/two-factor-auth-enter.component.html
+00:38:05.198 WARN    * models/relations.ts
+00:38:05.198 WARN    * frontend/src/styles.scss
+00:38:05.198 WARN    * test/api/angular-dist.test.ts
+00:38:05.198 WARN    * test/cypress/e2e/changePassword.spec.ts
+00:38:05.198 WARN    * frontend/src/hacking-instructor/tutorialUnavailable.ts
+00:38:05.198 WARN    * frontend/src/app/complaint/complaint.component.spec.ts
+00:38:05.198 WARN    * frontend/src/app/Models/address-form.schema.ts
+00:38:05.198 WARN    * frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.ts
+00:38:05.198 WARN    * frontend/src/app/Models/review.model.ts
+00:38:05.198 WARN    * frontend/src/app/score-board/components/filter-settings/components/score-board-additional-settings-dialog/score-board-additional-settings-dialog.component.ts
+00:38:05.198 WARN    * frontend/src/app/recycle/recycle.component.spec.ts
+00:38:05.199 WARN    * frontend/src/app/accounting/accounting.component.html
+00:38:05.199 WARN    * test/api/delivery.test.ts
+00:38:05.199 WARN    * frontend/src/app/welcome/welcome.component.spec.ts
+00:38:05.199 WARN    * routes/imageCaptcha.ts
+00:38:05.199 WARN    * frontend/src/app/Services/configuration.service.spec.ts
+00:38:05.199 WARN    * routes/userProfile.ts
+00:38:05.199 WARN    * frontend/src/app/ctf-system-wide-notification/ctf-system-wide-notification.component.ts
+00:38:05.199 WARN    * frontend/src/app/order-summary/order-summary.component.scss
+00:38:05.199 WARN    * frontend/src/hacking-instructor/challenges/reflectedXss.ts
+00:38:05.199 WARN    * frontend/src/app/product/product.component.ts
+00:38:05.200 WARN    * frontend/src/app/chatbot/chat.model.ts
+00:38:05.200 WARN    * routes/videoHandler.ts
+00:38:05.200 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-section/coding-challenge-section.component.spec.ts
+00:38:05.200 WARN    * frontend/src/app/basket/basket.component.html
+00:38:05.200 WARN    * frontend/src/app/server-started-notification/server-started-notification.component.html
+00:38:05.200 WARN    * test/cypress/support/e2e.ts
+00:38:05.200 WARN    * frontend/src/app/search-result/search-result.component.spec.ts
+00:38:05.200 WARN    * frontend/src/app/photo-wall/mime-type.validator.ts
+00:38:05.200 WARN    * frontend/src/app/Services/photo-wall.service.spec.ts
+00:38:05.200 WARN    * lib/is-windows.ts
+00:38:05.200 WARN    * routes/changePassword.ts
+00:38:05.201 WARN    * test/api/basket-item.test.ts
+00:38:05.201 WARN    * frontend/src/app/challenge-status-badge/challenge-status-badge.component.ts
+00:38:05.201 WARN    * frontend/src/app/chatbot/chat-conversation/chat-conversation.component.spec.ts
+00:38:05.201 WARN    * frontend/src/app/score-board/helpers/challenge-sorting.spec.ts
+00:38:05.201 WARN    * frontend/src/app/Services/conversation-storage.service.spec.ts
+00:38:05.201 WARN    * models/passkey.ts
+00:38:05.201 WARN    * frontend/src/app/data-export/data-export.component.scss
+00:38:05.201 WARN    * frontend/src/app/welcome-banner/welcome-banner.component.spec.ts
+00:38:05.201 WARN    * frontend/src/app/welcome/welcome.component.scss
+00:38:05.201 WARN    * routes/captcha.ts
+00:38:05.201 WARN    * frontend/src/app/challenge-status-badge/challenge-status-badge.component.html
+00:38:05.201 WARN    * frontend/src/app/Services/vuln-lines.service.ts
+00:38:05.201 WARN    * frontend/src/app/contact/contact.component.html
+00:38:05.201 WARN    * frontend/src/app/Services/challenge.service.ts
+00:38:05.201 WARN    * frontend/src/app/change-password/change-password.component.spec.ts
+00:38:05.201 WARN    * frontend/src/app/score-board/components/tutorial-mode-warning/tutorial-mode-warning.component.spec.ts
+00:38:05.201 WARN    * routes/trackOrder.ts
+00:38:05.201 WARN    * frontend/src/app/score-board/score-board.component.ts
+00:38:05.201 WARN    * frontend/src/app/two-factor-auth/two-factor-auth.component.ts
+00:38:05.201 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-find-it/format-selected-lines.spec.ts
+00:38:05.201 WARN    * frontend/src/app/Services/challenge.service.spec.ts
+00:38:05.201 WARN    * views/themes/themes.ts
+00:38:05.201 WARN    * routes/chat.ts
+00:38:05.202 WARN    * routes/updateProductReviews.ts
+00:38:05.202 WARN    * test/api/ftp-folder.test.ts
+00:38:05.202 WARN    * models/complaint.ts
+00:38:05.202 WARN    * lib/is-heroku.ts
+00:38:05.202 WARN    * lib/startup/restoreOverwrittenFilesWithOriginals.ts
+00:38:05.202 WARN    * frontend/src/app/nft-unlock/nft-unlock.component.ts
+00:38:05.202 WARN    * routes/currentUser.ts
+00:38:05.202 WARN    * frontend/src/app/payment/payment.component.scss
+00:38:05.202 WARN    * routes/web3Wallet.ts
+00:38:05.202 WARN    * infrastructure/terraform/main.tf
+00:38:05.202 WARN    * frontend/src/app/chatbot/chatbot.component.spec.ts
+00:38:05.202 WARN    * routes/2fa.ts
+00:38:05.202 WARN    * frontend/src/app/Services/chat.service.spec.ts
+00:38:05.202 WARN    * frontend/src/app/password-strength-info/password-strength-info.component.scss
+00:38:05.202 WARN    * test/server/preconditionValidation.unit.test.ts
+00:38:05.202 WARN    * frontend/src/app/address/address.component.html
+00:38:05.202 WARN    * frontend/src/app/Models/deliveryMethod.model.ts
+00:38:05.203 WARN    * frontend/src/app/score-board/components/filter-settings/components/category-filter/category-filter.component.html
+00:38:05.203 WARN    * frontend/src/app/score-board/components/coding-challenge-progress-score-card/coding-challenge-progress-score-card.component.spec.ts
+00:38:05.203 WARN    * test/server/continueCode.unit.test.ts
+00:38:05.203 WARN    * frontend/src/app/Services/address.service.ts
+00:38:05.203 WARN    * frontend/src/styles/theme.scss
+00:38:05.203 WARN    * frontend/src/app/feedback-details/feedback-details.component.html
+00:38:05.203 WARN    * models/challenge.ts
+00:38:05.203 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.ts
+00:38:05.203 WARN    * frontend/src/app/Services/delivery.service.spec.ts
+00:38:05.203 WARN    * frontend/src/hacking-instructor/challenges/viewBasket.ts
+00:38:05.203 WARN    * test/api/file-serving.test.ts
+00:38:05.203 WARN    * frontend/src/app/Services/order-history.service.spec.ts
+00:38:05.204 WARN    * test/server/customizeApplication.unit.test.ts
+00:38:05.204 WARN    * frontend/src/app/welcome-banner/welcome-banner.component.scss
+00:38:05.204 WARN    * frontend/src/app/payment-method/payment-method.component.ts
+00:38:05.204 WARN    * models/securityQuestion.ts
+00:38:05.204 WARN    * routes/quarantineServer.ts
+00:38:05.204 WARN    * test/cypress/e2e/complain.spec.ts
+00:38:05.204 WARN    * frontend/src/app/qr-code/qr-code.component.spec.ts
+00:38:05.204 WARN    * frontend/src/app/wallet/wallet.component.ts
+00:38:05.204 WARN    * frontend/src/app/payment-method/payment-method.component.scss
+00:38:05.204 WARN    * frontend/src/app/saved-payment-methods/saved-payment-methods.component.ts
+00:38:05.204 WARN    * frontend/src/app/Services/wallet.service.ts
+00:38:05.204 WARN    * frontend/src/app/chatbot/chatbot.component.ts
+00:38:05.204 WARN    * frontend/src/app/product-details/product-details.component.ts
+00:38:05.204 WARN    * frontend/src/app/score-board/components/challenge-card/challenge-card.component.scss
+00:38:05.205 WARN    * models/recycle.ts
+00:38:05.205 WARN    * test/server/rsn.unit.test.ts
+00:38:05.205 WARN    * test/api/promotion-video.test.ts
+00:38:05.205 WARN    * frontend/src/app/delivery-method/delivery-method.component.spec.ts
+00:38:05.205 WARN    * frontend/src/app/Services/user.service.ts
+00:38:05.205 WARN    * test/api/metrics.test.ts
+00:38:05.205 WARN    * frontend/src/app/two-factor-auth-enter/two-factor-auth-enter.component.scss
+00:38:05.205 WARN    * frontend/src/mocks/ng-gallery.ts
+00:38:05.205 WARN    * frontend/src/app/two-factor-auth-enter/two-factor-auth-enter.component.spec.ts
+00:38:05.205 WARN    * test/cypress/e2e/forgotPassword.spec.ts
+00:38:05.205 WARN    * frontend/src/app/score-board/components/challenges-unavailable-warning/challenges-unavailable-warning.component.html
+00:38:05.205 WARN    * frontend/src/app/score-board/components/filter-settings/components/score-board-additional-settings-dialog/score-board-additional-settings-dialog.component.html
+00:38:05.205 WARN    * frontend/src/app/score-board/components/score-card/score-card.component.spec.ts
+00:38:05.205 WARN    * frontend/src/app/score-board/components/difficulty-overview-score-card/difficulty-overview-score-card.component.html
+00:38:05.205 WARN    * routes/coupon.ts
+00:38:05.206 WARN    * test/cypress/e2e/dataExport.spec.ts
+00:38:05.206 WARN    * frontend/src/app/server-started-notification/server-started-notification.component.scss
+00:38:05.206 WARN    * rsn/rsnOutput.ts
+00:38:05.206 WARN    * test/api/recycle.test.ts
+00:38:05.206 WARN    * frontend/src/app/sidenav/sidenav.component.html
+00:38:05.206 WARN    * test/cypress/e2e/publicFtp.spec.ts
+00:38:05.206 WARN    * frontend/src/app/Services/product.service.ts
+00:38:05.206 WARN    * lib/insecurity.ts
+00:38:05.206 WARN    * frontend/src/app/payment/payment.component.ts
+00:38:05.206 WARN    * frontend/src/app/Services/local-backup.service.ts
+00:38:05.206 WARN    * frontend/src/app/coding-challenge-page/components/coding-challenge-find-it/format-selected-lines.ts
+00:38:05.206 WARN    * test/server/configValidation.unit.test.ts
+00:38:05.207 WARN    * frontend/src/app/Services/data-subject.service.ts
+00:38:05.207 WARN    * frontend/src/app/nft-unlock/nft-unlock.component.spec.ts
+00:38:05.207 WARN    * frontend/src/app/wallet-web3/wallet-web3.module.ts
+00:38:05.207 WARN    * frontend/src/app/order-summary/order-summary.component.html
+00:38:05.207 WARN    * test/api/order-history.test.ts
+00:38:05.208 WARN    * frontend/src/app/password-strength/password-strength.component.spec.ts
+00:38:05.208 WARN    * models/basketitem.ts
+00:38:05.208 WARN    * frontend/src/app/Services/code-fixes.service.spec.ts
+00:38:05.208 WARN    * frontend/src/app/contact/contact.component.scss
+00:38:05.208 WARN    * frontend/src/app/last-login-ip/last-login-ip.component.spec.ts
+00:38:05.208 WARN    * test/api/web3Wallet.test.ts
+00:38:05.208 WARN    * frontend/src/app/challenge-status-badge/challenge-status-badge.component.scss
+00:38:05.208 WARN    * frontend/src/app/Services/security-answer.service.spec.ts
+00:38:05.208 WARN    * frontend/src/app/register/register.component.spec.ts
+00:38:05.209 WARN    * routes/fileServer.ts
+00:38:05.209 WARN    * routes/dataErasure.ts
+00:38:05.209 WARN    * frontend/src/app/chatbot/chat-conversation/chat-conversation.component.ts
+00:38:05.209 WARN    * test/cypress/e2e/directAccess.spec.ts
+00:38:05.209 WARN    * test/server/chat.unit.test.ts
+00:38:05.209 WARN    * frontend/src/app/score-board/helpers/challenge-filtering.ts
+00:38:05.209 WARN    * routes/passkey.ts
+00:38:05.209 WARN    * frontend/src/app/Services/product-review.service.ts
+00:38:05.209 WARN    * test/api/wallet.test.ts
+00:38:05.209 WARN    * frontend/src/app/qr-code/qr-code.component.ts
+00:38:05.209 WARN    * frontend/src/app/address-select/address-select.component.spec.ts
+00:38:05.210 WARN    * frontend/src/app/Services/feedback.service.ts
+00:38:05.210 WARN    * frontend/src/hacking-instructor/challenges/bonusPayload.ts
+00:38:05.210 WARN    * frontend/src/app/Services/recycle.service.spec.ts
+00:38:05.210 WARN    * frontend/src/app/Services/two-factor-auth-service.ts
+00:38:05.210 WARN    * frontend/src/app/purchase-basket/purchase-basket.component.ts
+00:38:05.210 WARN    * frontend/src/app/administration/administration.component.html
+00:38:05.210 WARN    * test/api/product.test.ts
+00:38:05.210 WARN    * routes/languages.ts
+00:38:05.210 WARN    * test/api/languages.test.ts
+00:38:05.210 WARN    * test/cypress/e2e/passwordHashLeak.spec.ts
+00:38:05.210 WARN    * routes/createProductReviews.ts
+00:38:05.210 WARN    * frontend/src/app/delivery-method/delivery-method.component.scss
+00:38:05.211 WARN    * models/securityAnswer.ts
+00:38:05.211 WARN    * frontend/src/app/server-started-notification/server-started-notification.component.spec.ts
+00:38:05.211 WARN    * frontend/src/app/Services/captcha.service.spec.ts
+00:38:05.211 WARN    * frontend/src/app/challenge-status-badge/challenge-status-badge.component.spec.ts
+00:38:05.211 WARN    * scripts/package.mjs
+00:38:05.211 WARN    * terraform/main.tf
+00:38:05.212 WARN    * frontend/src/app/address/address.component.scss
+00:38:05.212 WARN    * frontend/src/app/score-board/components/warning-card/warning-card.component.html
+00:38:05.212 WARN    * frontend/src/app/welcome-banner/welcome-banner.component.html
+00:38:05.212 WARN    * test/server/fileServer.unit.test.ts
+00:38:05.212 WARN    * routes/appConfiguration.ts
+00:38:05.212 WARN    * routes/likeProductReviews.ts
+00:38:05.212 WARN    * lib/startup/customizeApplication.ts
+00:38:05.212 WARN    * frontend/src/app/app.guard.ts
+00:38:05.212 WARN    * frontend/src/app/two-factor-auth/two-factor-auth.component.scss
+00:38:05.213 WARN    * frontend/src/app/privacy-policy/privacy-policy.component.spec.ts
+00:38:05.213 WARN    * frontend/src/app/product-image/product-image.component.spec.ts
+00:38:05.213 WARN    * test/api/repeat-notification.test.ts
+00:38:05.213 WARN    * frontend/src/app/score-board/components/coding-challenge-progress-score-card/coding-challenge-progress-score-card.component.html
+00:38:05.213 WARN    * frontend/src/app/register/register.component.html
+00:38:05.213 WARN    * Dockerfile
+00:38:05.213 WARN    * frontend/src/hacking-instructor/challenges/privacyPolicy.ts
+00:38:05.213 WARN    * frontend/src/app/qr-code/qr-code.component.html
+00:38:05.213 WARN    * frontend/src/app/payment-method/payment-method.component.html
+00:38:05.213 WARN    * frontend/src/app/score-board/components/challenge-card/challenge-card.component.html
+00:38:05.214 WARN  This may lead to missing/broken features in SonarQube
+00:38:05.214 INFO  CPD Executor 127 files had no CPD blocks
+00:38:05.214 INFO  CPD Executor Calculating CPD for 350 files
+00:38:05.305 INFO  CPD Executor CPD calculation finished (done) | time=139ms
+00:38:05.368 INFO  SCM revision ID '266448aba68cd8ba5915f526a128da4fa7bc3f9f'
+00:38:08.825 INFO  Analysis report generated in 3462ms, dir size=5.8 MB
+00:38:10.214 INFO  Analysis report compressed in 1388ms, zip size=3.1 MB
+00:38:10.388 INFO  Analysis report uploaded in 173ms
+00:38:10.389 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://host.docker.internal:9100/dashboard?id=juice-shop
+00:38:10.389 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+00:38:10.390 INFO  More about the report processing at http://host.docker.internal:9100/api/ce/task?id=57725431-08d7-4ffa-9075-3bd33a0b64a4
+00:38:10.899 INFO  Analysis total time: 2:43.966 min
+00:38:10.904 INFO  SonarScanner Engine completed successfully
+00:38:10.971 INFO  EXECUTION SUCCESS
+00:38:10.973 INFO  Total time: 2:51.373s

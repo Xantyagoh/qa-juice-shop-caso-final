@@ -1,0 +1,4408 @@
+﻿[
+    {
+        "key":  "9fe70762-b424-4530-b9a8-a935571b0008",
+        "rule":  "typescript:S5332",
+        "severity":  "MINOR",
+        "component":  "juice-shop:data/datacreator.ts",
+        "project":  "juice-shop",
+        "line":  85,
+        "hash":  "3a03347bac59fe81991dc3dda486579f",
+        "textRange":  {
+                          "startLine":  85,
+                          "endLine":  85,
+                          "startOffset":  38,
+                          "endOffset":  70
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Using http protocol is insecure. Use https instead.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "8aac22d4-9643-4e91-bc04-7e971931bd22",
+        "rule":  "typescript:S5332",
+        "severity":  "MINOR",
+        "component":  "juice-shop:data/datacreator.ts",
+        "project":  "juice-shop",
+        "line":  172,
+        "hash":  "2e1ef6dc20616376379913496f20a655",
+        "textRange":  {
+                          "startLine":  172,
+                          "endLine":  172,
+                          "startOffset":  19,
+                          "endOffset":  51
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Using http protocol is insecure. Use https instead.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "e0a2b806-8da4-439d-8c7b-0c469d5ef865",
+        "rule":  "typescript:S2245",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:data/datacreator.ts",
+        "project":  "juice-shop",
+        "line":  771,
+        "hash":  "bebe824149ade63fbe941bee80e1598d",
+        "textRange":  {
+                          "startLine":  771,
+                          "endLine":  771,
+                          "startOffset":  23,
+                          "endOffset":  36
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure that using this pseudorandom number generator is safe here.",
+        "effort":  "10min",
+        "debt":  "10min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "d9c36a3c-b282-48a6-8dd8-1e3369818532",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/about/about.component.ts",
+        "project":  "juice-shop",
+        "line":  120,
+        "hash":  "6af16ec762e8bcb472de89448d7a02b9",
+        "textRange":  {
+                          "startLine":  120,
+                          "endLine":  120,
+                          "startOffset":  48,
+                          "endOffset":  71
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "7c365218-2c0c-402b-b123-f0eb02026be2",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/accounting/accounting.component.html",
+        "project":  "juice-shop",
+        "line":  86,
+        "hash":  "42b46d54a632515ef8135828c45db8b6",
+        "textRange":  {
+                          "startLine":  86,
+                          "endLine":  86,
+                          "startOffset":  16,
+                          "endOffset":  81
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "3cedc26b-ce68-4f65-9961-aa30c0698a44",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/accounting/accounting.component.html",
+        "project":  "juice-shop",
+        "line":  98,
+        "hash":  "5a166f8ae4e938b0862972d70d0b79f5",
+        "textRange":  {
+                          "startLine":  98,
+                          "endLine":  98,
+                          "startOffset":  16,
+                          "endOffset":  104
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "386c00e7-6b35-4467-b630-b52f24825e54",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/administration/administration.component.ts",
+        "project":  "juice-shop",
+        "line":  74,
+        "hash":  "5b81138f63c8ff239d87f36297376642",
+        "textRange":  {
+                          "startLine":  74,
+                          "endLine":  74,
+                          "startOffset":  38,
+                          "endOffset":  61
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "b160a391-fda5-4a91-980f-e192c0f87f67",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/administration/administration.component.ts",
+        "project":  "juice-shop",
+        "line":  92,
+        "hash":  "438b9ee14ab94dc518bca38bfc7a56eb",
+        "textRange":  {
+                          "startLine":  92,
+                          "endLine":  92,
+                          "startOffset":  44,
+                          "endOffset":  67
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f71ce517-6273-4990-8e53-b5a97b4448ef",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.ts",
+        "project":  "juice-shop",
+        "line":  74,
+        "hash":  "65a854079d4995d0b3ae4459cfc3c374",
+        "textRange":  {
+                          "startLine":  74,
+                          "endLine":  76,
+                          "startOffset":  14,
+                          "endOffset":  16
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "77fa11b3-957d-482d-afff-b9268cab884c",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.ts",
+        "project":  "juice-shop",
+        "line":  157,
+        "hash":  "3a806724f0e8eaf7f6b3173b69787153",
+        "textRange":  {
+                          "startLine":  157,
+                          "endLine":  159,
+                          "startOffset":  6,
+                          "endOffset":  8
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "4337ad38-9d09-424d-a1fb-4b7a0f845c8d",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/chatbot/chat-input-box/chat-input-box.component.html",
+        "project":  "juice-shop",
+        "line":  2,
+        "hash":  "e4301727923560f092ed0ab6c23681d6",
+        "textRange":  {
+                          "startLine":  2,
+                          "endLine":  11,
+                          "startOffset":  2,
+                          "endOffset":  34
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "dfaa2b9a-05fd-4789-ae51-3600f0356502",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/coding-challenge-page/helpers/handle-verdict.ts",
+        "project":  "juice-shop",
+        "line":  39,
+        "hash":  "64b7ba21093f69ae42a31d8b98ebbb8b",
+        "textRange":  {
+                          "startLine":  39,
+                          "endLine":  45,
+                          "startOffset":  4,
+                          "endOffset":  6
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "55626928-5314-4614-9d4b-1b6e17eb1928",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/contact/contact.component.html",
+        "project":  "juice-shop",
+        "line":  13,
+        "hash":  "cfe9f2b54ce5c55821a646e821501270",
+        "textRange":  {
+                          "startLine":  13,
+                          "endLine":  13,
+                          "startOffset":  8,
+                          "endOffset":  94
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Associate a valid label to this input field.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "aa100f48-8175-4343-9980-d6425c9ab165",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/contact/contact.component.html",
+        "project":  "juice-shop",
+        "line":  40,
+        "hash":  "24f5df6776361c09b1d7c04e2da6032b",
+        "textRange":  {
+                          "startLine":  40,
+                          "endLine":  40,
+                          "startOffset":  12,
+                          "endOffset":  97
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "716eb30c-e9b4-463a-b3a1-8587f6f22763",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/data-export/data-export.component.ts",
+        "project":  "juice-shop",
+        "line":  58,
+        "hash":  "165c9c4b7fcbbf50a496c9ccd9512139",
+        "textRange":  {
+                          "startLine":  58,
+                          "endLine":  58,
+                          "startOffset":  36,
+                          "endOffset":  59
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "9e3db983-b98b-4c10-843b-a216263c030c",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/faucet/faucet.component.ts",
+        "project":  "juice-shop",
+        "line":  68,
+        "hash":  "af7b0dd3073b97568e6f3fcd6b8f1daf",
+        "textRange":  {
+                          "startLine":  68,
+                          "endLine":  68,
+                          "startOffset":  4,
+                          "endOffset":  21
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "447aa211-cb8c-4dea-840c-29d1e7ccd55b",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/faucet/faucet.component.ts",
+        "project":  "juice-shop",
+        "line":  240,
+        "hash":  "dfa0e288f9a514eea93cc0e3f81e2356",
+        "textRange":  {
+                          "startLine":  240,
+                          "endLine":  240,
+                          "startOffset":  6,
+                          "endOffset":  28
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "3cfa856c-6abf-4f9e-9cd4-bf583b8e3464",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/faucet/faucet.component.ts",
+        "project":  "juice-shop",
+        "line":  241,
+        "hash":  "ac6343889d151a95a163b0b3e15a6be2",
+        "textRange":  {
+                          "startLine":  241,
+                          "endLine":  241,
+                          "startOffset":  6,
+                          "endOffset":  30
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "29db5b6c-f1f5-45a8-8d04-4a1054137548",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/last-login-ip/last-login-ip.component.ts",
+        "project":  "juice-shop",
+        "line":  40,
+        "hash":  "4092dad3e50f73ff3b0e1125482eac9a",
+        "textRange":  {
+                          "startLine":  40,
+                          "endLine":  40,
+                          "startOffset":  42,
+                          "endOffset":  65
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "d47d2ae0-3d9d-40c3-8640-5e5406f6334d",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/mat-search-bar/mat-search-bar.component.html",
+        "project":  "juice-shop",
+        "line":  8,
+        "hash":  "fe3f24934f9d66d6ac16e48e5468820d",
+        "textRange":  {
+                          "startLine":  8,
+                          "endLine":  11,
+                          "startOffset":  2,
+                          "endOffset":  66
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "b53bf73c-75a7-40ee-916f-3c3c453e780f",
+        "rule":  "Web:S5256",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/order-completion/order-completion.component.html",
+        "project":  "juice-shop",
+        "line":  56,
+        "hash":  "5307cecec301a3574532def5f13596ad",
+        "textRange":  {
+                          "startLine":  56,
+                          "endLine":  56,
+                          "startOffset":  12,
+                          "endOffset":  37
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add \"\u003cth\u003e\" headers to this \"\u003ctable\u003e\".",
+        "effort":  "2min",
+        "debt":  "2min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "dfe37fd7-6fbc-406f-bb7b-cba036cf1309",
+        "rule":  "Web:S5256",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/order-completion/order-completion.component.html",
+        "project":  "juice-shop",
+        "line":  76,
+        "hash":  "eda04a98388095939f2a4f11ff34ec59",
+        "textRange":  {
+                          "startLine":  76,
+                          "endLine":  76,
+                          "startOffset":  12,
+                          "endOffset":  39
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add \"\u003cth\u003e\" headers to this \"\u003ctable\u003e\".",
+        "effort":  "2min",
+        "debt":  "2min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f64f08a4-6d64-4b5f-ad22-502f44720843",
+        "rule":  "Web:S5256",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/order-summary/order-summary.component.html",
+        "project":  "juice-shop",
+        "line":  50,
+        "hash":  "5307cecec301a3574532def5f13596ad",
+        "textRange":  {
+                          "startLine":  50,
+                          "endLine":  50,
+                          "startOffset":  10,
+                          "endOffset":  35
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add \"\u003cth\u003e\" headers to this \"\u003ctable\u003e\".",
+        "effort":  "2min",
+        "debt":  "2min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f911884a-d7a0-4f9b-afcf-fd65e0dd4543",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/photo-wall/photo-wall.component.html",
+        "project":  "juice-shop",
+        "line":  80,
+        "hash":  "193a7c40223c9a9c85011240ad7b0f59",
+        "textRange":  {
+                          "startLine":  80,
+                          "endLine":  80,
+                          "startOffset":  16,
+                          "endOffset":  92
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "85c81d70-708d-4d92-b838-61bf40b275a1",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/score-board/components/challenge-card/challenge-card.component.ts",
+        "project":  "juice-shop",
+        "line":  67,
+        "hash":  "3a806724f0e8eaf7f6b3173b69787153",
+        "textRange":  {
+                          "startLine":  67,
+                          "endLine":  69,
+                          "startOffset":  8,
+                          "endOffset":  10
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "a49362a6-074f-4b81-a207-ae66b716d91c",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/score-board/components/filter-settings/components/score-board-additional-settings-dialog/score-board-additional-settings-dialog.component.html",
+        "project":  "juice-shop",
+        "line":  12,
+        "hash":  "83222f86b50aed597619d4dd2d1cdbff",
+        "textRange":  {
+                          "startLine":  12,
+                          "endLine":  15,
+                          "startOffset":  8,
+                          "endOffset":  34
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "28010508-b08e-4dda-9da5-6a5e8c09e60c",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/score-board/score-board.component.ts",
+        "project":  "juice-shop",
+        "line":  103,
+        "hash":  "772869ebd04c5d8ca44faf68c80cfd76",
+        "textRange":  {
+                          "startLine":  103,
+                          "endLine":  103,
+                          "startOffset":  38,
+                          "endOffset":  61
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "5212fd04-8709-4181-9d76-b5a8bc70a39b",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/search-result/search-result.component.ts",
+        "project":  "juice-shop",
+        "line":  113,
+        "hash":  "4c730cbc13ea39f93c9cc991d2d59e88",
+        "textRange":  {
+                          "startLine":  113,
+                          "endLine":  113,
+                          "startOffset":  48,
+                          "endOffset":  71
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "14bbc76b-7f28-42e4-84b7-06721af9c2b6",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/search-result/search-result.component.ts",
+        "project":  "juice-shop",
+        "line":  146,
+        "hash":  "c128b2fd232facfb92035bff4cca9556",
+        "textRange":  {
+                          "startLine":  146,
+                          "endLine":  146,
+                          "startOffset":  40,
+                          "endOffset":  63
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "db6c4201-dd8b-4a5e-a3cf-f22d9203dec8",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/search-result/search-result.component.ts",
+        "project":  "juice-shop",
+        "line":  202,
+        "hash":  "ba6d2a4aac7d012239257adbfe59fc81",
+        "textRange":  {
+                          "startLine":  202,
+                          "endLine":  204,
+                          "startOffset":  4,
+                          "endOffset":  6
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "a452cee6-fe90-4511-9a47-986268e1d2ac",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/search-result/search-result.component.ts",
+        "project":  "juice-shop",
+        "line":  203,
+        "hash":  "92ce2dc2f27d385f3cea10ee96cf12ec",
+        "textRange":  {
+                          "startLine":  203,
+                          "endLine":  203,
+                          "startOffset":  6,
+                          "endOffset":  53
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "11b6ed40-3ddb-429d-a222-c59bc330386c",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/sidenav/sidenav.component.ts",
+        "project":  "juice-shop",
+        "line":  169,
+        "hash":  "ba6d2a4aac7d012239257adbfe59fc81",
+        "textRange":  {
+                          "startLine":  169,
+                          "endLine":  171,
+                          "startOffset":  4,
+                          "endOffset":  6
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "011f7716-455a-4fe8-9b5c-45d47f5c1a01",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/sidenav/sidenav.component.ts",
+        "project":  "juice-shop",
+        "line":  170,
+        "hash":  "92ce2dc2f27d385f3cea10ee96cf12ec",
+        "textRange":  {
+                          "startLine":  170,
+                          "endLine":  170,
+                          "startOffset":  6,
+                          "endOffset":  53
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "d38d39e0-fb24-4bb6-8f8f-3973353d0e7f",
+        "rule":  "typescript:S6268",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:frontend/src/app/track-result/track-result.component.ts",
+        "project":  "juice-shop",
+        "line":  49,
+        "hash":  "f1a1b858f38d4878e05b8a47d33ae8db",
+        "textRange":  {
+                          "startLine":  49,
+                          "endLine":  49,
+                          "startOffset":  44,
+                          "endOffset":  67
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure disabling Angular built-in sanitization is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f9959544-e64a-499b-8de4-ddd1aa30e490",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/wallet-web3/wallet-web3.component.ts",
+        "project":  "juice-shop",
+        "line":  53,
+        "hash":  "af7b0dd3073b97568e6f3fcd6b8f1daf",
+        "textRange":  {
+                          "startLine":  53,
+                          "endLine":  53,
+                          "startOffset":  4,
+                          "endOffset":  21
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "b76f6fd4-9d6d-4bc8-88d3-2678b910b8eb",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/wallet-web3/wallet-web3.component.ts",
+        "project":  "juice-shop",
+        "line":  73,
+        "hash":  "8c0aac274ebc29df8642cc17aded273d",
+        "textRange":  {
+                          "startLine":  73,
+                          "endLine":  73,
+                          "startOffset":  6,
+                          "endOffset":  30
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "db7c5033-1403-426d-ab04-e614d4afb390",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/wallet-web3/wallet-web3.component.ts",
+        "project":  "juice-shop",
+        "line":  91,
+        "hash":  "8c0aac274ebc29df8642cc17aded273d",
+        "textRange":  {
+                          "startLine":  91,
+                          "endLine":  91,
+                          "startOffset":  6,
+                          "endOffset":  30
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "86f4a1a2-c7bb-4b8e-a916-1c6543632df6",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/wallet-web3/wallet-web3.component.ts",
+        "project":  "juice-shop",
+        "line":  166,
+        "hash":  "8c0aac274ebc29df8642cc17aded273d",
+        "textRange":  {
+                          "startLine":  166,
+                          "endLine":  166,
+                          "startOffset":  8,
+                          "endOffset":  32
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "7c8718e4-62ae-4733-997f-7f74e052bf43",
+        "rule":  "Web:InputWithoutLabelCheck",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/web3-sandbox/web3-sandbox.component.html",
+        "project":  "juice-shop",
+        "line":  93,
+        "hash":  "4bde052c1182ebedfdb535d5c783db67",
+        "textRange":  {
+                          "startLine":  93,
+                          "endLine":  94,
+                          "startOffset":  16,
+                          "endOffset":  87
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Add an \"id\" attribute to this input field and associate it with a label.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "accessibility",
+                     "wcag2-a"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "1f505364-bd8d-4e6c-875b-5e3b1fcd4de2",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/web3-sandbox/web3-sandbox.component.ts",
+        "project":  "juice-shop",
+        "line":  59,
+        "hash":  "af7b0dd3073b97568e6f3fcd6b8f1daf",
+        "textRange":  {
+                          "startLine":  59,
+                          "endLine":  59,
+                          "startOffset":  4,
+                          "endOffset":  21
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "fcaf2c07-e9e8-4205-9fb2-260e9a82d5a0",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/welcome-banner/welcome-banner.component.ts",
+        "project":  "juice-shop",
+        "line":  60,
+        "hash":  "ba6d2a4aac7d012239257adbfe59fc81",
+        "textRange":  {
+                          "startLine":  60,
+                          "endLine":  62,
+                          "startOffset":  4,
+                          "endOffset":  6
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "a8e9d4a7-b365-42b7-a206-04000578d87c",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/app/welcome-banner/welcome-banner.component.ts",
+        "project":  "juice-shop",
+        "line":  61,
+        "hash":  "92ce2dc2f27d385f3cea10ee96cf12ec",
+        "textRange":  {
+                          "startLine":  61,
+                          "endLine":  61,
+                          "startOffset":  6,
+                          "endOffset":  53
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "c4e897f9-c3e3-4424-b836-eace4cf6a8d3",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:frontend/src/confetti/index.ts",
+        "project":  "juice-shop",
+        "line":  39,
+        "hash":  "cf064a827957490e17b1d8b03c116391",
+        "textRange":  {
+                          "startLine":  39,
+                          "endLine":  41,
+                          "startOffset":  4,
+                          "endOffset":  6
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "153d16de-6e75-4618-be3a-87f42b35b650",
+        "rule":  "terraform:S6258",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:infrastructure/terraform/networking.tf",
+        "project":  "juice-shop",
+        "line":  122,
+        "hash":  "017ba19b7416012cbb9a7ac0d926633b",
+        "textRange":  {
+                          "startLine":  122,
+                          "endLine":  122,
+                          "startOffset":  9,
+                          "endOffset":  17
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Omitting \"access_logs\" makes logs incomplete. Make sure it is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "gcp",
+                     "aws",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "a7f3c7ee-814f-476f-b4b6-1921df8b9b4a",
+        "rule":  "terraform:S5332",
+        "severity":  "MINOR",
+        "component":  "juice-shop:infrastructure/terraform/networking.tf",
+        "project":  "juice-shop",
+        "line":  160,
+        "hash":  "6227cb343ad5c3d836175b64b23cc4e8",
+        "textRange":  {
+                          "startLine":  160,
+                          "endLine":  160,
+                          "startOffset":  2,
+                          "endOffset":  28
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure allowing clear-text traffic is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "gcp",
+                     "cryptography",
+                     "aws",
+                     "azure",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "a9d5e4d6-a673-41f4-bd97-a9004cfeadfc",
+        "rule":  "secrets:S6706",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:infrastructure/terraform/networking.tf",
+        "project":  "juice-shop",
+        "line":  171,
+        "hash":  "d31fe53e90107f2b6f68276a9517b301",
+        "textRange":  {
+                          "startLine":  171,
+                          "endLine":  171,
+                          "startOffset":  22,
+                          "endOffset":  53
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure this private key gets revoked, changed, and removed from the code.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "secret"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "0c8b2f98-cffa-4cbc-bae8-75ac83d39fa3",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:lib/challengeUtils.ts",
+        "project":  "juice-shop",
+        "line":  25,
+        "hash":  "0d8f5647de6df07cea3ced77614fc773",
+        "textRange":  {
+                          "startLine":  25,
+                          "endLine":  25,
+                          "startOffset":  4,
+                          "endOffset":  43
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "19e9cea6-6f55-4092-a092-57d790fe9809",
+        "rule":  "typescript:S6638",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:lib/challengeUtils.ts",
+        "project":  "juice-shop",
+        "line":  59,
+        "hash":  "588737b328c7dc94fee7f271c5e52360",
+        "textRange":  {
+                          "startLine":  59,
+                          "endLine":  59,
+                          "startOffset":  25,
+                          "endOffset":  66
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Unexpected constant nullishness on the left-hand side of a `??` expression.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CLEAR",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "14190faf-ac3a-4bfc-b193-73749b870aca",
+        "rule":  "secrets:S6706",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:lib/insecurity.ts",
+        "project":  "juice-shop",
+        "line":  21,
+        "hash":  "648b1c2b0817f9c92f0cadebbe3e4bdf",
+        "textRange":  {
+                          "startLine":  21,
+                          "endLine":  21,
+                          "startOffset":  20,
+                          "endOffset":  51
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure this private key gets revoked, changed, and removed from the code.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "secret"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "b4115356-2f4b-42b6-8812-c63b85a197a6",
+        "rule":  "typescript:S4790",
+        "severity":  "CRITICAL",
+        "component":  "juice-shop:lib/insecurity.ts",
+        "project":  "juice-shop",
+        "line":  41,
+        "hash":  "e308ef3ae31bbb37c1e3439461cf4705",
+        "textRange":  {
+                          "startLine":  41,
+                          "endLine":  41,
+                          "startOffset":  38,
+                          "endOffset":  55
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure this weak hash algorithm is not used in a sensitive context here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "HIGH"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "6835a0c5-4665-40df-99ed-466c0abb3bcc",
+        "rule":  "typescript:S6437",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:lib/insecurity.ts",
+        "project":  "juice-shop",
+        "line":  42,
+        "hash":  "f0812a9968209c58008afba7878097b7",
+        "textRange":  {
+                          "startLine":  42,
+                          "endLine":  42,
+                          "startOffset":  38,
+                          "endOffset":  55
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Revoke and change this password, as it is compromised.",
+        "effort":  "1h",
+        "debt":  "1h",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "secret"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "6957536f-bae9-4fa0-afc5-d8c9b5e510ff",
+        "rule":  "typescript:S2245",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:lib/insecurity.ts",
+        "project":  "juice-shop",
+        "line":  53,
+        "hash":  "401de32e15cbfc50cd691c3c1ee24359",
+        "textRange":  {
+                          "startLine":  53,
+                          "endLine":  53,
+                          "startOffset":  55,
+                          "endOffset":  68
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure that using this pseudorandom number generator is safe here.",
+        "effort":  "10min",
+        "debt":  "10min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "3b09fd88-2a2f-4e5e-a80f-67a182c8704a",
+        "rule":  "typescript:S5332",
+        "severity":  "MINOR",
+        "component":  "juice-shop:lib/insecurity.ts",
+        "project":  "juice-shop",
+        "line":  127,
+        "hash":  "51158762d81e66b30147edd3369986dc",
+        "textRange":  {
+                          "startLine":  127,
+                          "endLine":  127,
+                          "startOffset":  2,
+                          "endOffset":  41
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Using http protocol is insecure. Use https instead.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "e533b105-144f-42c7-9a44-4845ac3d1130",
+        "rule":  "typescript:S5332",
+        "severity":  "MINOR",
+        "component":  "juice-shop:lib/insecurity.ts",
+        "project":  "juice-shop",
+        "line":  128,
+        "hash":  "e76995f5be75a68851d29271f4a38ab1",
+        "textRange":  {
+                          "startLine":  128,
+                          "endLine":  128,
+                          "startOffset":  2,
+                          "endOffset":  40
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Using http protocol is insecure. Use https instead.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "903d82a3-1c4c-4e63-9a00-09817a73bce4",
+        "rule":  "typescript:S5332",
+        "severity":  "MINOR",
+        "component":  "juice-shop:lib/insecurity.ts",
+        "project":  "juice-shop",
+        "line":  130,
+        "hash":  "45a0715f63aa279b6adb6414e8ece77c",
+        "textRange":  {
+                          "startLine":  130,
+                          "endLine":  130,
+                          "startOffset":  2,
+                          "endOffset":  33
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Using http protocol is insecure. Use https instead.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "e8d6b236-c088-4f0a-9301-65496e4b4cfd",
+        "rule":  "typescript:S1523",
+        "severity":  "CRITICAL",
+        "component":  "juice-shop:lib/xml.ts",
+        "project":  "juice-shop",
+        "line":  38,
+        "hash":  "a145e57bd515fd18c9306c5f619e9e13",
+        "textRange":  {
+                          "startLine":  38,
+                          "endLine":  38,
+                          "startOffset":  17,
+                          "endOffset":  32
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure that this dynamic injection or execution of code is safe.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "HIGH"
+                        },
+                        {
+                            "softwareQuality":  "MAINTAINABILITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "81c6800e-672b-405e-b7b9-f16caaaca752",
+        "rule":  "typescript:S1523",
+        "severity":  "CRITICAL",
+        "component":  "juice-shop:routes/b2bOrder.ts",
+        "project":  "juice-shop",
+        "line":  23,
+        "hash":  "98154e3cc2ff63f171a5c66382945237",
+        "textRange":  {
+                          "startLine":  23,
+                          "endLine":  23,
+                          "startOffset":  8,
+                          "endOffset":  23
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure that this dynamic injection or execution of code is safe.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "HIGH"
+                        },
+                        {
+                            "softwareQuality":  "MAINTAINABILITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "0ada8023-4f17-4b9e-bfcf-89103298ec6f",
+        "rule":  "typescript:S1523",
+        "severity":  "CRITICAL",
+        "component":  "juice-shop:routes/captcha.ts",
+        "project":  "juice-shop",
+        "line":  22,
+        "hash":  "0d2538aa1bc15c1355522a945628756f",
+        "textRange":  {
+                          "startLine":  22,
+                          "endLine":  22,
+                          "startOffset":  19,
+                          "endOffset":  23
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure that this dynamic injection or execution of code is safe.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "HIGH"
+                        },
+                        {
+                            "softwareQuality":  "MAINTAINABILITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "a83c587a-ae3a-47b3-91c5-cc6938b8fa34",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/fileUpload.ts",
+        "project":  "juice-shop",
+        "line":  88,
+        "hash":  "2c23afb988e0d33eeeadbdcb03409bcb",
+        "textRange":  {
+                          "startLine":  88,
+                          "endLine":  88,
+                          "startOffset":  10,
+                          "endOffset":  58
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "6e94ef6b-21b3-46fd-a5c1-5412c10c3ebd",
+        "rule":  "typescript:S1523",
+        "severity":  "CRITICAL",
+        "component":  "juice-shop:routes/fileUpload.ts",
+        "project":  "juice-shop",
+        "line":  114,
+        "hash":  "59e6962f957f4ba8a5d9dba31b87a689",
+        "textRange":  {
+                          "startLine":  114,
+                          "endLine":  114,
+                          "startOffset":  25,
+                          "endOffset":  40
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure that this dynamic injection or execution of code is safe.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "HIGH"
+                        },
+                        {
+                            "softwareQuality":  "MAINTAINABILITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "8ae16d8e-b085-4aad-bbdd-1d2afd7320bf",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/fileUpload.ts",
+        "project":  "juice-shop",
+        "line":  121,
+        "hash":  "52213f57299354d49589f5a1c52d0e9e",
+        "textRange":  {
+                          "startLine":  121,
+                          "endLine":  121,
+                          "startOffset":  10,
+                          "endOffset":  60
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "3ac66488-f1df-4ebf-acec-663e821621a2",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/login.ts",
+        "project":  "juice-shop",
+        "line":  76,
+        "hash":  "98215fa5065575cf5bb10091ee520c2e",
+        "textRange":  {
+                          "startLine":  76,
+                          "endLine":  76,
+                          "startOffset":  10,
+                          "endOffset":  71
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "2f4f09a5-4668-4e99-8ef0-47979bd5a667",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/restoreProgress.ts",
+        "project":  "juice-shop",
+        "line":  25,
+        "hash":  "2e56bab86d78f334a7c2161602611592",
+        "textRange":  {
+                          "startLine":  25,
+                          "endLine":  25,
+                          "startOffset":  6,
+                          "endOffset":  60
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "725de3d4-e7f3-4320-9c7d-212b3f2454be",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/restoreProgress.ts",
+        "project":  "juice-shop",
+        "line":  30,
+        "hash":  "698cc91d8007d199b37f1650cd921ada",
+        "textRange":  {
+                          "startLine":  30,
+                          "endLine":  30,
+                          "startOffset":  10,
+                          "endOffset":  47
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "e27642ea-51ea-4aac-91cb-17ba0abb3998",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/search.ts",
+        "project":  "juice-shop",
+        "line":  38,
+        "hash":  "c64463388e413b464839b7a80edd2790",
+        "textRange":  {
+                          "startLine":  38,
+                          "endLine":  38,
+                          "startOffset":  16,
+                          "endOffset":  75
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f0fe65f9-8958-45cb-ab31-b761996bf983",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/search.ts",
+        "project":  "juice-shop",
+        "line":  59,
+        "hash":  "c9e46a0354046e9450e203d1ce76aac9",
+        "textRange":  {
+                          "startLine":  59,
+                          "endLine":  59,
+                          "startOffset":  16,
+                          "endOffset":  66
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f9d332f5-bd55-497a-b837-e24f172db8e7",
+        "rule":  "typescript:S1523",
+        "severity":  "CRITICAL",
+        "component":  "juice-shop:routes/userProfile.ts",
+        "project":  "juice-shop",
+        "line":  65,
+        "hash":  "d0d562cd1420387071601fcb693cc3bf",
+        "textRange":  {
+                          "startLine":  65,
+                          "endLine":  65,
+                          "startOffset":  21,
+                          "endOffset":  25
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure that this dynamic injection or execution of code is safe.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "HIGH"
+                        },
+                        {
+                            "softwareQuality":  "MAINTAINABILITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f06024f8-0fa7-4896-a866-e0facc4125e8",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/verify.ts",
+        "project":  "juice-shop",
+        "line":  43,
+        "hash":  "78e244cc3d45e55ccd9189b5e62efee8",
+        "textRange":  {
+                          "startLine":  43,
+                          "endLine":  43,
+                          "startOffset":  8,
+                          "endOffset":  63
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "1c061459-54c8-4870-af30-1c3126731889",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/verify.ts",
+        "project":  "juice-shop",
+        "line":  102,
+        "hash":  "96de674e552f75377249f3657ed15dc7",
+        "textRange":  {
+                          "startLine":  102,
+                          "endLine":  102,
+                          "startOffset":  6,
+                          "endOffset":  52
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "fdad55a6-855d-4c7f-b1eb-e8d240b6bcfe",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/verify.ts",
+        "project":  "juice-shop",
+        "line":  108,
+        "hash":  "69c479d2a4877abcc6adcf4bb846d525",
+        "textRange":  {
+                          "startLine":  108,
+                          "endLine":  108,
+                          "startOffset":  6,
+                          "endOffset":  52
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "b3b5174b-901b-44e1-922f-0b320f9980e6",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/verify.ts",
+        "project":  "juice-shop",
+        "line":  153,
+        "hash":  "5ba6f20899d30af0694c402cd06df4d2",
+        "textRange":  {
+                          "startLine":  153,
+                          "endLine":  153,
+                          "startOffset":  6,
+                          "endOffset":  56
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "b9a34541-ca19-4e40-924c-ec3d08bf7e5b",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/verify.ts",
+        "project":  "juice-shop",
+        "line":  164,
+        "hash":  "5ba6f20899d30af0694c402cd06df4d2",
+        "textRange":  {
+                          "startLine":  164,
+                          "endLine":  164,
+                          "startOffset":  6,
+                          "endOffset":  56
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "f929e398-b2f3-4fa0-bd8e-63c3f54a1402",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/verify.ts",
+        "project":  "juice-shop",
+        "line":  228,
+        "hash":  "f3901128865c84178e5a8bfe08a36006",
+        "textRange":  {
+                          "startLine":  228,
+                          "endLine":  228,
+                          "startOffset":  10,
+                          "endOffset":  65
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "a2904c74-c9bc-47eb-9c9a-d9fb7bee2b17",
+        "rule":  "typescript:S9383",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:routes/verify.ts",
+        "project":  "juice-shop",
+        "line":  238,
+        "hash":  "57605152a8db133474e1bcb966235a85",
+        "textRange":  {
+                          "startLine":  238,
+                          "endLine":  238,
+                          "startOffset":  6,
+                          "endOffset":  56
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "async",
+                     "es2017",
+                     "type-dependent",
+                     "promise"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "BUG",
+        "scope":  "MAIN",
+        "quickFixAvailable":  true,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "LOGICAL",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "RELIABILITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "bef164d5-5f20-4578-a3c2-998d3dc3718c",
+        "rule":  "javascript:S4036",
+        "severity":  "MINOR",
+        "component":  "juice-shop:scripts/package.mjs",
+        "project":  "juice-shop",
+        "line":  19,
+        "hash":  "ab2805254589258b1d2da53c4b29b83e",
+        "textRange":  {
+                          "startLine":  19,
+                          "endLine":  19,
+                          "startOffset":  32,
+                          "endOffset":  45
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure the \"PATH\" variable only contains fixed, unwriteable directories.",
+        "effort":  "15min",
+        "debt":  "15min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "05c92929-737b-4c53-9525-e328b978f691",
+        "rule":  "javascript:S4790",
+        "severity":  "CRITICAL",
+        "component":  "juice-shop:scripts/package.mjs",
+        "project":  "juice-shop",
+        "line":  122,
+        "hash":  "9dfa2211215b30ffe3d97ef9f9315237",
+        "textRange":  {
+                          "startLine":  122,
+                          "endLine":  122,
+                          "startOffset":  15,
+                          "endOffset":  32
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure this weak hash algorithm is not used in a sensitive context here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "cryptography",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "HIGH"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "9a2f310a-270a-4f3b-a41c-26a9eac690a2",
+        "rule":  "typescript:S4507",
+        "severity":  "MINOR",
+        "component":  "juice-shop:server.ts",
+        "project":  "juice-shop",
+        "line":  722,
+        "hash":  "533a0b15edff243b4be47bebbce7d622",
+        "textRange":  {
+                          "startLine":  722,
+                          "endLine":  722,
+                          "startOffset":  10,
+                          "endOffset":  24
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure this debug feature is deactivated before delivering the code in production.",
+        "effort":  "1min",
+        "debt":  "1min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "error-handling",
+                     "debug",
+                     "user-experience",
+                     "express.js",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "54249098-47b0-4f22-bdb1-4e66d11d95f6",
+        "rule":  "typescript:S5693",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:server.ts",
+        "project":  "juice-shop",
+        "line":  740,
+        "hash":  "09a1a4375027087f405f2aa58a47f5c3",
+        "textRange":  {
+                          "startLine":  740,
+                          "endLine":  740,
+                          "startOffset":  21,
+                          "endOffset":  27
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure the content length limit is safe here.",
+        "effort":  "5min",
+        "debt":  "5min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "express.js",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "5c2ccd9f-f542-4b87-a4cb-64756fca7295",
+        "rule":  "terraform:S6258",
+        "severity":  "MAJOR",
+        "component":  "juice-shop:terraform/networking.tf",
+        "project":  "juice-shop",
+        "line":  122,
+        "hash":  "017ba19b7416012cbb9a7ac0d926633b",
+        "textRange":  {
+                          "startLine":  122,
+                          "endLine":  122,
+                          "startOffset":  9,
+                          "endOffset":  17
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Omitting \"access_logs\" makes logs incomplete. Make sure it is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "gcp",
+                     "aws",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "CONVENTIONAL",
+        "cleanCodeAttributeCategory":  "CONSISTENT",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "MEDIUM"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "1b0af719-1abf-4b34-b41a-fc782149d27b",
+        "rule":  "terraform:S5332",
+        "severity":  "MINOR",
+        "component":  "juice-shop:terraform/networking.tf",
+        "project":  "juice-shop",
+        "line":  160,
+        "hash":  "6227cb343ad5c3d836175b64b23cc4e8",
+        "textRange":  {
+                          "startLine":  160,
+                          "endLine":  160,
+                          "startOffset":  2,
+                          "endOffset":  28
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure allowing clear-text traffic is safe here.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "gcp",
+                     "cryptography",
+                     "aws",
+                     "azure",
+                     "former-hotspot"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "COMPLETE",
+        "cleanCodeAttributeCategory":  "INTENTIONAL",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "LOW"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    },
+    {
+        "key":  "5aac5545-99d0-4513-9479-fb906d39b062",
+        "rule":  "secrets:S6706",
+        "severity":  "BLOCKER",
+        "component":  "juice-shop:terraform/networking.tf",
+        "project":  "juice-shop",
+        "line":  171,
+        "hash":  "d31fe53e90107f2b6f68276a9517b301",
+        "textRange":  {
+                          "startLine":  171,
+                          "endLine":  171,
+                          "startOffset":  22,
+                          "endOffset":  53
+                      },
+        "flows":  [
+
+                  ],
+        "status":  "OPEN",
+        "message":  "Make sure this private key gets revoked, changed, and removed from the code.",
+        "effort":  "30min",
+        "debt":  "30min",
+        "author":  "",
+        "tags":  [
+                     "cwe",
+                     "secret"
+                 ],
+        "creationDate":  "2026-11-15T23:27:47+0000",
+        "updateDate":  "2026-11-15T23:27:47+0000",
+        "type":  "VULNERABILITY",
+        "scope":  "MAIN",
+        "quickFixAvailable":  false,
+        "messageFormattings":  [
+
+                               ],
+        "codeVariants":  [
+
+                         ],
+        "cleanCodeAttribute":  "TRUSTWORTHY",
+        "cleanCodeAttributeCategory":  "RESPONSIBLE",
+        "impacts":  [
+                        {
+                            "softwareQuality":  "SECURITY",
+                            "severity":  "BLOCKER"
+                        }
+                    ],
+        "issueStatus":  "OPEN",
+        "prioritizedRule":  false,
+        "fromSonarQubeUpdate":  false,
+        "internalTags":  [
+
+                         ],
+        "linkedTicketStatus":  "NOT_LINKED"
+    }
+]

@@ -1,0 +1,14 @@
+# Verificación manual de hallazgos de ZAP (15/11/2026) contra http://localhost:3100
+
+## 1) Inyección SQL en la búsqueda: GET /rest/products/search?q='(
+HTTP 500
+<title>Error: SQLITE_ERROR: near &quot;(&quot;: syntax error</title>
+
+## 2) Redirección abierta: GET /redirect?to=https://sitio-externo.example/?https://github.com/juice-shop/juice-shop
+HTTP/1.1 302 Found
+Location: https://sitio-externo.example/?https://github.com/juice-shop/juice-shop
+
+## 3) CORS permisivo: GET /
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN

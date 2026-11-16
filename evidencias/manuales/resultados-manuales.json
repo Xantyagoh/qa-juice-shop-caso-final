@@ -1,0 +1,333 @@
+[
+  {
+    "id": "MC-01",
+    "nombre": "Registro con datos válidos",
+    "req": "RF-01",
+    "tecnica": "Partición de equivalencia (clase válida)",
+    "objetivo": "Verificar que un usuario puede registrarse con datos válidos.",
+    "pre": "Sistema accesible; correo no registrado.",
+    "entrada": "Correo único válido; contraseña \"Passw0rd!\" (9 car.); misma confirmación; pregunta de seguridad y respuesta.",
+    "pasos": [
+      "Abrir /#/register",
+      "Completar el formulario con los datos de entrada",
+      "Pulsar \"Register\""
+    ],
+    "esperado": "El sistema crea la cuenta, redirige a la pantalla de login y muestra un mensaje de registro exitoso.",
+    "evidencias": [
+      "MC-01_paso1_formulario_completo.png",
+      "MC-01_paso2_resultado.png"
+    ],
+    "obtenido": "Redirigió a /login y mostró: \"Registration completed successfully. You can now log in.\"",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-02",
+    "nombre": "Registro con contraseña de 4 caracteres",
+    "req": "RF-01",
+    "tecnica": "Valores límite: límite inferior − 1",
+    "objetivo": "Verificar el comportamiento del formulario con una contraseña de 4 caracteres (regla: 5 a 40).",
+    "pre": "Sistema accesible.",
+    "entrada": "Correo único válido; contraseña de 4 caracteres \"a\"; confirmación igual.",
+    "pasos": [
+      "Abrir /#/register",
+      "Escribir una contraseña de 4 caracteres y repetirla",
+      "Completar pregunta/respuesta de seguridad",
+      "Observar errores y estado del botón Register"
+    ],
+    "esperado": "Se muestra error de longitud y el botón Register permanece deshabilitado.",
+    "evidencias": [
+      "MC-02_paso1_formulario.png"
+    ],
+    "obtenido": "Errores: Password must be 5-40 characters long.. Botón Register deshabilitado.",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-03",
+    "nombre": "Registro con contraseña de 5 caracteres",
+    "req": "RF-01",
+    "tecnica": "Valores límite: límite inferior",
+    "objetivo": "Verificar el comportamiento del formulario con una contraseña de 5 caracteres (regla: 5 a 40).",
+    "pre": "Sistema accesible.",
+    "entrada": "Correo único válido; contraseña de 5 caracteres \"a\"; confirmación igual.",
+    "pasos": [
+      "Abrir /#/register",
+      "Escribir una contraseña de 5 caracteres y repetirla",
+      "Completar pregunta/respuesta de seguridad",
+      "Observar errores y estado del botón Register"
+    ],
+    "esperado": "Sin errores; el botón Register queda habilitado y el registro se completa.",
+    "evidencias": [
+      "MC-03_paso1_formulario.png",
+      "MC-03_paso2_resultado.png"
+    ],
+    "obtenido": "Errores: ninguno. Botón habilitado. URL final: /login",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-04",
+    "nombre": "Registro con contraseña de 40 caracteres",
+    "req": "RF-01",
+    "tecnica": "Valores límite: límite superior",
+    "objetivo": "Verificar el comportamiento del formulario con una contraseña de 40 caracteres (regla: 5 a 40).",
+    "pre": "Sistema accesible.",
+    "entrada": "Correo único válido; contraseña de 40 caracteres \"a\"; confirmación igual.",
+    "pasos": [
+      "Abrir /#/register",
+      "Escribir una contraseña de 40 caracteres y repetirla",
+      "Completar pregunta/respuesta de seguridad",
+      "Observar errores y estado del botón Register"
+    ],
+    "esperado": "Sin errores; el botón Register queda habilitado y el registro se completa.",
+    "evidencias": [
+      "MC-04_paso1_formulario.png",
+      "MC-04_paso2_resultado.png"
+    ],
+    "obtenido": "Errores: ninguno. Botón habilitado. URL final: /login",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-05",
+    "nombre": "Registro con contraseña de 41 caracteres",
+    "req": "RF-01",
+    "tecnica": "Valores límite: límite superior + 1",
+    "objetivo": "Verificar que el formulario no admite contraseñas de más de 40 caracteres.",
+    "pre": "Sistema accesible.",
+    "entrada": "Contraseña de 41 caracteres \"a\" en el campo contraseña.",
+    "pasos": [
+      "Abrir /#/register",
+      "Escribir 41 caracteres en el campo contraseña",
+      "Revisar cuántos caracteres quedan en el campo"
+    ],
+    "esperado": "El campo no acepta más de 40 caracteres (queda truncado o se rechaza).",
+    "evidencias": [
+      "MC-05_paso1_campo_contrasena.png"
+    ],
+    "obtenido": "El campo contiene 40 caracteres de los 41 escritos (atributo maxlength=40).",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-06",
+    "nombre": "Registro con correo de formato inválido",
+    "req": "RF-01",
+    "tecnica": "Partición de equivalencia (clase inválida)",
+    "objetivo": "Verificar la validación del formato del correo en el formulario.",
+    "pre": "Sistema accesible.",
+    "entrada": "Correo \"sinarroba\"; contraseña válida.",
+    "pasos": [
+      "Abrir /#/register",
+      "Escribir \"sinarroba\" en el campo correo",
+      "Completar el resto del formulario",
+      "Observar error y botón"
+    ],
+    "esperado": "Se muestra un error de correo inválido y el botón Register permanece deshabilitado.",
+    "evidencias": [
+      "MC-06_paso1_error_correo.png"
+    ],
+    "obtenido": "Errores: Email address is not valid.. Botón deshabilitado.",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-07",
+    "nombre": "Registro con confirmación de contraseña distinta",
+    "req": "RF-01",
+    "tecnica": "Partición de equivalencia (clase inválida)",
+    "objetivo": "Verificar que la confirmación debe coincidir con la contraseña.",
+    "pre": "Sistema accesible.",
+    "entrada": "Contraseña \"Passw0rd!\"; confirmación \"Passw0rd?\".",
+    "pasos": [
+      "Abrir /#/register",
+      "Completar con contraseñas distintas",
+      "Observar error y botón"
+    ],
+    "esperado": "Se muestra \"Passwords do not match\" y el botón queda deshabilitado.",
+    "evidencias": [
+      "MC-07_paso1_error_confirmacion.png"
+    ],
+    "obtenido": "Errores: Passwords do not match. Botón deshabilitado.",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-08",
+    "nombre": "Login con credenciales válidas",
+    "req": "RF-02",
+    "tecnica": "Partición de equivalencia (clase válida)",
+    "objetivo": "Verificar que un usuario registrado puede iniciar sesión.",
+    "pre": "Usuario creado en MC-01.",
+    "entrada": "Correo y contraseña del usuario de MC-01.",
+    "pasos": [
+      "Abrir /#/login",
+      "Escribir correo y contraseña",
+      "Pulsar \"Log in\"",
+      "Abrir el menú Account"
+    ],
+    "esperado": "Se accede a la tienda y el menú de cuenta muestra el correo del usuario.",
+    "evidencias": [
+      "MC-08_paso1_credenciales.png",
+      "MC-08_paso2_sesion_iniciada.png"
+    ],
+    "obtenido": "Redirigió a /search. El menú de cuenta muestra: \"mc01.17947868232772172@qa-test.com\"",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-09",
+    "nombre": "Login con contraseña incorrecta",
+    "req": "RF-02",
+    "tecnica": "Partición de equivalencia (clase inválida)",
+    "objetivo": "Verificar que se rechazan credenciales inválidas con un mensaje claro.",
+    "pre": "Usuario creado en MC-01.",
+    "entrada": "Correo válido; contraseña \"Incorrecta123\".",
+    "pasos": [
+      "Abrir /#/login",
+      "Escribir correo válido y contraseña incorrecta",
+      "Pulsar \"Log in\""
+    ],
+    "esperado": "No se inicia sesión y se muestra el mensaje \"Invalid email or password.\"",
+    "evidencias": [
+      "MC-09_paso1_mensaje_error.png"
+    ],
+    "obtenido": "Permaneció en /login. Mensaje: \"Invalid email or password.\"",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-10",
+    "nombre": "Búsqueda con término existente",
+    "req": "RF-03",
+    "tecnica": "Partición de equivalencia (clase válida)",
+    "objetivo": "Verificar que la búsqueda devuelve los productos relacionados.",
+    "pre": "Sistema accesible.",
+    "entrada": "Texto de búsqueda: \"apple\".",
+    "pasos": [
+      "Abrir la tienda",
+      "Pulsar el ícono de búsqueda",
+      "Escribir \"apple\" y Enter"
+    ],
+    "esperado": "Se listan productos cuyo nombre o descripción contienen \"apple\".",
+    "evidencias": [
+      "MC-10_paso1_resultados.png"
+    ],
+    "obtenido": "3 producto(s): Apple Juice (1000ml); Apple Pomace; Pineapple Juice (1000ml)",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-11",
+    "nombre": "Búsqueda sin coincidencias",
+    "req": "RF-03",
+    "tecnica": "Partición de equivalencia (clase sin resultados)",
+    "objetivo": "Verificar el mensaje cuando no hay coincidencias.",
+    "pre": "Sistema accesible.",
+    "entrada": "Texto de búsqueda: \"zzzxxxqqq\".",
+    "pasos": [
+      "Abrir la tienda",
+      "Buscar \"zzzxxxqqq\""
+    ],
+    "esperado": "No se listan productos y se informa al usuario \"No results found\".",
+    "evidencias": [
+      "MC-11_paso1_sin_resultados.png"
+    ],
+    "obtenido": "0 producto(s). Texto en pantalla: \"Search Results - zzzxxxqqq No results found Try adjusting your search to find what you're looking for. Items per page: 1\"",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-12",
+    "nombre": "Agregar producto al carrito",
+    "req": "RF-04",
+    "tecnica": "Partición de equivalencia (clase válida)",
+    "objetivo": "Verificar que un usuario autenticado puede agregar un producto al carrito.",
+    "pre": "Usuario de MC-01 con carrito vacío.",
+    "entrada": "Primer producto del catálogo, cantidad 1.",
+    "pasos": [
+      "Iniciar sesión",
+      "Pulsar \"Add to Basket\" en el primer producto",
+      "Observar el contador del carrito"
+    ],
+    "esperado": "Se confirma el agregado y el contador del carrito pasa de 0 a 1.",
+    "evidencias": [
+      "MC-12_paso1_carrito_inicial.png",
+      "MC-12_paso2_producto_agregado.png"
+    ],
+    "obtenido": "Mensaje: \"Placed Apple Juice (1000ml) into basket.\". Botón del carrito: \"Your Basket 1\"",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-13",
+    "nombre": "Feedback con comentario en el límite de 160 caracteres",
+    "req": "RF-05",
+    "tecnica": "Valores límite: límite superior (y +1)",
+    "objetivo": "Verificar el límite de 160 caracteres del comentario y el envío exitoso.",
+    "pre": "Sistema accesible.",
+    "entrada": "Comentario de 170 caracteres escritos (se espera truncado a 160); calificación; CAPTCHA resuelto.",
+    "pasos": [
+      "Abrir /#/contact",
+      "Escribir 170 caracteres en el comentario",
+      "Fijar la calificación",
+      "Resolver el CAPTCHA y pulsar Submit"
+    ],
+    "esperado": "El campo acepta máximo 160 caracteres y el feedback se envía con mensaje de agradecimiento.",
+    "evidencias": [
+      "MC-13_paso1_formulario.png",
+      "MC-13_paso2_resultado.png"
+    ],
+    "obtenido": "Comentario con 160 caracteres. CAPTCHA \"7-9*10\" = -83. Mensaje: \"Thank you so much for your amazing 5-star feedback!\"",
+    "estado": "Aprobado"
+  },
+  {
+    "id": "MC-14",
+    "nombre": "Validación en servidor: contraseña de 4 caracteres (API)",
+    "req": "RF-01 / RNF-02",
+    "tecnica": "Valores límite: límite inferior − 1 (capa API)",
+    "objetivo": "Verificar que la regla de 5–40 caracteres también se aplica en el servidor y no solo en la interfaz.",
+    "pre": "Sistema accesible.",
+    "entrada": "POST /api/Users con contraseña \"abcd\" (4 caracteres).",
+    "pasos": [
+      "Enviar la petición de registro directamente a la API, sin pasar por el formulario",
+      "Leer el código de estado"
+    ],
+    "esperado": "El servidor rechaza la petición (HTTP 400).",
+    "evidencias": [
+      "MC-14_api_evidencia.png"
+    ],
+    "obtenido": "HTTP 201: el servidor CREÓ la cuenta.",
+    "estado": "Fallido"
+  },
+  {
+    "id": "MC-15",
+    "nombre": "Login con payload de inyección SQL",
+    "req": "RNF-02 (OWASP A03)",
+    "tecnica": "Pruebas de seguridad: partición clase inválida/maliciosa",
+    "objetivo": "Verificar que el login no es vulnerable a inyección SQL.",
+    "pre": "Sistema accesible; no hay sesión iniciada.",
+    "entrada": "Correo: ' or 1=1--   Contraseña: x",
+    "pasos": [
+      "Abrir /#/login",
+      "Escribir el payload en el campo correo y cualquier contraseña",
+      "Pulsar Log in",
+      "Abrir el menú Account"
+    ],
+    "esperado": "El acceso es rechazado con \"Invalid email or password.\".",
+    "evidencias": [
+      "MC-15_paso1_payload.png",
+      "MC-15_paso2_resultado.png"
+    ],
+    "obtenido": "URL: /search. Sesión iniciada como: \"admin@juice-sh.op\"",
+    "estado": "Fallido"
+  },
+  {
+    "id": "MC-16",
+    "nombre": "XSS reflejado en el campo de búsqueda",
+    "req": "RNF-02 (OWASP A03)",
+    "tecnica": "Pruebas de seguridad: entrada maliciosa",
+    "objetivo": "Verificar que el texto de búsqueda se muestra como texto y no se ejecuta como código.",
+    "pre": "Sistema accesible.",
+    "entrada": "<iframe src=\"javascript:alert('xss')\">",
+    "pasos": [
+      "Abrir /#/search?q=<payload>",
+      "Observar si el navegador ejecuta el script (aparece un diálogo alert)"
+    ],
+    "esperado": "No se ejecuta ningún script; el texto se muestra escapado.",
+    "evidencias": [
+      "MC-16_paso1_resultado.png"
+    ],
+    "obtenido": "El navegador ejecutó el script: apareció un alert con el texto \"xss\".",
+    "estado": "Fallido"
+  }
+]

@@ -1,0 +1,1348 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\playwright.config.js",
+    "rootDir": "C:/Users/User/Downloads/Trabajo Aseguramiento de calidad/Final Aseguramiento de la calidad/pruebas/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/User/Downloads/Trabajo Aseguramiento de calidad/Final Aseguramiento de la calidad/evidencias/automatizadas/artefactos",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/User/Downloads/Trabajo Aseguramiento de calidad/Final Aseguramiento de la calidad/pruebas/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests",
+        "snapshotDir": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://localhost:3100",
+          "viewport": {
+            "width": 1366,
+            "height": 800
+          },
+          "screenshot": "on",
+          "trace": "retain-on-failure",
+          "actionTimeout": 10000
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "../evidencias/automatizadas/reporte-html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../evidencias/automatizadas/resultados.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.js",
+      "file": "auth.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RF-02 Autenticación (UI)",
+          "file": "auth.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AT-01 Login válido redirige a la tienda y muestra la sesión",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2076,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:36.887Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\auth-RF-02-Autenticación-U-5a469--tienda-y-muestra-la-sesión\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-9e9fc3cb9bd21ee60ddf",
+              "file": "auth.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "AT-02 Login con contraseña incorrecta es rechazado con mensaje claro",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1483,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:39.161Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\auth-RF-02-Autenticación-U-30d2c-rechazado-con-mensaje-claro\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-c2f8d339ef8bf2214a8d",
+              "file": "auth.spec.js",
+              "line": 23,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "basket-feedback.spec.js",
+      "file": "basket-feedback.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RF-04 Carrito (API)",
+          "file": "basket-feedback.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AT-14 Agregar un producto al carrito lo refleja en el contenido del carrito",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 149,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:40.667Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3474b6658c118a01504b-219de36a0b0e8ba45e56",
+              "file": "basket-feedback.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "AT-15 Un usuario NO puede ver el carrito de otro usuario (control de acceso)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 224,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m200\u001b[39m\nReceived array: \u001b[31m[401, 403]\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m200\u001b[39m\nReceived array: \u001b[31m[401, 403]\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js:36:24",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                          "column": 24,
+                          "line": 36
+                        },
+                        "snippet": " \u001b[90m 34 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Usuario B consulta carrito de A -> status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     expect([\u001b[35m401\u001b[39m\u001b[33m,\u001b[39m \u001b[35m403\u001b[39m])\u001b[33m.\u001b[39mtoContain(res\u001b[33m.\u001b[39mstatus())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                            "column": 24,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m200\u001b[39m\nReceived array: \u001b[31m[401, 403]\u001b[39m\n\n  34 |     });\n  35 |     console.log(`Usuario B consulta carrito de A -> status=${res.status()}`);\n> 36 |     expect([401, 403]).toContain(res.status());\n     |                        ^\n  37 |   });\n  38 | });\n  39 |\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js:36:24"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Usuario B consulta carrito de A -> status=200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:40.826Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\basket-feedback-RF-04-Carr-97dd5--usuario-control-de-acceso-\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\basket-feedback-RF-04-Carr-97dd5--usuario-control-de-acceso-\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                        "column": 24,
+                        "line": 36
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "3474b6658c118a01504b-4850f36b3310350cf01a",
+              "file": "basket-feedback.spec.js",
+              "line": 25,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "RF-05 Feedback (API) - valores límite del comentario",
+          "file": "basket-feedback.spec.js",
+          "line": 40,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AT-16 Comentario de 160 caracteres (límite superior) es aceptado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 102,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:41.523Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3474b6658c118a01504b-762103ab3689844603a1",
+              "file": "basket-feedback.spec.js",
+              "line": 53,
+              "column": 3
+            },
+            {
+              "title": "AT-17 Comentario de 161 caracteres (límite superior + 1) es rechazado",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 94,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js:61:26",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                          "column": 26,
+                          "line": 61
+                        },
+                        "snippet": " \u001b[90m 59 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m enviarFeedback(request\u001b[33m,\u001b[39m \u001b[35m161\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`comentario 161 -> status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m   test(\u001b[32m'AT-18 Calificación fuera de rango (0) es rechazada'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                            "column": 26,
+                            "line": 61
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n\n  59 |     const res = await enviarFeedback(request, 161);\n  60 |     console.log(`comentario 161 -> status=${res.status()}`);\n> 61 |     expect(res.status()).toBe(400);\n     |                          ^\n  62 |   });\n  63 |\n  64 |   test('AT-18 Calificación fuera de rango (0) es rechazada', async ({ request }) => {\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js:61:26"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "comentario 161 -> status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:41.651Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\basket-feedback-RF-05-Feed-e5810-ite-superior-1-es-rechazado\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\basket-feedback-RF-05-Feed-e5810-ite-superior-1-es-rechazado\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                        "column": 26,
+                        "line": 61
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "3474b6658c118a01504b-3e80a1ba04b1638b2c5d",
+              "file": "basket-feedback.spec.js",
+              "line": 58,
+              "column": 3
+            },
+            {
+              "title": "AT-18 Calificación fuera de rango (0) es rechazada",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 113,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js:70:26",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                          "column": 26,
+                          "line": 70
+                        },
+                        "snippet": " \u001b[90m 68 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`rating 0 -> status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                            "column": 26,
+                            "line": 70
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n\n  68 |     });\n  69 |     console.log(`rating 0 -> status=${res.status()}`);\n> 70 |     expect(res.status()).toBe(400);\n     |                          ^\n  71 |   });\n  72 | });\n  73 |\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js:70:26"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "rating 0 -> status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:42.138Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\basket-feedback-RF-05-Feed-ded15-era-de-rango-0-es-rechazada\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\basket-feedback-RF-05-Feed-ded15-era-de-rango-0-es-rechazada\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\basket-feedback.spec.js",
+                        "column": 26,
+                        "line": 70
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "3474b6658c118a01504b-04c907cd61345f3e00b5",
+              "file": "basket-feedback.spec.js",
+              "line": 64,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "registration.spec.js",
+      "file": "registration.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RF-01 Registro - validación de contraseña en el servidor (BVA)",
+          "file": "registration.spec.js",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AT-06 Contraseña de 4 caracteres (Límite inferior - 1) -> rechazada",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 77,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:20:33",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                          "column": 33,
+                          "line": 20
+                        },
+                        "snippet": " \u001b[90m 18 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`longitud=${c.longitud} status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mvalida) expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m       \u001b[36melse\u001b[39m expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\n \u001b[90m 23 |\u001b[39m })\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                            "column": 33,
+                            "line": 20
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n\n  18 |       console.log(`longitud=${c.longitud} status=${res.status()}`);\n  19 |       if (c.valida) expect(res.status()).toBe(201);\n> 20 |       else expect(res.status()).toBe(400);\n     |                                 ^\n  21 |     });\n  22 |   }\n  23 | });\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:20:33"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "longitud=4 status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:42.656Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-f2aac-te-inferior---1---rechazada\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-f2aac-te-inferior---1---rechazada\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                        "column": 33,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-11874e35b1a33efb055a",
+              "file": "registration.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "AT-07 Contraseña de 5 caracteres (Límite inferior) -> aceptada",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 66,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "longitud=5 status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:43.138Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-3156c9146f09bdbaa841",
+              "file": "registration.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "AT-08 Contraseña de 40 caracteres (Límite superior) -> aceptada",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "longitud=40 status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:43.228Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-a060e6208158835e4407",
+              "file": "registration.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "AT-09 Contraseña de 41 caracteres (Límite superior + 1) -> rechazada",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 57,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:20:33",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                          "column": 33,
+                          "line": 20
+                        },
+                        "snippet": " \u001b[90m 18 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`longitud=${c.longitud} status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mvalida) expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m       \u001b[36melse\u001b[39m expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\n \u001b[90m 23 |\u001b[39m })\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                            "column": 33,
+                            "line": 20
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n\n  18 |       console.log(`longitud=${c.longitud} status=${res.status()}`);\n  19 |       if (c.valida) expect(res.status()).toBe(201);\n> 20 |       else expect(res.status()).toBe(400);\n     |                                 ^\n  21 |     });\n  22 |   }\n  23 | });\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:20:33"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "longitud=41 status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:43.282Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-de588-mite-superior-1---rechazada\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-de588-mite-superior-1---rechazada\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                        "column": 33,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-111fa563a81dab4a4808",
+              "file": "registration.spec.js",
+              "line": 16,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "RF-01 Registro - validación de correo en el servidor (EP)",
+          "file": "registration.spec.js",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AT-10 Correo inválido: sin @ debe ser rechazado",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 83,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:40:28",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                          "column": 28,
+                          "line": 40
+                        },
+                        "snippet": " \u001b[90m 38 |\u001b[39m       \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m registerViaApi(request\u001b[33m,\u001b[39m c\u001b[33m.\u001b[39memail()\u001b[33m,\u001b[39m \u001b[32m'Passw0rd!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`email inválido status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m       expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                            "column": 28,
+                            "line": 40
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n\n  38 |       const res = await registerViaApi(request, c.email(), 'Passw0rd!');\n  39 |       console.log(`email inválido status=${res.status()}`);\n> 40 |       expect(res.status()).toBe(400);\n     |                            ^\n  41 |     });\n  42 |   }\n  43 |\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:40:28"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "email inválido status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:43.757Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-1203e-lido-sin-debe-ser-rechazado\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-1203e-lido-sin-debe-ser-rechazado\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                        "column": 28,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-e0c55a4b73fac2928850",
+              "file": "registration.spec.js",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "AT-11 Correo inválido: sin parte local debe ser rechazado",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 83,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:40:28",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                          "column": 28,
+                          "line": 40
+                        },
+                        "snippet": " \u001b[90m 38 |\u001b[39m       \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m registerViaApi(request\u001b[33m,\u001b[39m c\u001b[33m.\u001b[39memail()\u001b[33m,\u001b[39m \u001b[32m'Passw0rd!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`email inválido status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m       expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                            "column": 28,
+                            "line": 40
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n\n  38 |       const res = await registerViaApi(request, c.email(), 'Passw0rd!');\n  39 |       console.log(`email inválido status=${res.status()}`);\n> 40 |       expect(res.status()).toBe(400);\n     |                            ^\n  41 |     });\n  42 |   }\n  43 |\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:40:28"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "email inválido status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:44.265Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-98e8d-te-local-debe-ser-rechazado\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-98e8d-te-local-debe-ser-rechazado\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                        "column": 28,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-2b9a5b02538df1e96011",
+              "file": "registration.spec.js",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "AT-12 Correo inválido: dominio sin punto debe ser rechazado",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 79,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:40:28",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                          "column": 28,
+                          "line": 40
+                        },
+                        "snippet": " \u001b[90m 38 |\u001b[39m       \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m registerViaApi(request\u001b[33m,\u001b[39m c\u001b[33m.\u001b[39memail()\u001b[33m,\u001b[39m \u001b[32m'Passw0rd!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`email inválido status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m       expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                            "column": 28,
+                            "line": 40
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m201\u001b[39m\n\n  38 |       const res = await registerViaApi(request, c.email(), 'Passw0rd!');\n  39 |       console.log(`email inválido status=${res.status()}`);\n> 40 |       expect(res.status()).toBe(400);\n     |                            ^\n  41 |     });\n  42 |   }\n  43 |\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js:40:28"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "email inválido status=201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:44.738Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-6bf93-in-punto-debe-ser-rechazado\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\registration-RF-01-Registr-6bf93-in-punto-debe-ser-rechazado\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\registration.spec.js",
+                        "column": 28,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-de22bd9b65ca01d087e8",
+              "file": "registration.spec.js",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "AT-13 Correo duplicado debe ser rechazado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 91,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:45.228Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1551a940dbfbf0872387-e1d9f7d5b632e1f4a44d",
+              "file": "registration.spec.js",
+              "line": 44,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "search.spec.js",
+      "file": "search.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RF-03 Búsqueda de productos (API)",
+          "file": "search.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AT-03 Búsqueda con término existente devuelve solo productos relacionados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:45.365Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9e6ea2b6d72fedbaa223-4935958d842ae66027ff",
+              "file": "search.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "AT-04 Búsqueda sin coincidencias devuelve lista vacía",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:45.402Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9e6ea2b6d72fedbaa223-4b69ffecd6497aa92cce",
+              "file": "search.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "AT-05 RNF-01: la búsqueda responde en menos de 1000 ms",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Tiempo de respuesta búsqueda: 12 ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:45.424Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9e6ea2b6d72fedbaa223-09275f3cafd1e27b9d50",
+              "file": "search.spec.js",
+              "line": 23,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "security.spec.js",
+      "file": "security.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RNF-02 Seguridad básica",
+          "file": "security.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AT-19 A03 Inyección SQL: el login con payload SQL NO debe autenticar",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 30,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js:10:26",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js",
+                          "column": 26,
+                          "line": 10
+                        },
+                        "snippet": " \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Login con SQLi -> status=${res.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m401\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test(\u001b[32m'AT-20 A05 Configuración: la respuesta debe incluir cabeceras de seguridad'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js",
+                            "column": 26,
+                            "line": 10
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n   8 |     });\n   9 |     console.log(`Login con SQLi -> status=${res.status()}`);\n> 10 |     expect(res.status()).toBe(401);\n     |                          ^\n  11 |   });\n  12 |\n  13 |   test('AT-20 A05 Configuración: la respuesta debe incluir cabeceras de seguridad', async ({ request }) => {\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js:10:26"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Login con SQLi -> status=200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:45.461Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\security-RNF-02-Seguridad--c5cf5-load-SQL-NO-debe-autenticar\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\security-RNF-02-Seguridad--c5cf5-load-SQL-NO-debe-autenticar\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js",
+                        "column": 26,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "3efa7971ab9a8dd627a5-bb3042ed01cf07e85899",
+              "file": "security.spec.js",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "AT-20 A05 Configuración: la respuesta debe incluir cabeceras de seguridad",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 44,
+                      "error": {
+                        "message": "Error: Content-Security-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m",
+                        "stack": "Error: Content-Security-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js:23:74",
+                        "location": {
+                          "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js",
+                          "column": 74,
+                          "line": 23
+                        },
+                        "snippet": " \u001b[90m 21 |\u001b[39m     }))\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(h[\u001b[32m'x-content-type-options'\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m'X-Content-Type-Options'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m'nosniff'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(h[\u001b[32m'content-security-policy'\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m'Content-Security-Policy'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(h[\u001b[32m'x-frame-options'\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m'X-Frame-Options'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js",
+                            "column": 74,
+                            "line": 23
+                          },
+                          "message": "Error: Content-Security-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n\n  21 |     }));\n  22 |     expect.soft(h['x-content-type-options'], 'X-Content-Type-Options').toBe('nosniff');\n> 23 |     expect.soft(h['content-security-policy'], 'Content-Security-Policy').toBeTruthy();\n     |                                                                          ^\n  24 |     expect.soft(h['x-frame-options'], 'X-Frame-Options').toBeTruthy();\n  25 |   });\n  26 |\n    at C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js:23:74"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "{\"csp\":null,\"xcto\":\"nosniff\",\"xfo\":\"SAMEORIGIN\",\"hsts\":null}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:45.889Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\security-RNF-02-Seguridad--44921-luir-cabeceras-de-seguridad\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\evidencias\\automatizadas\\artefactos\\security-RNF-02-Seguridad--44921-luir-cabeceras-de-seguridad\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\User\\Downloads\\Trabajo Aseguramiento de calidad\\Final Aseguramiento de la calidad\\pruebas\\tests\\security.spec.js",
+                        "column": 74,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "3efa7971ab9a8dd627a5-83904981265e00fb34f9",
+              "file": "security.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "AT-21 A01 Control de acceso: /api/Users sin token no debe listar usuarios",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "GET /api/Users sin token -> status=401\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T23:49:46.327Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3efa7971ab9a8dd627a5-074062f0d01d5b5c58cf",
+              "file": "security.spec.js",
+              "line": 27,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T23:49:36.429Z",
+    "duration": 9973.835000000001,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

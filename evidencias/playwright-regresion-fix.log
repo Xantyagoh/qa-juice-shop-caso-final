@@ -1,0 +1,178 @@
+
+Running 21 tests using 1 worker
+
+  ok  1 tests\auth.spec.js:13:3 › RF-02 Autenticación (UI) › AT-01 Login válido redirige a la tienda y muestra la sesión (2.4s)
+  ok  2 tests\auth.spec.js:23:3 › RF-02 Autenticación (UI) › AT-02 Login con contraseña incorrecta es rechazado con mensaje claro (1.6s)
+  ok  3 tests\basket-feedback.spec.js:6:3 › RF-04 Carrito (API) › AT-14 Agregar un producto al carrito lo refleja en el contenido del carrito (166ms)
+Usuario B consulta carrito de A -> status=200
+  x   4 tests\basket-feedback.spec.js:25:3 › RF-04 Carrito (API) › AT-15 Un usuario NO puede ver el carrito de otro usuario (control de acceso) (256ms)
+  ok  5 tests\basket-feedback.spec.js:53:3 › RF-05 Feedback (API) - valores límite del comentario › AT-16 Comentario de 160 caracteres (límite superior) es aceptado (108ms)
+comentario 161 -> status=201
+  x   6 tests\basket-feedback.spec.js:58:3 › RF-05 Feedback (API) - valores límite del comentario › AT-17 Comentario de 161 caracteres (límite superior + 1) es rechazado (104ms)
+rating 0 -> status=201
+  x   7 tests\basket-feedback.spec.js:64:3 › RF-05 Feedback (API) - valores límite del comentario › AT-18 Calificación fuera de rango (0) es rechazada (419ms)
+longitud=4 status=400
+  ok  8 tests\registration.spec.js:16:5 › RF-01 Registro - validación de contraseña en el servidor (BVA) › AT-06 Contraseña de 4 caracteres (Límite inferior - 1) -> rechazada (35ms)
+longitud=5 status=201
+  ok  9 tests\registration.spec.js:16:5 › RF-01 Registro - validación de contraseña en el servidor (BVA) › AT-07 Contraseña de 5 caracteres (Límite inferior) -> aceptada (59ms)
+longitud=40 status=201
+  ok 10 tests\registration.spec.js:16:5 › RF-01 Registro - validación de contraseña en el servidor (BVA) › AT-08 Contraseña de 40 caracteres (Límite superior) -> aceptada (53ms)
+longitud=41 status=400
+  ok 11 tests\registration.spec.js:16:5 › RF-01 Registro - validación de contraseña en el servidor (BVA) › AT-09 Contraseña de 41 caracteres (Límite superior + 1) -> rechazada (11ms)
+email inválido status=400
+  ok 12 tests\registration.spec.js:37:5 › RF-01 Registro - validación de correo en el servidor (EP) › AT-10 Correo inválido: sin @ debe ser rechazado (10ms)
+email inválido status=400
+  ok 13 tests\registration.spec.js:37:5 › RF-01 Registro - validación de correo en el servidor (EP) › AT-11 Correo inválido: sin parte local debe ser rechazado (12ms)
+email inválido status=400
+  ok 14 tests\registration.spec.js:37:5 › RF-01 Registro - validación de correo en el servidor (EP) › AT-12 Correo inválido: dominio sin punto debe ser rechazado (16ms)
+  ok 15 tests\registration.spec.js:44:3 › RF-01 Registro - validación de correo en el servidor (EP) › AT-13 Correo duplicado debe ser rechazado (77ms)
+  ok 16 tests\search.spec.js:6:3 › RF-03 Búsqueda de productos (API) › AT-03 Búsqueda con término existente devuelve solo productos relacionados (31ms)
+  ok 17 tests\search.spec.js:16:3 › RF-03 Búsqueda de productos (API) › AT-04 Búsqueda sin coincidencias devuelve lista vacía (16ms)
+Tiempo de respuesta búsqueda: 14 ms
+  ok 18 tests\search.spec.js:23:3 › RF-03 Búsqueda de productos (API) › AT-05 RNF-01: la búsqueda responde en menos de 1000 ms (19ms)
+Login con SQLi -> status=200
+  x  19 tests\security.spec.js:5:3 › RNF-02 Seguridad básica › AT-19 A03 Inyección SQL: el login con payload SQL NO debe autenticar (36ms)
+{"csp":null,"xcto":"nosniff","xfo":"SAMEORIGIN","hsts":null}
+  x  20 tests\security.spec.js:13:3 › RNF-02 Seguridad básica › AT-20 A05 Configuración: la respuesta debe incluir cabeceras de seguridad (58ms)
+GET /api/Users sin token -> status=401
+  ok 21 tests\security.spec.js:27:3 › RNF-02 Seguridad básica › AT-21 A01 Control de acceso: /api/Users sin token no debe listar usuarios (35ms)
+
+
+  1) tests\basket-feedback.spec.js:25:3 › RF-04 Carrito (API) › AT-15 Un usuario NO puede ver el carrito de otro usuario (control de acceso) 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected value: 200
+    Received array: [401, 403]
+
+      34 |     });
+      35 |     console.log(`Usuario B consulta carrito de A -> status=${res.status()}`);
+    > 36 |     expect([401, 403]).toContain(res.status());
+         |                        ^
+      37 |   });
+      38 | });
+      39 |
+        at C:\Users\User\Downloads\Trabajo Aseguramiento de calidad\Final Aseguramiento de la calidad\pruebas\tests\basket-feedback.spec.js:36:24
+
+    Error Context: ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-04-Carr-97dd5--usuario-control-de-acceso-\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-04-Carr-97dd5--usuario-control-de-acceso-\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-04-Carr-97dd5--usuario-control-de-acceso-\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\basket-feedback.spec.js:58:3 › RF-05 Feedback (API) - valores límite del comentario › AT-17 Comentario de 161 caracteres (límite superior + 1) es rechazado 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 400
+    Received: 201
+
+      59 |     const res = await enviarFeedback(request, 161);
+      60 |     console.log(`comentario 161 -> status=${res.status()}`);
+    > 61 |     expect(res.status()).toBe(400);
+         |                          ^
+      62 |   });
+      63 |
+      64 |   test('AT-18 Calificación fuera de rango (0) es rechazada', async ({ request }) => {
+        at C:\Users\User\Downloads\Trabajo Aseguramiento de calidad\Final Aseguramiento de la calidad\pruebas\tests\basket-feedback.spec.js:61:26
+
+    Error Context: ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-05-Feed-e5810-ite-superior-1-es-rechazado\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-05-Feed-e5810-ite-superior-1-es-rechazado\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-05-Feed-e5810-ite-superior-1-es-rechazado\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests\basket-feedback.spec.js:64:3 › RF-05 Feedback (API) - valores límite del comentario › AT-18 Calificación fuera de rango (0) es rechazada 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 400
+    Received: 201
+
+      68 |     });
+      69 |     console.log(`rating 0 -> status=${res.status()}`);
+    > 70 |     expect(res.status()).toBe(400);
+         |                          ^
+      71 |   });
+      72 | });
+      73 |
+        at C:\Users\User\Downloads\Trabajo Aseguramiento de calidad\Final Aseguramiento de la calidad\pruebas\tests\basket-feedback.spec.js:70:26
+
+    Error Context: ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-05-Feed-ded15-era-de-rango-0-es-rechazada\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-05-Feed-ded15-era-de-rango-0-es-rechazada\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\evidencias\automatizadas-regresion-fix\artefactos\basket-feedback-RF-05-Feed-ded15-era-de-rango-0-es-rechazada\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) tests\security.spec.js:5:3 › RNF-02 Seguridad básica › AT-19 A03 Inyección SQL: el login con payload SQL NO debe autenticar 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 401
+    Received: 200
+
+       8 |     });
+       9 |     console.log(`Login con SQLi -> status=${res.status()}`);
+    > 10 |     expect(res.status()).toBe(401);
+         |                          ^
+      11 |   });
+      12 |
+      13 |   test('AT-20 A05 Configuración: la respuesta debe incluir cabeceras de seguridad', async ({ request }) => {
+        at C:\Users\User\Downloads\Trabajo Aseguramiento de calidad\Final Aseguramiento de la calidad\pruebas\tests\security.spec.js:10:26
+
+    Error Context: ..\evidencias\automatizadas-regresion-fix\artefactos\security-RNF-02-Seguridad--c5cf5-load-SQL-NO-debe-autenticar\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\evidencias\automatizadas-regresion-fix\artefactos\security-RNF-02-Seguridad--c5cf5-load-SQL-NO-debe-autenticar\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\evidencias\automatizadas-regresion-fix\artefactos\security-RNF-02-Seguridad--c5cf5-load-SQL-NO-debe-autenticar\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) tests\security.spec.js:13:3 › RNF-02 Seguridad básica › AT-20 A05 Configuración: la respuesta debe incluir cabeceras de seguridad 
+
+    Error: Content-Security-Policy
+
+    expect(received).toBeTruthy()
+
+    Received: undefined
+
+      21 |     }));
+      22 |     expect.soft(h['x-content-type-options'], 'X-Content-Type-Options').toBe('nosniff');
+    > 23 |     expect.soft(h['content-security-policy'], 'Content-Security-Policy').toBeTruthy();
+         |                                                                          ^
+      24 |     expect.soft(h['x-frame-options'], 'X-Frame-Options').toBeTruthy();
+      25 |   });
+      26 |
+        at C:\Users\User\Downloads\Trabajo Aseguramiento de calidad\Final Aseguramiento de la calidad\pruebas\tests\security.spec.js:23:74
+
+    Error Context: ..\evidencias\automatizadas-regresion-fix\artefactos\security-RNF-02-Seguridad--44921-luir-cabeceras-de-seguridad\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\evidencias\automatizadas-regresion-fix\artefactos\security-RNF-02-Seguridad--44921-luir-cabeceras-de-seguridad\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\evidencias\automatizadas-regresion-fix\artefactos\security-RNF-02-Seguridad--44921-luir-cabeceras-de-seguridad\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    tests\basket-feedback.spec.js:25:3 › RF-04 Carrito (API) › AT-15 Un usuario NO puede ver el carrito de otro usuario (control de acceso) 
+    tests\basket-feedback.spec.js:58:3 › RF-05 Feedback (API) - valores límite del comentario › AT-17 Comentario de 161 caracteres (límite superior + 1) es rechazado 
+    tests\basket-feedback.spec.js:64:3 › RF-05 Feedback (API) - valores límite del comentario › AT-18 Calificación fuera de rango (0) es rechazada 
+    tests\security.spec.js:5:3 › RNF-02 Seguridad básica › AT-19 A03 Inyección SQL: el login con payload SQL NO debe autenticar 
+    tests\security.spec.js:13:3 › RNF-02 Seguridad básica › AT-20 A05 Configuración: la respuesta debe incluir cabeceras de seguridad 
+  16 passed (8.8s)

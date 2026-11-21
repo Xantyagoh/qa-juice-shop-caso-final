@@ -161,18 +161,18 @@ ${tabla(['Nivel', 'Qué se prueba', 'Cómo se ejecutó en este trabajo'], [
   ['Aceptación', 'Cumplimiento de los criterios de aceptación', 'Evaluación de cada caso contra el criterio de la sección 4.3 y resumen de métricas.'],
 ])}
 <h2>5.5 Estrategias</h2>
-${tabla(['Estrategia', 'Aplicación'], [
-  ['Funcionales', 'Verificación de RF-01 a RF-05 con casos de caja negra derivados de los requisitos.'],
-  ['No funcionales', 'Rendimiento y fiabilidad (k6), seguridad (SonarQube, ZAP, casos OWASP), usabilidad (mensajes y accesibilidad), mantenibilidad (SonarQube).'],
-  ['Exploratorias', 'Sondeo previo de la API con valores límite y entradas anómalas (por ejemplo contraseñas de 0, 1, 4, 41 y 100 caracteres), cuyo resultado motivó los casos AT-06 a AT-12 y MC-14.'],
-  ['Automatizadas', 'Suite Playwright de 21 casos repetible en una línea de comandos; k6 para carga; contenedores para SonarQube y ZAP.'],
+${tabla(['Estrategia', 'Aplicación', 'Justificación'], [
+  ['Funcionales', 'Verificación de RF-01 a RF-05 con casos de caja negra derivados de los requisitos.', 'Los requisitos funcionales definen el comportamiento de negocio; sin verificarlos no hay base para juzgar el resto.'],
+  ['No funcionales', 'Rendimiento y fiabilidad (k6), seguridad (SonarQube, ZAP, casos OWASP), usabilidad (mensajes y accesibilidad), mantenibilidad (SonarQube).', 'Los RNF son criterios de aceptación medibles; rendimiento y seguridad no se detectan con pruebas funcionales.'],
+  ['Exploratorias', 'Sondeo previo de la API con valores límite y entradas anómalas (por ejemplo contraseñas de 0, 1, 4, 41 y 100 caracteres), cuyo resultado motivó los casos AT-06 a AT-12 y MC-14.', 'Las reglas que valida realmente el servidor no estaban documentadas; el sondeo mostró dónde concentrar los límites.'],
+  ['Automatizadas', 'Suite Playwright de 21 casos repetible en una línea de comandos; k6 para carga; contenedores para SonarQube y ZAP.', 'Los casos de validación son repetitivos y baratos de ejecutar; automatizarlos permite regresión (se usó para verificar DEF-001 y DEF-002).'],
 ])}
 <h2>5.6 Técnicas de diseño aplicadas</h2>
 <ul>
-  <li><strong>Partición de equivalencia:</strong> clases válida e inválidas de correo (sin @, sin parte local, dominio sin punto, duplicado), contraseña, credenciales y búsqueda (con y sin resultados).</li>
-  <li><strong>Valores límite:</strong> contraseña en 4, 5, 40 y 41 caracteres; comentario en 160 y 161; calificación en 0.</li>
-  <li><strong>Pruebas basadas en riesgo / OWASP Top 10:</strong> inyección SQL, XSS, control de acceso, configuración de seguridad.</li>
-  <li><strong>Tabla de decisión</strong> (login): combinaciones de correo y contraseña válidos/inválidos que determinan el resultado esperado (ver sección 6.3).</li>
+  <li><strong>Partición de equivalencia:</strong> clases válida e inválidas de correo (sin @, sin parte local, dominio sin punto, duplicado), contraseña, credenciales y búsqueda (con y sin resultados). <em>Por qué:</em> reduce el número de pruebas al agrupar entradas que el sistema trata igual.</li>
+  <li><strong>Valores límite:</strong> contraseña en 4, 5, 40 y 41 caracteres; comentario en 160 y 161; calificación en 0. <em>Por qué:</em> los errores de validación se concentran en los bordes de los rangos.</li>
+  <li><strong>Pruebas basadas en riesgo / OWASP Top 10:</strong> inyección SQL, XSS, control de acceso, configuración de seguridad. <em>Por qué:</em> login, búsqueda y datos de usuario concentran el mayor impacto si fallan.</li>
+  <li><strong>Tabla de decisión</strong> (login): combinaciones de correo y contraseña válidos/inválidos que determinan el resultado esperado (ver sección 6.1). <em>Por qué:</em> el login combina condiciones cuyas combinaciones cambian el resultado.</li>
 </ul>
 <h2>5.7 Criterios de aprobación y suspensión</h2>
 <ul>

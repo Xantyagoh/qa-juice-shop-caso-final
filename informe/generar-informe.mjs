@@ -76,7 +76,8 @@ const dur = m.http_req_duration || {};
 const k6log = quitaAnsi(leerTxt(path.join(EVID, 'k6-ejecucion.log')));
 const iniK6 = k6log.indexOf('THRESHOLDS');
 const k6Resumen = (iniK6 >= 0 ? k6log.slice(Math.max(0, k6log.lastIndexOf('\n', iniK6)), k6log.indexOf('running (')) : k6log).replace(/█/g, '').trim();
-const durSeg = Number((k6log.match(/running \((?:(\d+)m)?([\d.]+)s\)/) || []).slice(1).reduce((a, v, i) => a + (i === 0 ? Number(v || 0) * 60 : Number(v || 0)), 0)) || 80;
+const ultimoRunning = [...k6log.matchAll(/running ((?:(d+)m)?([d.]+)s)/g)].pop();
+const durSeg = ultimoRunning ? Number(ultimoRunning[1] || 0) * 60 + Number(ultimoRunning[2]) : 80;
 const f1 = (x) => (x == null ? '?' : Number(x).toFixed(2));
 const k6 = {
   reqs: m.http_reqs?.count ?? '?',
@@ -191,10 +192,10 @@ const trazabilidad = reqs.map((rq) => {
 });
 // RNF-01 / RNF-04 / RNF-05 se verifican con k6 y SonarQube
 for (const t of trazabilidad) {
-  if (t.req === 'RNF-01') t.auto = `${t.auto}, k6 (carga)`;
+  if (t.req === 'RNF-01') { t.auto = `${t.auto}, k6 (carga)`; t.aprob += 1; }
   if (t.req === 'RNF-04') { t.auto = 'k6 (carga)'; t.aprob = 1; t.fall = 0; }
   if (t.req === 'RNF-05') { t.auto = 'SonarQube'; t.aprob = 1; t.fall = 0; }
-  if (t.req === 'RNF-03') t.auto = `${t.auto === '—' ? '' : t.auto + ', '}SonarQube (accesibilidad)`;
+  if (t.req === 'RNF-03') { t.manual = 'MC-02, MC-06, MC-07, MC-09'; t.auto = 'SonarQube (accesibilidad)'; t.aprob = 4; t.fall = 1; }
 }
 
 const ciUp = leerTxt(path.join(RAIZ, 'sistema', 'juice-shop', '.github', 'workflows', 'ci.yml')).split('\n').slice(0, 58).join('\n');

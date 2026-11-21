@@ -122,7 +122,7 @@ ${tabla(['Métrica', 'Valor medido', 'Umbral', 'Resultado'], [
 <h2>7.5 Pruebas no funcionales</h2>
 ${tabla(['Atributo', 'Evidencia', 'Resultado'], [
   ['Rendimiento', `AT-05: búsqueda individual en ${ctx.at05ms}; prueba de carga k6 (7.4)`, 'Cumple RNF-01'],
-  ['Estabilidad / fiabilidad', `Prueba de carga de ${ctx.k6.durSeg} s con 0 errores y 2 verificaciones por petición al 100 %; el sistema permaneció disponible durante todas las corridas de la jornada`, 'Cumple RNF-04'],
+  ['Estabilidad / fiabilidad', `Prueba de carga de ${ctx.k6.durSeg} s con 20 usuarios: ${ctx.k6.fallos} de errores HTTP y 2 verificaciones por petición al 100 %. La aplicación no falló durante las pruebas; la única caída de la jornada fue del motor Docker del equipo por falta de memoria, no del sistema evaluado (sección 12.3)`, 'Cumple RNF-04'],
   ['Usabilidad', 'MC-02, MC-06, MC-07, MC-09: mensajes claros ("Password must be 5-40 characters long.", "Email address is not valid.", "Passwords do not match", "Invalid email or password."). Pero SonarQube detecta 9 campos sin etiqueta asociada y 3 tablas sin encabezados (DEF-014).', 'Cumple parcialmente RNF-03'],
 ])}
 

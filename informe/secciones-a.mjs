@@ -199,7 +199,8 @@ ${tabla(['#', 'Actividad', 'Responsable (propuesto)', 'Fecha', 'Estado'], [
   ['8', 'Análisis dinámico (OWASP ZAP)', 'Heyner Mena', '15/11/2026', 'Completada'],
   ['9', 'Gestión de defectos, corrección y verificación', 'Santiago Betancur', '15/11/2026', 'Completada'],
   ['10', 'Métricas, reflexión e informe', 'Carlos Mendez', '15–16/11/2026', 'Completada'],
-  ['11', 'Revisión del equipo y repetición manual de casos críticos', 'Todos', '16–20/11/2026', 'Pendiente'],
+  ['11a', 'Reverificación de DEF-001 (MC-14) por API: sigue abierto', 'Santiago Betancur', '21/11/2026', 'Completada'],
+  ['11b', 'Repetición manual de MC-15 y MC-16 por el equipo', 'Todos', '21–22/11/2026', 'Pendiente'],
   ['12', 'Entrega en Microsoft Teams (PDF)', 'Todos', '22/11/2026 11:59 PM', 'Pendiente'],
 ])}
 <h2>5.10 Riesgos del plan</h2>

@@ -31,7 +31,7 @@ const deudaTxt = `${Math.floor(mins / 60)} h ${mins % 60} min`;
 
 // ---------- Casos manuales ----------
 const manualDef = { 'MC-14': 'DEF-001', 'MC-15': 'DEF-003', 'MC-16': 'DEF-008' };
-const manual = (leerJson(path.join(EVID, 'manuales', 'resultados-manuales.json'), []) || []).map((c) => ({ ...c, obtenido: String(c.obtenido).replace(/..+/g, '.'), defecto: manualDef[c.id] }));
+const manual = (leerJson(path.join(EVID, 'manuales', 'resultados-manuales.json'), []) || []).map((c) => ({ ...c, obtenido: String(c.obtenido).replace(/\.{2,}/g, '.'), defecto: manualDef[c.id] }));
 
 // ---------- Casos automatizados ----------
 const autoDef = { 'AT-06': 'DEF-001', 'AT-09': 'DEF-001', 'AT-10': 'DEF-002', 'AT-11': 'DEF-002', 'AT-12': 'DEF-002', 'AT-15': 'DEF-004', 'AT-17': 'DEF-005', 'AT-18': 'DEF-006', 'AT-19': 'DEF-003', 'AT-20': 'DEF-007' };

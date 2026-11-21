@@ -9,6 +9,7 @@ export const INTEGRANTES = [
 ];
 export const FECHA = '15 de noviembre de 2026';
 export const REPO = 'https://github.com/juice-shop/juice-shop';
+export const REPO_EQUIPO = 'https://github.com/Xantyagoh/qa-juice-shop-caso-final';
 
 export const REQ_FUNCIONALES = [
   ['RF-01', 'Registro de usuarios', 'El sistema permite registrar usuarios con correo de formato válido y único, contraseña de 5 a 40 caracteres, confirmación idéntica y pregunta de seguridad.', 'Con datos válidos se crea la cuenta y se redirige al login; con datos inválidos se rechaza (en la interfaz y también en el servidor).'],

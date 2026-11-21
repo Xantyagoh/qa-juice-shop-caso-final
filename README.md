@@ -39,4 +39,4 @@ OWASP ZAP (análisis dinámico): `zaproxy/zap-stable` con `zap-full-scan.py -t h
 
 - `pruebas/.credenciales-locales.txt` guarda la contraseña y el token de la instancia **local** de SonarQube. No lo publiques; está en `.gitignore`.
 - Juice Shop contiene vulnerabilidades intencionales; ver la aclaración en la sección 2.3 del informe.
-- Antes de entregar: el equipo debe repetir manualmente los casos críticos (MC-14 a MC-16), ajustar los roles del cronograma (sección 5.9) y la sección 12.5 (trabajo en equipo), y publicar `pruebas/` y `evidencias/` en un repositorio propio para dar el enlace funcional que pide el enunciado.
+- Antes de entregar: el equipo debe repetir manualmente los casos críticos (MC-14 a MC-16), ajustar los roles del cronograma (sección 5.9) y la sección 12.5 (trabajo en equipo), y revisar que el enlace del repositorio (anexo 13.1) siga funcionando.

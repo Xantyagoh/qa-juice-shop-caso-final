@@ -1,7 +1,7 @@
 // Secciones 10 a 13: seguridad, métricas, reflexión y anexos.
 import path from 'node:path';
 import { esc, tabla, insignia, fig, EVID, leerTxt, RAIZ, pct } from './lib.mjs';
-import { REPO } from './secciones-a.mjs';
+import { REPO, REPO_EQUIPO } from './secciones-a.mjs';
 
 const owaspSonar = {
   'typescript:S6268': 'A03 Inyección (XSS)',
@@ -186,12 +186,13 @@ export function seccion13(ctx) {
 <h1>13. Anexos</h1>
 <h2>13.1 Enlaces</h2>
 <ul>
+  <li><strong>Repositorio del equipo</strong> (scripts, evidencias, registro de defectos y este informe): <a href="${REPO_EQUIPO}">${REPO_EQUIPO}</a>.</li>
   <li>Repositorio del sistema bajo prueba: <a href="${REPO}">${REPO}</a> (commit analizado <code>266448a</code>, 08/11/2026).</li>
   <li>Imagen Docker utilizada: <a href="https://hub.docker.com/r/bkimminich/juice-shop">hub.docker.com/r/bkimminich/juice-shop</a>.</li>
   <li>Guía oficial del proyecto: <a href="https://pwning.owasp-juice.shop">pwning.owasp-juice.shop</a>.</li>
   <li>Pipeline CI/CD del proyecto: <a href="${REPO}/blob/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>.</li>
 </ul>
-<p class="nota">Los scripts, configuraciones y reportes propios de este trabajo están en la carpeta del entregable (<code>pruebas/</code> y <code>evidencias/</code>). Antes de la entrega, el grupo debe publicarlos en un repositorio propio y reemplazar esta nota por su enlace.</p>
+<p class="nota">Los scripts, configuraciones y reportes propios de este trabajo están en el repositorio del equipo, en las carpetas <code>pruebas/</code> y <code>evidencias/</code>. El README explica cómo reproducir las pruebas.</p>
 <h2>13.2 Estructura de los entregables</h2>
 <pre class="codigo">${esc(`Final Aseguramiento de la calidad/
 ├── pruebas/

@@ -2,10 +2,10 @@
 import { esc, tabla } from './lib.mjs';
 
 export const INTEGRANTES = [
-  'Santiago Betancur Rendón',
-  'Diego Andrés Alzate Martínez',
-  'Heyner Mena Capaña',
-  'Carlos David Méndez Aristizábal',
+  'Santiago Betancur',
+  'Diego Alzate',
+  'Carlos Mendez',
+  'Heyner Mena',
 ];
 export const FECHA = '22 de noviembre de 2026';
 export const REPO = 'https://github.com/juice-shop/juice-shop';
@@ -194,11 +194,11 @@ ${tabla(['#', 'Actividad', 'Responsable (propuesto)', 'Fecha', 'Estado'], [
   ['3', 'Diseño de casos (EP, BVA, tabla de decisión)', 'Santiago Betancur', '15/11/2026', 'Completada'],
   ['4', 'Ejecución de casos manuales y capturas', 'Heyner Mena', '15/11/2026', 'Completada'],
   ['5', 'Automatización (Playwright) y regresión', 'Diego Alzate', '15/11/2026', 'Completada'],
-  ['6', 'Prueba de carga (k6)', 'Carlos Méndez', '15/11/2026', 'Completada'],
+  ['6', 'Prueba de carga (k6)', 'Carlos Mendez', '15/11/2026', 'Completada'],
   ['7', 'Análisis estático (SonarQube) y cobertura', 'Heyner Mena', '15/11/2026', 'Completada'],
   ['8', 'Análisis dinámico (OWASP ZAP)', 'Heyner Mena', '15/11/2026', 'Completada'],
   ['9', 'Gestión de defectos, corrección y verificación', 'Santiago Betancur', '15/11/2026', 'Completada'],
-  ['10', 'Métricas, reflexión e informe', 'Carlos Méndez', '15–16/11/2026', 'Completada'],
+  ['10', 'Métricas, reflexión e informe', 'Carlos Mendez', '15–16/11/2026', 'Completada'],
   ['11', 'Revisión del equipo y repetición manual de casos críticos', 'Todos', '16–20/11/2026', 'Pendiente'],
   ['12', 'Entrega en Microsoft Teams (PDF)', 'Todos', '22/11/2026 11:59 PM', 'Pendiente'],
 ])}

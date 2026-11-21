@@ -7,7 +7,7 @@ export const INTEGRANTES = [
   'Heyner Mena Capaña',
   'Carlos David Méndez Aristizábal',
 ];
-export const FECHA = '15 de noviembre de 2026';
+export const FECHA = '22 de noviembre de 2026';
 export const REPO = 'https://github.com/juice-shop/juice-shop';
 export const REPO_EQUIPO = 'https://github.com/Xantyagoh/qa-juice-shop-caso-final';
 

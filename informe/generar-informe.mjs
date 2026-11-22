@@ -231,7 +231,7 @@ fs.writeFileSync(path.join(EVID, 'registro-defectos.csv'), '﻿' + csv, 'utf8');
 const css = leerTxt(path.join(AQUI, 'estilos.css'));
 const indice = ['1. Portada', '2. Introducción', '3. Contexto del proyecto', '4. Requerimientos y criterios de calidad', '5. Plan de pruebas', '6. Diseño de casos de prueba', '7. Ejecución y evidencias de pruebas', '8. Automatización de pruebas', '9. Gestión de defectos', '10. Pruebas de seguridad', '11. Métricas de calidad', '12. Reflexión y lecciones aprendidas', '13. Anexos'];
 const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Caso práctico final - Aseguramiento de la calidad</title><style>${css}</style></head><body>
-${seccion1y2().replace('</section>\n\n<section>', `<div class="indice"><h3>Contenido</h3><ol>${indice.map((i) => `<li>${esc(i.replace(/^\d+\.\s*/, ''))}</li>`).join('')}</ol></div></section>\n\n<section>`)}
+${seccion1y2().replace('</section>\n\n<section>', `</section>\n\n<div class="indice"><h3>Contenido</h3><ul>${indice.map((i) => `<li>${esc(i)}</li>`).join('')}</ul></div>\n\n<section>`)}
 ${seccion3()}
 ${seccion4(ctx)}
 ${seccion5()}

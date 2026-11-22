@@ -51,4 +51,10 @@ figcaption { font-size: 8pt; color: #475569; text-align: center; margin-top: 2px
 .portada-tabla { width: 86%; margin: 0 auto; font-size: 10pt; text-align: left; }
 .portada-tabla th { width: 28%; background: #e0f2fe; }
 .indice { text-align: left; width: 86%; margin: 26px auto 0; page-break-before: always; }
-.indice ol { columns: 2; font-size: 10pt; }
+/* Lista simple (sin <ol>): el número ya viene escrito en cada entrada ("1. Portada"), para no
+   depender del contador automático del navegador, que se duplicaba al combinarse con "columns". */
+.indice ul { columns: 2; font-size: 10pt; list-style: none; padding-left: 0; margin: 0; }
+.indice li { margin: 2px 0; break-inside: avoid; }
+/* Evita que la sección siguiente al índice (Introducción) fuerce otra página en blanco: que
+   continúe en la misma página 2, debajo del índice, en vez de dejarla casi vacía. */
+.indice + section { page-break-before: avoid; }

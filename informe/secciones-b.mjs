@@ -1,6 +1,6 @@
 // Secciones 6 a 9: diseño de casos, ejecución y evidencias, automatización y gestión de defectos.
 import path from 'node:path';
-import { esc, tabla, insignia, fig, url, existe, leerTxt, EVID, RAIZ, pct } from './lib.mjs';
+import { esc, tabla, insignia, fig, url, existe, leerTxt, EVID, RAIZ, pct, cant } from './lib.mjs';
 import { DEFECTOS_BASE, CICLO_DEF001 } from './datos-defectos.mjs';
 
 const lista = (arr) => `<ol>${arr.map((p) => `<li>${esc(p)}</li>`).join('')}</ol>`;
@@ -59,7 +59,7 @@ ${manuales}
 ${autos}
 
 <h2>6.4 Matriz de trazabilidad requisito–casos</h2>
-${tabla(['Requisito', 'Casos manuales', 'Casos automatizados', 'Resultado'], trazab.map((t) => [`<strong>${t.req}</strong>`, t.manual, t.auto, `${t.aprob} aprobados · ${t.fall} fallidos`]))}
+${tabla(['Requisito', 'Casos manuales', 'Casos automatizados', 'Resultado'], trazab.map((t) => [`<strong>${t.req}</strong>`, t.manual, t.auto, `${cant(t.aprob, 'aprobado')} · ${cant(t.fall, 'fallido')}`]))}
 </section>`;
 }
 
@@ -87,15 +87,15 @@ export function seccion7(ctx) {
 <section>
 <h1>7. Ejecución y evidencias de pruebas</h1>
 <h2>7.1 Entorno y método de ejecución</h2>
-<p>Todas las pruebas se ejecutaron el 15 de noviembre de 2026 contra la misma instancia: <code>bkimminich/juice-shop:latest</code> (versión 20.4.0-SNAPSHOT) en Docker, puerto 3100, con datos de ejemplo recién creados. Los logs, reportes y capturas citados están en la carpeta <code>evidencias/</code> y pueden regenerarse con los scripts de <code>pruebas/</code>.</p>
+<p>La línea base de todas las pruebas (manuales, automatizadas, carga, SonarQube, ZAP y cobertura) se ejecutó el 15 de noviembre de 2026 contra la misma instancia: <code>bkimminich/juice-shop:latest</code> (versión 20.4.0-SNAPSHOT) en Docker, puerto 3100, con datos de ejemplo recién creados. Los defectos DEF-001 (MC-14) y DEF-003/DEF-008 (MC-15, MC-16) se reverificaron después, el 21 y el 22 de noviembre respectivamente, contra la misma versión del sistema; esas fechas quedan registradas en el cronograma (5.9) y en las evidencias de cada caso (7.2). Los logs, reportes y capturas citados están en la carpeta <code>evidencias/</code> y pueden regenerarse con los scripts de <code>pruebas/</code>.</p>
 <p class="nota">Los puertos 3000 y 9000, habituales para estas herramientas, estaban ocupados por otros servicios de la máquina; por eso Juice Shop usa 3100 y SonarQube 9100.</p>
 
 <h2>7.2 Pruebas funcionales manuales: capturas y comportamiento observado</h2>
-<p>Resultado: <strong>${ctx.resumen.manAprob} de ${ctx.manual.length}</strong> casos aprobados y <strong>${ctx.resumen.manFall}</strong> fallidos.</p>
+<p>Resultado: <strong>${cant(ctx.resumen.manAprob, 'caso aprobado', 'casos aprobados')} de ${ctx.manual.length}</strong> y <strong>${cant(ctx.resumen.manFall, 'fallido')}</strong>.</p>
 ${imgs}
 
 <h2>7.3 Pruebas funcionales automatizadas</h2>
-<p>Resultado de la línea base: <strong>${ctx.resumen.autAprob} de ${ctx.auto.length}</strong> casos aprobados y <strong>${ctx.resumen.autFall}</strong> fallidos, en ${ctx.resumen.autSeg} s de ejecución.</p>
+<p>Resultado de la línea base: <strong>${cant(ctx.resumen.autAprob, 'caso aprobado', 'casos aprobados')} de ${ctx.auto.length}</strong> y <strong>${cant(ctx.resumen.autFall, 'fallido')}</strong>, en ${ctx.resumen.autSeg} s de ejecución.</p>
 ${tabla(['Caso', 'Nombre', 'Requisito', 'Estado', 'Duración'], filasAuto)}
 <h3>Evidencia de fallos encontrados</h3>
 ${tabla(['Caso', 'Resultado esperado', 'Resultado obtenido (real)', 'Defecto'], fallosAuto)}
@@ -127,7 +127,7 @@ ${tabla(['Atributo', 'Evidencia', 'Resultado'], [
 ])}
 
 <h2>7.6 Verificación de la corrección (regresión)</h2>
-<p>Tras corregir DEF-001 y DEF-002 en una instancia aislada (puerto 3200) se repitió la suite completa. Resultado: <strong>${ctx.fix.aprob} aprobados</strong> y <strong>${ctx.fix.fall} fallidos</strong> (frente a ${ctx.resumen.autAprob} y ${ctx.resumen.autFall} de la línea base). Pasaron a verde AT-06, AT-09, AT-10, AT-11 y AT-12; no apareció ninguna regresión (AT-07, AT-08, AT-13 siguen aprobados). Los casos que siguen fallando (${ctx.fix.fallIds.join(', ')}) corresponden a defectos aún abiertos.</p>
+<p>Tras corregir DEF-001 y DEF-002 en una instancia aislada (puerto 3200) se repitió la suite completa. Resultado: <strong>${cant(ctx.fix.aprob, 'aprobado')}</strong> y <strong>${cant(ctx.fix.fall, 'fallido')}</strong> (frente a ${ctx.resumen.autAprob} y ${ctx.resumen.autFall} de la línea base). Pasaron a verde AT-06, AT-09, AT-10, AT-11 y AT-12; no apareció ninguna regresión (AT-07, AT-08, AT-13 siguen aprobados). Los casos que siguen fallando (${ctx.fix.fallIds.join(', ')}) corresponden a defectos aún abiertos.</p>
 ${tabla(['Caso', 'Línea base (3100)', 'Con corrección (3200)'], ctx.fix.comparacion.map((f) => [esc(f.id), insignia(f.base), insignia(f.fix)]))}
 
 <h2>7.7 Análisis de resultados</h2>
@@ -176,7 +176,7 @@ for (const c of casosContrasena) {
   });
 }`)}</pre>
 <h2>8.3 Evidencia de ejecución y resultados</h2>
-<p>Resultados de la línea base: <strong>${ctx.resumen.autAprob} aprobados / ${ctx.resumen.autFall} fallidos de ${ctx.auto.length}</strong> (${ctx.resumen.autSeg} s). Los fallos no son errores del script: se verificó que cada uno se debe a una respuesta real del sistema distinta de la esperada (por ejemplo, HTTP 201 en lugar de 400). La corrida de regresión con la corrección de DEF-001/002 se documenta en 7.6.</p>
+<p>Resultados de la línea base: <strong>${cant(ctx.resumen.autAprob, 'aprobado')} / ${cant(ctx.resumen.autFall, 'fallido')} de ${ctx.auto.length}</strong> (${ctx.resumen.autSeg} s). Los fallos no son errores del script: se verificó que cada uno se debe a una respuesta real del sistema distinta de la esperada (por ejemplo, HTTP 201 en lugar de 400). La corrida de regresión con la corrección de DEF-001/002 se documenta en 7.6.</p>
 <pre class="log">${esc(ctx.logPlaywrightResumen)}</pre>
 <h2>8.4 Integración CI/CD</h2>
 <p><strong>El proyecto sí posee pipeline.</strong> Juice Shop incluye en su repositorio <code>.github/workflows/ci.yml</code> (“CI/CD Pipeline”), que en GitHub Actions ejecuta lint, pruebas unitarias del frontend y del servidor con cobertura, pruebas de integración de API y publicación de la cobertura, además de análisis CodeQL (<code>codeql-analysis.yml</code>). Fragmento real del archivo:</p>
@@ -210,7 +210,7 @@ export function seccion9(ctx) {
 <h2>9.1 Herramienta utilizada</h2>
 <p>Los defectos se registraron en un <strong>registro estructurado propio</strong> (<code>evidencias/registro-defectos.csv</code>), con los campos de una incidencia de Jira o de GitHub Issues (identificador, descripción, severidad, prioridad, estado, evidencia, requisito, categoría OWASP), de modo que puede importarse a cualquiera de ellas. No se usó una herramienta en línea porque el grupo no cuenta con un proyecto compartido para este trabajo; se recomienda migrarlo a GitHub Issues al publicar el repositorio.</p>
 <h2>9.2 Listado y clasificación</h2>
-<p>Se registraron <strong>${defs.length} defectos</strong>: ${cont('Crítico')} críticos, ${cont('Alto')} altos, ${cont('Medio')} medios y ${cont('Bajo')} bajos. Criterios: <em>Crítico</em> = compromete la cuenta del administrador o los datos de todos los usuarios sin autenticación; <em>Alto</em> = permite acceso indebido o ejecución de código con poco esfuerzo; <em>Medio</em> = incumple una regla de negocio o debilita la defensa; <em>Bajo</em> = impacto menor o de buenas prácticas.</p>
+<p>Se registraron <strong>${cant(defs.length, 'defecto')}</strong>: ${cant(cont('Crítico'), 'crítico')}, ${cant(cont('Alto'), 'alto')}, ${cant(cont('Medio'), 'medio')} y ${cant(cont('Bajo'), 'bajo')}. Criterios: <em>Crítico</em> = compromete la cuenta del administrador o los datos de todos los usuarios sin autenticación; <em>Alto</em> = permite acceso indebido o ejecución de código con poco esfuerzo; <em>Medio</em> = incumple una regla de negocio o debilita la defensa; <em>Bajo</em> = impacto menor o de buenas prácticas.</p>
 ${tabla(['ID', 'Descripción', 'Severidad', 'Prioridad', 'Estado', 'Evidencia'], filas, 'defectos')}
 <h2>9.3 Ciclo de vida de un defecto representativo (DEF-001)</h2>
 <p>Se eligió DEF-001 porque pudo recorrerse hasta la verificación con evidencia real: se detectó, se reprodujo, se corrigió en una instancia aislada y se verificó con pruebas de regresión.</p>

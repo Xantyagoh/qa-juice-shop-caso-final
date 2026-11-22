@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { chromium } from '../pruebas/node_modules/@playwright/test/index.mjs';
 import { PDFDocument } from '../pruebas/node_modules/pdf-lib/cjs/index.js';
-import { AQUI, RAIZ, EVID, esc, leerJson, leerTxt, existe, url, quitaAnsi, aplanaPlaywright, pct } from './lib.mjs';
+import { AQUI, RAIZ, EVID, esc, leerJson, leerTxt, existe, url, quitaAnsi, aplanaPlaywright, pct, cant } from './lib.mjs';
 import { CASOS_AUTO } from './datos-auto.mjs';
 import { DEFECTOS_BASE } from './datos-defectos.mjs';
 import { seccion1y2, seccion3, seccion4, seccion5, REQ_FUNCIONALES, REQ_NO_FUNCIONALES, INTEGRANTES, FECHA } from './secciones-a.mjs';
@@ -25,7 +25,7 @@ for (const v of vulns) {
 }
 const sonarVulnPorRegla = Object.values(porRegla).sort((a, b) => b.n - a.n);
 const sev = (s) => vulns.filter((v) => v.severity === s).length;
-const sonarVulnPorSev = `Por severidad: ${sev('BLOCKER')} bloqueantes, ${sev('CRITICAL')} críticas, ${sev('MAJOR')} mayores y ${sev('MINOR')} menores`;
+const sonarVulnPorSev = `Por severidad: ${cant(sev('BLOCKER'), 'bloqueante', 'bloqueantes')}, ${cant(sev('CRITICAL'), 'crítica', 'críticas')}, ${cant(sev('MAJOR'), 'mayor', 'mayores')} y ${cant(sev('MINOR'), 'menor', 'menores')}`;
 const sonarBugsWeb = issues.filter((i) => i.type === 'BUG' && i.rule.startsWith('Web:')).length;
 const mins = Number(sonar.sqale_index || 0);
 const deudaTxt = `${Math.floor(mins / 60)} h ${mins % 60} min`;

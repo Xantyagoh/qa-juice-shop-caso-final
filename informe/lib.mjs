@@ -20,6 +20,9 @@ export const existe = (p) => fs.existsSync(p);
 export const url = (p) => pathToFileURL(p).href;
 export const pct = (a, b, d = 1) => (b ? ((a / b) * 100).toFixed(d) : '0.0') + ' %';
 
+/** Concordancia de número: cant(1, 'crítico') -> "1 crítico"; cant(3, 'crítico') -> "3 críticos". */
+export const cant = (n, singular, pluralForm = singular + 's') => `${n} ${n === 1 ? singular : pluralForm}`;
+
 /** Aplana los resultados de Playwright (JSON reporter) a una lista de { titulo, estado, duracion, stdout, error, adjuntos }. */
 export function aplanaPlaywright(json) {
   const out = [];

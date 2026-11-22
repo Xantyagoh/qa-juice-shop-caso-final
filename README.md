@@ -10,7 +10,7 @@ Informe entregable: [`Informe_Caso_Practico_Final.pdf`](Informe_Caso_Practico_Fi
 | `pruebas/` | Scripts: Playwright (`tests/`), casos manuales guiados (`manual/`), k6 (`rendimiento/`), cobertura (`cobertura/`), parche de DEF-001/002 (`correcciones/`), CI propuesto (`ci/qa.yml`), `sonar-project.properties` |
 | `evidencias/` | Capturas, reportes HTML/JSON, logs, informes de ZAP y SonarQube, `registro-defectos.csv` |
 | `informe/` | Generador del PDF (lee los resultados reales de `evidencias/`) |
-| `sistema/juice-shop/` | Clon del repositorio analizado (commit `266448a`) |
+| `sistema/juice-shop/` | Clon local del repositorio analizado (commit `266448a`); **no está en este repositorio** (excluido por `.gitignore`, ver nota abajo) |
 
 ## Cómo reproducir
 
@@ -38,5 +38,7 @@ OWASP ZAP (análisis dinámico): `zaproxy/zap-stable` con `zap-full-scan.py -t h
 ## Notas importantes
 
 - `pruebas/.credenciales-locales.txt` guarda la contraseña y el token de la instancia **local** de SonarQube. No lo publiques; está en `.gitignore`.
+- `sistema/` tampoco está en este repositorio: es el clon del sistema bajo prueba, público en <https://github.com/juice-shop/juice-shop>, por lo que no hace falta duplicarlo aquí. El comando `git clone` del repositorio original recrea esa carpeta si se necesita volver a ejecutar algo contra el código fuente.
 - Juice Shop contiene vulnerabilidades intencionales; ver la aclaración en la sección 2.3 del informe.
-- Antes de entregar: el equipo debe repetir manualmente los casos críticos (MC-14 a MC-16), ajustar los roles del cronograma (sección 5.9) y la sección 12.5 (trabajo en equipo), y revisar que el enlace del repositorio (anexo 13.1) siga funcionando.
+- MC-14 a MC-16 ya se reverificaron a mano el 21 y el 22 de noviembre (sección 9.3 y cronograma 5.9 del informe); si el sistema cambia de versión, conviene repetirlos de nuevo antes de reutilizar este material.
+- Si se edita el informe, regenerar el PDF con `node informe/generar-informe.mjs` y subir el cambio con commit y push.

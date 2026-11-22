@@ -1,6 +1,6 @@
 // Secciones 10 a 13: seguridad, métricas, reflexión y anexos.
 import path from 'node:path';
-import { esc, tabla, insignia, fig, EVID, leerTxt, RAIZ, pct } from './lib.mjs';
+import { esc, tabla, insignia, fig, EVID, leerTxt, RAIZ, pct, cant } from './lib.mjs';
 import { REPO, REPO_EQUIPO } from './secciones-a.mjs';
 
 const owaspSonar = {
@@ -84,7 +84,7 @@ export function seccion11(ctx) {
 <h2>11.1 Indicadores (KPI) definidos e interpretados</h2>
 ${tabla(['KPI', 'Definición', 'Valor', 'Interpretación'], [
   ['Casos ejecutados', 'Manuales + automatizados', `${r.totalCasos}`, 'Se ejecutó el 100 % de los casos diseñados.'],
-  ['Casos aprobados / fallidos', 'Estado final de cada caso', `${r.totalAprob} aprobados (${pct(r.totalAprob, r.totalCasos)}) · ${r.totalFall} fallidos (${pct(r.totalFall, r.totalCasos)})`, 'Los fallidos no son ruido: cada uno se sustenta en un defecto (DEF-001 a DEF-008). Un porcentaje de fallo alto es esperable porque varios casos se diseñaron para sondear riesgos de seguridad.'],
+  ['Casos aprobados / fallidos', 'Estado final de cada caso', `${cant(r.totalAprob, 'aprobado')} (${pct(r.totalAprob, r.totalCasos)}) · ${cant(r.totalFall, 'fallido')} (${pct(r.totalFall, r.totalCasos)})`, 'Los fallidos no son ruido: cada uno se sustenta en un defecto (DEF-001 a DEF-008). Un porcentaje de fallo alto es esperable porque varios casos se diseñaron para sondear riesgos de seguridad.'],
   ['Cobertura de requisitos', 'Requisitos con al menos un caso / total', '10 de 10 (100 %)', 'RF-01 a RF-05 y RNF-01 a RNF-05 tienen casos asociados (matriz 6.4).'],
   ['Cobertura de código (servidor)', 'Sentencias cubiertas por la suite unitaria propia del proyecto (nyc)', ctx.cobertura.texto, 'Cobertura moderada: más de la mitad del código del servidor no se ejercita con pruebas unitarias. Nuestras pruebas de caja negra no miden cobertura de código. Dos pruebas unitarias del reto jwtForgedChallenge fallan en nuestro ambiente; no se investigaron (el repositorio no trae lockfile, por lo que <code>npm install</code> pudo instalar dependencias más nuevas que las del proyecto: es una hipótesis sin verificar).'],
   ['Cobertura según SonarQube', 'Coverage global importado (solo servidor)', `${s.coverage} %`, 'Es menor que la cobertura del servidor porque el denominador incluye el frontend, cuyas pruebas no se ejecutaron en este trabajo.'],

@@ -8,6 +8,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.65.1"
+    "@playwright/test": "^1.65.1",
+    "pdf-lib": "^1.17.1"
   }
 }

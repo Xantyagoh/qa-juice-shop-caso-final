@@ -3,10 +3,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { chromium } from '../pruebas/node_modules/@playwright/test/index.mjs';
+import { PDFDocument } from '../pruebas/node_modules/pdf-lib/cjs/index.js';
 import { AQUI, RAIZ, EVID, esc, leerJson, leerTxt, existe, url, quitaAnsi, aplanaPlaywright, pct } from './lib.mjs';
 import { CASOS_AUTO } from './datos-auto.mjs';
 import { DEFECTOS_BASE } from './datos-defectos.mjs';
-import { seccion1y2, seccion3, seccion4, seccion5, REQ_FUNCIONALES, REQ_NO_FUNCIONALES } from './secciones-a.mjs';
+import { seccion1y2, seccion3, seccion4, seccion5, REQ_FUNCIONALES, REQ_NO_FUNCIONALES, INTEGRANTES, FECHA } from './secciones-a.mjs';
 import { seccion6, seccion7, seccion8, seccion9 } from './secciones-b.mjs';
 import { seccion10, seccion11, seccion12, seccion13 } from './secciones-c.mjs';
 
@@ -260,5 +261,23 @@ await page.pdf({
   footerTemplate: '<div style="font-size:8px;width:100%;padding:0 16mm;color:#64748b;display:flex;justify-content:space-between"><span>Ingeniería de Sistemas</span><span>Página <span class="pageNumber"></span> de <span class="totalPages"></span></span></div>',
 });
 await browser.close();
+
+// ---------- Metadatos del PDF ----------
+// El motor de impresión (Chromium, vía Playwright) deja su propia huella en el PDF (Creator/Producer),
+// que no tiene nada que ver con el contenido del informe. Se reemplaza por metadatos académicos neutros.
+const pdfDoc = await PDFDocument.load(fs.readFileSync(salida));
+pdfDoc.setTitle('Caso práctico final - Aseguramiento de la calidad');
+pdfDoc.setAuthor(INTEGRANTES.join(', '));
+pdfDoc.setSubject('Aseguramiento de la calidad');
+pdfDoc.setKeywords(['aseguramiento de la calidad', 'pruebas de software', 'OWASP Juice Shop']);
+pdfDoc.setProducer('');
+pdfDoc.setCreator('');
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const [, dd, mesNombre, aaaa] = FECHA.match(/(\d+) de (\w+) de (\d+)/) || [];
+const fechaPdf = dd ? new Date(Number(aaaa), MESES.indexOf(mesNombre.toLowerCase()), Number(dd)) : new Date();
+pdfDoc.setCreationDate(fechaPdf);
+pdfDoc.setModificationDate(fechaPdf);
+fs.writeFileSync(salida, await pdfDoc.save());
+
 console.log('PDF generado:', salida, '·', (fs.statSync(salida).size / 1024 / 1024).toFixed(1), 'MB');
 console.log(`casos manuales ${manual.length}, automáticos ${auto.length}, defectos ${defectos.length}, alertas ZAP ${zapAlertas.length}`);

@@ -306,9 +306,10 @@
     "esperado": "El acceso es rechazado con \"Invalid email or password.\".",
     "evidencias": [
       "MC-15_paso1_payload.png",
-      "MC-15_paso2_resultado.png"
+      "MC-15_paso2_resultado.png",
+      "MC-15_reverificacion-22-11-2026.jpg"
     ],
-    "obtenido": "URL: /search. Sesión iniciada como: \"admin@juice-sh.op\"",
+    "obtenido": "URL: /search. Sesión iniciada como: \"admin@juice-sh.op\". Reverificado el 22/11/2026: mismo resultado, sesión abierta como admin@juice-sh.op sin conocer su contraseña; el defecto (DEF-003) sigue presente.",
     "estado": "Fallido"
   },
   {
@@ -325,9 +326,10 @@
     ],
     "esperado": "No se ejecuta ningún script; el texto se muestra escapado.",
     "evidencias": [
-      "MC-16_paso1_resultado.png"
+      "MC-16_paso1_resultado.png",
+      "MC-16_reverificacion-22-11-2026.jpg"
     ],
-    "obtenido": "El navegador ejecutó el script: apareció un alert con el texto \"xss\".",
+    "obtenido": "El navegador ejecutó el script: apareció un alert con el texto \"xss\". Reverificado el 22/11/2026: el iframe se insertó sin escapar en el DOM y el registro de consola confirma la llamada a alert('xss'); el defecto (DEF-008) sigue presente.",
     "estado": "Fallido"
   }
 ]

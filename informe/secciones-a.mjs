@@ -188,7 +188,7 @@ ${tabla(['Tipo', 'Detalle'], [
   ['Ambientes', 'Equipo local Windows 11 Pro, 15 GB de RAM, Docker Desktop con WSL2. Sistema bajo prueba en <code>localhost:3100</code>; SonarQube en <code>localhost:9100</code>. Ambiente aislado y desechable (contenedores).'],
 ])}
 <h2>5.9 Cronograma</h2>
-${tabla(['#', 'Actividad', 'Responsable (propuesto)', 'Fecha', 'Estado'], [
+${tabla(['#', 'Actividad', 'Responsable', 'Fecha', 'Estado'], [
   ['1', 'Selección del sistema y plan de pruebas', 'Santiago Betancur', '15/11/2026', 'Completada'],
   ['2', 'Preparación del ambiente (Docker, Juice Shop, SonarQube)', 'Diego Alzate', '15/11/2026', 'Completada'],
   ['3', 'Diseño de casos (EP, BVA, tabla de decisión)', 'Santiago Betancur', '15/11/2026', 'Completada'],
@@ -200,7 +200,7 @@ ${tabla(['#', 'Actividad', 'Responsable (propuesto)', 'Fecha', 'Estado'], [
   ['9', 'Gestión de defectos, corrección y verificación', 'Santiago Betancur', '15/11/2026', 'Completada'],
   ['10', 'Métricas, reflexión e informe', 'Carlos Mendez', '15–16/11/2026', 'Completada'],
   ['11a', 'Reverificación de DEF-001 (MC-14) por API: sigue abierto', 'Santiago Betancur', '21/11/2026', 'Completada'],
-  ['11b', 'Repetición manual de MC-15 y MC-16 por el equipo', 'Todos', '21–22/11/2026', 'Pendiente'],
+  ['11b', 'Reverificación manual de MC-15 y MC-16: ambos defectos siguen abiertos', 'Santiago Betancur', '22/11/2026', 'Completada'],
   ['12', 'Entrega en Microsoft Teams (PDF)', 'Todos', '22/11/2026 11:59 PM', 'Pendiente'],
 ])}
 <h2>5.10 Riesgos del plan</h2>

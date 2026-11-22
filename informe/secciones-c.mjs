@@ -155,7 +155,14 @@ ${tabla(['Dificultad', 'Causa', 'Resolución'], [
   <li>Una corrección sin <strong>prueba de regresión</strong> puede romper el sistema (el primer parche de DEF-001).</li>
 </ul>
 <h2>12.5 Trabajo en equipo</h2>
-<p>El trabajo se organizó en cuatro frentes con dependencias entre sí: plan y diseño de casos, ambiente y automatización, seguridad (SonarQube y ZAP) y rendimiento y métricas. La principal lección de coordinación es que los frentes comparten el mismo ambiente y la misma versión del sistema: acordar puertos, datos de prueba y versiones de herramientas desde el inicio evitó resultados distintos entre integrantes. El reparto de roles propuesto está en el cronograma (5.9).</p>
+<p>El trabajo se organizó en cuatro frentes con dependencias entre sí, repartidos según la experiencia e interés de cada integrante:</p>
+<ul>
+  <li><strong>Santiago Betancur:</strong> selección del sistema y plan de pruebas; diseño de casos (partición de equivalencia, valores límite, tabla de decisión); gestión de defectos, corrección y verificación; reverificación de DEF-001 (MC-14), DEF-003 y DEF-008 (MC-15, MC-16).</li>
+  <li><strong>Diego Alzate:</strong> preparación del ambiente (Docker, Juice Shop, SonarQube); automatización con Playwright y pruebas de regresión.</li>
+  <li><strong>Heyner Mena:</strong> ejecución de los casos manuales y sus capturas; análisis estático con SonarQube y cobertura de código; análisis dinámico con OWASP ZAP.</li>
+  <li><strong>Carlos Mendez:</strong> prueba de carga con k6; métricas de calidad, reflexión final e informe.</li>
+</ul>
+<p>La principal lección de coordinación es que los cuatro frentes comparten el mismo ambiente y la misma versión del sistema: acordar puertos, datos de prueba y versiones de herramientas desde el inicio evitó resultados distintos entre integrantes. El detalle de fechas de cada actividad está en el cronograma (5.9).</p>
 <h2>12.6 Recomendaciones de mejora para futuros proyectos</h2>
 <ol>
   <li>Elegir el sistema y levantarlo en la primera semana, y fijar versiones de las herramientas.</li>
